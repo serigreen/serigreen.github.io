@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SeriGreen Technologies — Protecting silk farms</title>
-<meta name="description" content="SeriGreen Technologies builds IoT systems that measure pesticide drift risk at the field boundary, and the conditions that decide a crop. DPIIT-recognised R&amp;D company. Salem, Tamil Nadu, India.">
+<meta name="description" content="SeriGreen Technologies builds IoT systems that measure pesticide drift risk at the field boundary, and the conditions that decide a crop. A research and development company working in India.">
 <link rel="canonical" href="https://serigreen.in/">
 
 <meta property="og:site_name" content="SeriGreen Technologies">
 <meta property="og:title" content="SeriGreen Technologies — Protecting silk farms">
-<meta property="og:description" content="IoT systems that measure pesticide drift risk at the field boundary, and the conditions that decide a crop. DPIIT-recognised. Salem, Tamil Nadu.">
+<meta property="og:description" content="IoT systems that measure pesticide drift risk at the field boundary, and the conditions that decide a crop.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://serigreen.in/">
 <meta property="og:image" content="https://serigreen.in/assets/og.png">
@@ -179,7 +179,7 @@ h2{font-size:clamp(27px,3.5vw,39px);line-height:1.16;font-weight:700;max-width:1
 .row dd{margin:0;text-align:right;font:400 14.5px/1.5 var(--mono);color:var(--muted)}
 
 /* contact */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:44px}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:48px;margin-top:44px}
 @media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:28px}}
 .cbox .lbl{font:600 11.5px/1 var(--body);letter-spacing:.19em;text-transform:uppercase;color:var(--amber);margin-bottom:12px}
 .cbox .val{font-size:20px;font-weight:600}
@@ -219,7 +219,7 @@ footer .tag{color:#6E9C82;font-style:italic}
     transform:translateX(-50%) rotate(135deg)}
   .knode:last-child::after{display:none}
 }
-.act{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:28px;
+.act{margin-top:20px;display:block;
   background:var(--ground);border-radius:14px;padding:24px 28px;flex-wrap:wrap}
 .act h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:8px}
 .act p{margin:0;font-size:15px;line-height:1.6;color:#B9D6C6;max-width:64ch}
@@ -229,21 +229,6 @@ footer .tag{color:#6E9C82;font-style:italic}
 .act .metric span{display:block;margin-top:8px;font:500 10px/1.4 var(--mono);letter-spacing:.13em;color:#8FB9A2}
 @media(max-width:760px){.act{flex-direction:column;align-items:flex-start;gap:18px}.act .metric{text-align:left}}
 
-/* ---------- measured strip ---------- */
-.eviz{display:grid;grid-template-columns:repeat(3,1fr);margin-top:46px;
-  border-top:1px solid var(--line-dark)}
-.ev{padding:22px 22px 20px;border-bottom:1px solid var(--line-dark);border-right:1px solid var(--line-dark)}
-.ev:nth-child(3n){border-right:0}
-.ev b{display:block;font-family:var(--display);font-size:28px;font-weight:800;color:var(--amber);
-  line-height:1;font-variant-numeric:tabular-nums}
-.ev span{display:block;margin-top:9px;font-size:13.5px;line-height:1.5;color:#B9D6C6}
-.ev.zero b{color:var(--action)}
-@media(max-width:860px){
-  .eviz{grid-template-columns:repeat(2,1fr)}
-  .ev:nth-child(3n){border-right:1px solid var(--line-dark)}
-  .ev:nth-child(2n){border-right:0}
-}
-@media(max-width:520px){.eviz{grid-template-columns:1fr}.ev{border-right:0!important}}
 </style>
 </head>
 <body id="top">
@@ -273,7 +258,7 @@ footer .tag{color:#6E9C82;font-style:italic}
 <div class="hero">
   <div class="wrap grid">
     <div>
-      <span class="pill"><b></b> Salem · Tamil Nadu · India</span>
+      <span class="pill"><b></b> India</span>
       <h1>Protecting silk farms from <em>what they cannot see.</em></h1>
       <p class="lede">Pesticide drift from a neighbouring field can reach mulberry leaf and cost a
         farmer an entire silkworm batch — often without anyone knowing it arrived. SeriGreen builds
@@ -397,7 +382,6 @@ footer .tag{color:#6E9C82;font-style:italic}
             this time &mdash; so the decision it changes is whether you cut leaf from that block,
             and when.</p>
         </div>
-        <div class="metric"><b>30&ndash;79 s</b><span>SPRAY TO SCORE, AT 2&nbsp;M</span></div>
       </div>
     </div>
   </div>
@@ -430,14 +414,6 @@ footer .tag{color:#6E9C82;font-style:italic}
           stays afterwards, to explain an outcome and to carry into the next season.</p>
       </div>
     </div>
-    <div class="eviz">
-      <div class="ev"><b>40.6 h</b><span>of logged device operation across seven test sessions. Every hour is on the record.</span></div>
-      <div class="ev"><b>10,450</b><span>rows of sensor data. Monotonic timestamps, no duplicates, no gaps.</span></div>
-      <div class="ev"><b>~2 m</b><span>measured detection radius. It scores 0.0 at seven metres, and we publish that too.</span></div>
-      <div class="ev"><b>30&ndash;79 s</b><span>from the spray leaving the nozzle to a score on the device.</span></div>
-      <div class="ev"><b>0.8 / hr</b><span>false alarms, down from 15&ndash;23, by reading the rate of change instead of the level.</span></div>
-      <div class="ev zero"><b>0</b><span>farms deployed. We put that on our own website, before you have to ask.</span></div>
-    </div>
     <p class="note">SeriGreen is pre-revenue and in active research and development. Our prototype has been
       tested over 40&nbsp;hours against controlled sprays; the full test record, including the
       results that failed, is documented and available on request. We do not publish performance
@@ -463,20 +439,9 @@ footer .tag{color:#6E9C82;font-style:italic}
   <div class="wrap">
     <div class="eyebrow">Company</div>
     <h2>Serigreen Technologies Private Limited</h2>
-    <p class="sub">A registered Indian private limited company. Every registration below can be
-      independently verified.</p>
-    <div class="facts">
-      <div>
-        <div class="row"><dt>Incorporated</dt><dd>28 July 2023</dd></div>
-        <div class="row"><dt>CIN</dt><dd>U13122TZ2023PTC029040</dd></div>
-        <div class="row"><dt>Registered office</dt><dd>Salem, Tamil Nadu, India</dd></div>
-      </div>
-      <div>
-        <div class="row"><dt>DPIIT recognition</dt><dd>DIPP155430</dd></div>
-        <div class="row"><dt>Udyam (MSME)</dt><dd>UDYAM-TN-20-0115381</dd></div>
-        <div class="row"><dt>Stage</dt><dd>Pre-revenue · R&amp;D</dd></div>
-      </div>
-    </div>
+    <p class="sub">A registered Indian private limited company, pre-revenue and in active research
+      and development. We build instrumentation for a hazard that sericulture has so far had no practical
+      way to measure.</p>
   </div>
 </section>
 
@@ -491,10 +456,6 @@ footer .tag{color:#6E9C82;font-style:italic}
         <div class="lbl">Email</div>
         <div class="val"><a href="mailto:info@serigreen.in">info@serigreen.in</a></div>
       </div>
-      <div class="cbox">
-        <div class="lbl">Location</div>
-        <div class="val" style="color:#EAF6EE">Salem, Tamil Nadu, India</div>
-      </div>
     </div>
   </div>
 </section>
@@ -503,7 +464,8 @@ footer .tag{color:#6E9C82;font-style:italic}
   <div class="wrap foot">
     <div>
       <b>SeriGreen Technologies</b>
-      Serigreen Technologies Private Limited · CIN U13122TZ2023PTC029040<br>
+      Serigreen Technologies Private Limited &nbsp;·&nbsp; CIN U13122TZ2023PTC029040<br>
+      Registered office: Salem, Tamil Nadu, India &nbsp;·&nbsp; info@serigreen.in<br>
       <span class="tag">Protecting silk farms. Growing rural futures.</span>
     </div>
     <div style="text-align:right">
