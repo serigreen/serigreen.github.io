@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SeriGreen Technologies — Climate-resilient sericulture</title>
+<meta name="description" content="SeriGreen Technologies is an R&amp;D company working on IoT-enabled optimisation and protection for sericulture. DPIIT-recognised. Salem, Tamil Nadu, India.">
+<meta property="og:title" content="SeriGreen Technologies">
+<meta property="og:description" content="IoT-enabled optimisation and protection for sericulture. DPIIT-recognised. Salem, Tamil Nadu.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233F4A1E'/%3E%3Cpath d='M16 7c5 3 7 6 7 10a7 7 0 0 1-14 0c0-4 2-7 7-10z' fill='%23F2D94E'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --olive:#3F4A1E; --deep:#242B10; --mid:#5C6B2C; --soft:#8A9560;
+    --yellow:#F2D94E; --pale:#FBF6D8;
+    --cream:#FAF9F3; --ink:#1A1E12; --muted:#5D6552; --line:#E3E1D3;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+  body{margin:0; background:var(--cream); color:var(--ink);
+    font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px; margin:0 auto; padding:0 24px}
+  a{color:var(--mid)}
+  h1,h2,h3{letter-spacing:-.015em}
+
+  header{background:var(--deep); padding:16px 0; position:sticky; top:0; z-index:20}
+  .bar{display:flex; align-items:center; justify-content:space-between; gap:16px}
+  .brand{display:flex; align-items:center; gap:11px; text-decoration:none; color:#fff}
+  .brand b{font-size:18px; letter-spacing:.24em; font-weight:700}
+  nav a{color:#CBD1B4; text-decoration:none; margin-left:24px; font-size:14px}
+  nav a:hover{color:var(--yellow)}
+  @media(max-width:680px){nav{display:none}}
+
+  .hero{background:linear-gradient(160deg,#46521F 0%,#333D16 100%); color:#fff;
+    padding:100px 0 92px; position:relative; overflow:hidden}
+  .hero:before{content:""; position:absolute; inset:0; opacity:.5;
+    background:radial-gradient(circle at 82% 18%, rgba(242,217,78,.16), transparent 55%)}
+  .hero .wrap{position:relative}
+  .tag{display:inline-flex; align-items:center; gap:8px; font-size:12px; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--yellow); border:1px solid rgba(242,217,78,.4);
+    padding:6px 14px; border-radius:999px; margin-bottom:28px}
+  .hero h1{font-size:clamp(32px,5.4vw,56px); line-height:1.1; margin:0 0 24px; font-weight:700; max-width:17ch}
+  .hero .sub{font-size:clamp(17px,2.1vw,20px); color:#E4E8D2; margin:0; max-width:58ch; line-height:1.6}
+  .cta{margin-top:36px; display:flex; gap:14px; flex-wrap:wrap}
+  .btn{display:inline-block; padding:13px 26px; border-radius:6px; text-decoration:none;
+    font-weight:600; font-size:15px; transition:.15s}
+  .btn-y{background:var(--yellow); color:var(--deep)}
+  .btn-y:hover{background:#FFE873; transform:translateY(-1px)}
+  .btn-o{border:1px solid rgba(255,255,255,.35); color:#fff}
+  .btn-o:hover{border-color:var(--yellow); color:var(--yellow)}
+
+  section{padding:80px 0; border-bottom:1px solid var(--line)}
+  section.alt{background:#fff}
+  .kicker{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--mid);
+    font-weight:700; margin:0 0 14px}
+  h2{font-size:clamp(24px,3.5vw,34px); line-height:1.22; margin:0 0 18px; font-weight:700; max-width:22ch}
+  .lead{font-size:17px; color:var(--muted); max-width:64ch; margin:0 0 38px}
+  p{margin:0 0 16px}
+
+  .grid{display:grid; gap:20px}
+  @media(min-width:740px){ .g3{grid-template-columns:repeat(3,1fr)} .g2{grid-template-columns:repeat(2,1fr)} }
+
+  .card{background:var(--cream); border:1px solid var(--line); border-radius:12px; padding:28px;
+    transition:.15s}
+  .card:hover{border-color:var(--soft); transform:translateY(-2px)}
+  section.alt .card{background:var(--cream)}
+  .card h3{margin:0 0 10px; font-size:17px; font-weight:700}
+  .card p{margin:0; font-size:15px; color:var(--muted); line-height:1.65}
+  .num{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.12em; color:var(--mid);
+    background:var(--pale); border-radius:4px; padding:4px 8px; margin-bottom:14px}
+
+  .band{background:var(--pale); border:1px solid #EEE4A6; border-radius:14px; padding:32px}
+  .band h3{margin:0 0 10px; font-size:19px; line-height:1.35}
+  .band p{margin:0 0 8px; color:#4C4B2C; font-size:15px}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:14px}
+  .note{font-size:14px; color:var(--muted); margin-top:14px}
+
+  table{width:100%; border-collapse:collapse; font-size:15px}
+  th,td{text-align:left; padding:13px 0; border-bottom:1px solid var(--line); vertical-align:top}
+  th{width:46%; font-weight:600; color:var(--muted)}
+  td{font-weight:500}
+  @media(max-width:560px){th,td{font-size:14px}}
+
+  .contact-row{display:flex; gap:44px; flex-wrap:wrap}
+  .contact-row span{display:block; font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:6px}
+  .contact-row strong{font-weight:600; font-size:17px}
+
+  footer{background:var(--deep); color:#BFC5A5; padding:46px 0; font-size:14px}
+  .fbar{display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap}
+  footer a{color:var(--yellow); text-decoration:none}
+  .small{font-size:13px; color:#939B78; margin-top:10px; max-width:54ch; line-height:1.6}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="#5C6B2C"/>
+        <path d="M16 7c5 3 7 6 7 10a7 7 0 0 1-14 0c0-4 2-7 7-10z" fill="#F2D94E"/>
+      </svg>
+      <b>SERIGREEN</b>
+    </a>
+    <nav>
+      <a href="#problem">Problem</a>
+      <a href="#approach">Approach</a>
+      <a href="#technology">Technology</a>
+      <a href="#company">Company</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <span class="tag">Salem · Tamil Nadu · India</span>
+    <h1>Climate resilience for sericulture, built on measurement.</h1>
+    <p class="sub">SeriGreen is an early-stage research and development company working on IoT-enabled optimisation and protection for silk farming — so that what happens to a crop can be measured, understood and acted on.</p>
+    <div class="cta">
+      <a class="btn btn-y" href="#approach">Our approach</a>
+      <a class="btn btn-o" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<section id="problem">
+  <div class="wrap">
+    <p class="kicker">The problem</p>
+    <h2>Silk farming is climate-exposed and largely unmeasured.</h2>
+    <p class="lead">Sericulture supports a large number of smallholder families in India. It is also unusually sensitive to conditions — and unusually short of data about them.</p>
+    <div class="grid g3">
+      <div class="card">
+        <span class="num">01</span>
+        <h3>Narrow tolerances</h3>
+        <p>Silkworm rearing succeeds only within a tight range of environmental conditions. Excursions at the wrong stage can cost an entire crop.</p>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <h3>Widening variability</h3>
+        <p>Practices built around a predictable climate are losing reliability. The margin for error is narrowing season by season.</p>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <h3>Little record of what happened</h3>
+        <p>When a crop fails, most farms cannot say why. Without measurement there is nothing to learn from and nothing to improve against.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="approach">
+  <div class="wrap">
+    <p class="kicker">Our approach</p>
+    <h2>Instrument the crop. Act on what the data shows.</h2>
+    <p class="lead">Our work centres on bringing continuous sensing and automated response to sericulture, so conditions are managed as they change rather than discovered after the loss.</p>
+    <div class="grid g3">
+      <div class="card">
+        <h3>Monitor</h3>
+        <p>Connected sensing through the crop cycle, capturing conditions continuously instead of depending on someone being present to observe them.</p>
+      </div>
+      <div class="card">
+        <h3>Optimise</h3>
+        <p>Using what is measured to keep conditions within the range the crop needs, rather than reacting once damage is already visible.</p>
+      </div>
+      <div class="card">
+        <h3>Protect</h3>
+        <p>Detecting adverse conditions early enough for intervention to still matter, and recording every cycle so outcomes can be traced to causes.</p>
+      </div>
+    </div>
+    <p class="note">SeriGreen is pre-revenue and in active research and development. Our systems are undergoing field validation; we do not publish performance claims we cannot yet evidence.</p>
+  </div>
+</section>
+
+<section id="technology">
+  <div class="wrap">
+    <p class="kicker">Technology &amp; intellectual property</p>
+    <h2>Our approach is the subject of a filed patent application.</h2>
+    <p class="lead">SeriGreen's core work is covered by a patent application filed with the Indian Patent Office.</p>
+    <div class="band">
+      <h3>Integrated IoT-Enabled Sericulture Field Optimization and Protection System</h3>
+      <p class="mono">Indian patent application no. 202541117191 &nbsp;·&nbsp; filed 26 November 2025</p>
+      <p>The application is pending examination. SeriGreen makes no claim to a granted patent.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="company">
+  <div class="wrap">
+    <p class="kicker">Company</p>
+    <h2>Serigreen Technologies Private Limited</h2>
+    <p class="lead">A DPIIT-recognised research and development company based in Salem, Tamil Nadu. Every registration below can be verified independently against the public record.</p>
+    <div class="grid g2">
+      <div>
+        <table>
+          <tr><th>Legal name</th><td>Serigreen Technologies Private Limited</td></tr>
+          <tr><th>Incorporated</th><td>28 July 2023</td></tr>
+          <tr><th>CIN</th><td class="mono">U13122TZ2023PTC029040</td></tr>
+          <tr><th>Registered office</th><td>Salem, Tamil Nadu, India</td></tr>
+        </table>
+      </div>
+      <div>
+        <table>
+          <tr><th>DPIIT recognition</th><td class="mono">DIPP155430</td></tr>
+          <tr><th>Udyam registration</th><td class="mono">UDYAM-TN-20-0115381</td></tr>
+          <tr><th>Enterprise class</th><td>Micro · Manufacturing</td></tr>
+          <tr><th>Stage</th><td>Pre-revenue · R&amp;D</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <p class="kicker">Contact</p>
+    <h2>Talk to us.</h2>
+    <p class="lead">For research collaboration, partnership, investment or supplier enquiries, write to us and we will respond.</p>
+    <div class="contact-row">
+      <div>
+        <span>Email</span>
+        <strong><a href="mailto:info@serigreen.in">info@serigreen.in</a></strong>
+      </div>
+      <div>
+        <span>Location</span>
+        <strong>Salem, Tamil Nadu, India</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fbar">
+    <div>
+      <strong style="color:#fff; letter-spacing:.2em">SERIGREEN</strong>
+      <p class="small">Serigreen Technologies Private Limited · CIN U13122TZ2023PTC029040<br>Salem, Tamil Nadu, India</p>
+    </div>
+    <div>
+      <a href="mailto:info@serigreen.in">info@serigreen.in</a>
+      <p class="small">&copy; 2026 Serigreen Technologies Private Limited.<br>All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
