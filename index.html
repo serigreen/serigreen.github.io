@@ -191,6 +191,59 @@ footer{background:#061C15;color:#8FB9A2;padding:44px 0;font-size:14.5px}
 footer b{display:block;font-family:var(--display);font-weight:800;letter-spacing:.02em;color:#EAF6EE;font-size:16px;margin-bottom:9px}
 footer a{color:var(--amber);text-decoration:none}
 footer .tag{color:#6E9C82;font-style:italic}
+
+/* ---------- drift chain ---------- */
+.chainwrap{margin-top:48px}
+.chain{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.knode{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:13px;
+  padding:18px 15px 16px;display:flex;flex-direction:column;gap:8px}
+.knode .cap{height:5px;border-radius:99px;width:100%;margin-bottom:4px}
+.knode .num{font:500 11px/1 var(--mono);letter-spacing:.1em;color:#8FA096}
+.knode h3{font-size:15.5px;font-weight:700;line-height:1.26}
+.knode p{margin:0;font-size:13.4px;line-height:1.54;color:var(--muted)}
+.knode .tag{margin-top:auto;padding-top:12px;font:500 9.5px/1.35 var(--mono);letter-spacing:.11em;
+  text-transform:uppercase;color:#8FA096}
+.knode.gap{background:#FFF8EA;border-color:#F0D8A6}
+.knode.gap .tag{color:#B0741B}
+.knode::after{content:"";position:absolute;right:-11px;top:50%;width:7px;height:7px;
+  border-top:2px solid #C9DACE;border-right:2px solid #C9DACE;
+  transform:translateY(-50%) rotate(45deg)}
+.knode:last-child::after{display:none}
+@media(max-width:1040px){
+  .chain{grid-template-columns:repeat(3,1fr);gap:14px 18px}
+  .knode:nth-child(3)::after{display:none}
+}
+@media(max-width:680px){
+  .chain{grid-template-columns:1fr;gap:26px}
+  .knode::after,.knode:nth-child(3)::after{display:block;right:auto;left:50%;top:auto;bottom:-17px;
+    transform:translateX(-50%) rotate(135deg)}
+  .knode:last-child::after{display:none}
+}
+.act{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:28px;
+  background:var(--ground);border-radius:14px;padding:24px 28px;flex-wrap:wrap}
+.act h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:8px}
+.act p{margin:0;font-size:15px;line-height:1.6;color:#B9D6C6;max-width:64ch}
+.act .metric{flex-shrink:0;text-align:right}
+.act .metric b{display:block;font-family:var(--display);font-size:31px;font-weight:800;
+  color:var(--amber);line-height:1;white-space:nowrap}
+.act .metric span{display:block;margin-top:8px;font:500 10px/1.4 var(--mono);letter-spacing:.13em;color:#8FB9A2}
+@media(max-width:760px){.act{flex-direction:column;align-items:flex-start;gap:18px}.act .metric{text-align:left}}
+
+/* ---------- measured strip ---------- */
+.eviz{display:grid;grid-template-columns:repeat(3,1fr);margin-top:46px;
+  border-top:1px solid var(--line-dark)}
+.ev{padding:22px 22px 20px;border-bottom:1px solid var(--line-dark);border-right:1px solid var(--line-dark)}
+.ev:nth-child(3n){border-right:0}
+.ev b{display:block;font-family:var(--display);font-size:28px;font-weight:800;color:var(--amber);
+  line-height:1;font-variant-numeric:tabular-nums}
+.ev span{display:block;margin-top:9px;font-size:13.5px;line-height:1.5;color:#B9D6C6}
+.ev.zero b{color:var(--action)}
+@media(max-width:860px){
+  .eviz{grid-template-columns:repeat(2,1fr)}
+  .ev:nth-child(3n){border-right:1px solid var(--line-dark)}
+  .ev:nth-child(2n){border-right:0}
+}
+@media(max-width:520px){.eviz{grid-template-columns:1fr}.ev{border-right:0!important}}
 </style>
 </head>
 <body id="top">
@@ -208,6 +261,7 @@ footer .tag{color:#6E9C82;font-style:italic}
     <label class="burger" for="navtoggle" aria-label="Open menu"><i></i><i></i><i></i></label>
     <nav>
       <a href="#threat">The threat</a>
+      <a href="#chain">The chain</a>
       <a href="#approach">Approach</a>
       <a href="#technology">Technology</a>
       <a href="#company">Company</a>
@@ -269,10 +323,90 @@ footer .tag{color:#6E9C82;font-style:italic}
   </div>
 </section>
 
+<section id="chain" class="sec-light">
+  <div class="wrap">
+    <div class="eyebrow">How a batch is lost</div>
+    <h2>The drift chain.</h2>
+    <p class="sub">Six stages, none of them dramatic. The loss is decided long before anyone can see
+      that anything went wrong.</p>
+
+    <div class="chainwrap">
+      <div class="chain">
+
+        <div class="knode">
+          <span class="cap" style="background:#4FA96B"></span>
+          <div class="num">01</div>
+          <h3>The neighbour sprays</h3>
+          <p>Cotton, sugarcane, banana, chilli &mdash; whatever is next door. India has no buffer-zone
+            rule protecting sericulture, and he has no duty to tell anyone.</p>
+          <div class="tag">Surveyed</div>
+        </div>
+
+        <div class="knode">
+          <span class="cap" style="background:#E8C77A"></span>
+          <div class="num">02</div>
+          <h3>The fine droplets travel</h3>
+          <p>Nozzles throw 50&ndash;500&nbsp;&micro;m. Anything under 150&nbsp;&micro;m does not fall.
+            It stays up and moves with the wind.</p>
+          <div class="tag">Literature</div>
+        </div>
+
+        <div class="knode">
+          <span class="cap" style="background:#F2C14E"></span>
+          <div class="num">03</div>
+          <h3>It reaches the leaf</h3>
+          <p>Direct drift, vapour settling out overnight, dew, soil to root. Several routes onto
+            mulberry, not one.</p>
+          <div class="tag">Documented</div>
+        </div>
+
+        <div class="knode gap">
+          <span class="cap" style="background:#F39D19"></span>
+          <div class="num">04</div>
+          <h3>Nothing looks wrong</h3>
+          <p>The leaf is fresh and green; residue is invisible. Sericulture has a zero-tolerance
+            standard, so a dose far below lethal has already ruined it.</p>
+          <div class="tag">The gap</div>
+        </div>
+
+        <div class="knode">
+          <span class="cap" style="background:#D2601C"></span>
+          <div class="num">05</div>
+          <h3>He cuts, and he feeds</h3>
+          <p>Within hours the worms stop feeding, regurgitate, curl, and go flaccid. By then the
+            decision that mattered is days behind him.</p>
+          <div class="tag">Published toxicology</div>
+        </div>
+
+        <div class="knode">
+          <span class="cap" style="background:#A33417"></span>
+          <div class="num">06</div>
+          <h3>The cycle is gone</h3>
+          <p>Death, or a worm that eats for eighteen days and never spins. Weeks of labour, leaf and
+            eggs go with it.</p>
+          <div class="tag">Published toxicology</div>
+        </div>
+
+      </div>
+
+      <div class="act">
+        <div>
+          <h3>What we put into stage 04</h3>
+          <p>A unit on the boundary notices the air change and raises a score. It does not name the
+            chemical and it does not touch the leaf. It tells you that a spray passed this point, at
+            this time &mdash; so the decision it changes is whether you cut leaf from that block,
+            and when.</p>
+        </div>
+        <div class="metric"><b>30&ndash;79 s</b><span>SPRAY TO SCORE, AT 2&nbsp;M</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="approach" class="sec-dark on-dark">
   <div class="wrap">
     <div class="eyebrow">Our approach</div>
-    <h2>Instrument the field. Warn early. Improve on the record.</h2>
+    <h2>Instrument the boundary. Warn early. Improve on the record.</h2>
     <p class="sub">Our work follows the structure of our patent application — a field optimisation
       <em>and protection</em> system. Protection is where it starts, because that is where a season
       is most often lost.</p>
@@ -295,6 +429,14 @@ footer .tag{color:#6E9C82;font-style:italic}
         <p>The decision this changes is whether to cut leaf from that block, and when. The record
           stays afterwards, to explain an outcome and to carry into the next season.</p>
       </div>
+    </div>
+    <div class="eviz">
+      <div class="ev"><b>40.6 h</b><span>of logged device operation across seven test sessions. Every hour is on the record.</span></div>
+      <div class="ev"><b>10,450</b><span>rows of sensor data. Monotonic timestamps, no duplicates, no gaps.</span></div>
+      <div class="ev"><b>~2 m</b><span>measured detection radius. It scores 0.0 at seven metres, and we publish that too.</span></div>
+      <div class="ev"><b>30&ndash;79 s</b><span>from the spray leaving the nozzle to a score on the device.</span></div>
+      <div class="ev"><b>0.8 / hr</b><span>false alarms, down from 15&ndash;23, by reading the rate of change instead of the level.</span></div>
+      <div class="ev zero"><b>0</b><span>farms deployed. We put that on our own website, before you have to ask.</span></div>
     </div>
     <p class="note">SeriGreen is pre-revenue and in active research and development. Our prototype has been
       tested over 40&nbsp;hours against controlled sprays; the full test record, including the
