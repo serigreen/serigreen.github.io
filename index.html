@@ -4,22 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SeriGreen Technologies — Protecting silk farms</title>
-<meta name="description" content="SeriGreen Technologies builds IoT systems that measure pesticide drift risk at the field boundary, and the conditions that decide a crop. A research and development company working in India.">
+<meta name="description" content="SeriGreen Technologies builds instruments for the sericulture cycle — the mulberry, the rearing house, and the boundary where a neighbour's spray arrives. A research and development company working in India.">
 <link rel="canonical" href="https://serigreen.in/">
 
 <meta property="og:site_name" content="SeriGreen Technologies">
 <meta property="og:title" content="SeriGreen Technologies — Protecting silk farms">
-<meta property="og:description" content="IoT systems that measure pesticide drift risk at the field boundary, and the conditions that decide a crop.">
+<meta property="og:description" content="Instruments for the sericulture cycle — the mulberry, the rearing house, and the boundary where the drift arrives.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://serigreen.in/">
 <meta property="og:image" content="https://serigreen.in/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="SeriGreen Technologies — Protecting silk farms. Growing rural futures.">
 <meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SeriGreen Technologies — Protecting silk farms">
-<meta name="twitter:description" content="IoT systems that measure pesticide drift risk at the field boundary, and the conditions that decide a crop.">
+<meta name="twitter:description" content="Instruments for the sericulture cycle — the mulberry, the rearing house, and the boundary where the drift arrives.">
 <meta name="twitter:image" content="https://serigreen.in/assets/og.png">
 <meta name="theme-color" content="#0A2E22">
 
@@ -28,65 +27,75 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&family=Noto+Sans+Tamil:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Kannada:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  /* Brand, sampled from the company's own logo and applied poster */
-  --ground:#0A2E22;      /* darkest brand ground */
-  --panel:#0E4534;       /* brand panel */
-  --panel-2:#12563F;
-  --leaf:#066F35;        /* mulberry leaf, from the logo */
-  --action:#22C962;      /* action green */
-  --cocoon:#F39D19;      /* cocoon orange, from the logo */
-  --amber:#F2C14E;       /* applied amber */
-  --mint:#DDF0E4;        /* pale mint card */
-  --spot:#946833;        /* cocoon spots */
-
-  --paper:#FFFFFF;
-  --paper-2:#F4F9F5;
-  --ink:#10231B;
-  --muted:#4E6559;
-  --line:#DCE7DF;
-  --line-dark:rgba(221,240,228,.16);
-
+  --ground:#0A2E22; --panel:#0E4534; --panel-2:#12563F;
+  --leaf:#066F35; --action:#22C962; --cocoon:#F39D19; --amber:#F2C14E;
+  --mint:#DDF0E4; --spot:#946833;
+  --paper:#FFFFFF; --paper-2:#F4F9F5; --ink:#10231B; --muted:#4E6559;
+  --line:#DCE7DF; --line-dark:rgba(221,240,228,.16);
   --display:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-  --body:'Public Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --body:'Public Sans','Noto Sans Tamil','Noto Sans Devanagari','Noto Sans Kannada','Noto Sans Telugu',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
   --mono:'Roboto Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);
+body{overflow-wrap:break-word;margin:0;background:var(--paper);color:var(--ink);
   font:400 17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+html[lang="ta"] body,html[lang="hi"] body,html[lang="kn"] body,html[lang="te"] body,html[lang="mr"] body{font-size:16.5px;line-height:1.8}
 img,svg{max-width:100%}
 a{color:var(--leaf)}
 h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;margin:0}
+html[lang="ta"] h1,html[lang="ta"] h2,html[lang="ta"] h3,
+html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] h3,
+html[lang="kn"] h1,html[lang="kn"] h2,html[lang="kn"] h3,
+html[lang="te"] h1,html[lang="te"] h2,html[lang="te"] h3,
+html[lang="mr"] h1,html[lang="mr"] h2,html[lang="mr"] h3{font-family:var(--body);font-weight:700;letter-spacing:0;line-height:1.35}
+/* Indic scripts set a taller x-height and carry matras above and below, so the display sizes come down a step. */
+html[lang="ta"] h1,html[lang="hi"] h1,html[lang="kn"] h1,html[lang="te"] h1,html[lang="mr"] h1{font-size:clamp(27px,3.5vw,41px);line-height:1.32}
+html[lang="ta"] h2,html[lang="hi"] h2,html[lang="kn"] h2,html[lang="te"] h2,html[lang="mr"] h2{font-size:clamp(22px,2.5vw,30px);line-height:1.36}
 .wrap{max-width:1120px;margin:0 auto;padding:0 26px}
 .eyebrow{font:600 12px/1 var(--body);letter-spacing:.19em;text-transform:uppercase;color:var(--leaf);margin-bottom:18px}
 .on-dark .eyebrow{color:var(--amber)}
 
 /* ---------- header ---------- */
-header{background:var(--ground);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line-dark)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 0}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+header{background:var(--ground);position:sticky;top:0;z-index:60;border-bottom:1px solid var(--line-dark)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;flex-shrink:0}
 .brand .mark{width:30px;height:36px;display:block;--brand-green:var(--action);--brand-amber:var(--cocoon)}
 .brand .wordmark{font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:.02em;line-height:1}
 .brand .wordmark span{color:var(--action)}
 .brand small{display:block;font:500 9.5px/1 var(--body);letter-spacing:.24em;color:#8FB9A2;margin-top:4px}
-nav{display:flex;align-items:center;gap:28px}
-nav a{color:#CFE4D8;text-decoration:none;font-size:14.5px;font-weight:500}
+.navwrap{display:flex;align-items:center;gap:22px}
+nav{display:flex;align-items:center;gap:22px}
+nav a{color:#CFE4D8;text-decoration:none;font-size:14.5px;font-weight:500;white-space:nowrap}
 nav a:hover{color:var(--amber)}
 
-/* mobile menu — pure CSS, no script */
+/* language switcher */
+.lang{position:relative;flex-shrink:0}
+.lang button{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);
+  border:1px solid var(--line-dark);color:#EAF6EE;font:500 13.5px/1 var(--body);
+  padding:9px 13px;border-radius:9px;cursor:pointer}
+.lang button:hover{border-color:var(--amber);color:var(--amber)}
+.lang button svg{width:15px;height:15px;flex-shrink:0}
+.lang ul{position:absolute;right:0;top:calc(100% + 8px);margin:0;padding:6px;list-style:none;
+  background:var(--panel);border:1px solid var(--line-dark);border-radius:11px;min-width:172px;
+  box-shadow:0 18px 40px rgba(0,0,0,.4);display:none;z-index:80}
+.lang[data-open="1"] ul{display:block}
+.lang li button{width:100%;justify-content:flex-start;background:transparent;border:0;padding:10px 12px;border-radius:7px;font-size:14.5px}
+.lang li button:hover{background:rgba(255,255,255,.07);color:var(--amber)}
+.lang li button[aria-current="true"]{color:var(--action);font-weight:600}
+.lang li button .native{color:#8FB9A2;font-size:12.5px;margin-left:auto}
+
 #navtoggle{position:absolute;opacity:0;pointer-events:none}
 .burger{display:none;width:42px;height:38px;border:1px solid var(--line-dark);border-radius:9px;
   cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:4.5px;background:rgba(255,255,255,.04)}
 .burger i{display:block;width:17px;height:2px;background:#DDF0E4;border-radius:2px;transition:.2s}
-@media(max-width:820px){
+@media(max-width:1040px){
   .burger{display:flex}
   nav{position:absolute;left:0;right:0;top:100%;background:var(--panel);flex-direction:column;
-    align-items:stretch;gap:0;padding:6px 26px 16px;border-bottom:1px solid var(--line-dark);
-    display:none}
+    align-items:stretch;gap:0;padding:6px 26px 16px;border-bottom:1px solid var(--line-dark);display:none}
   #navtoggle:checked ~ .bar nav{display:flex}
   nav a{padding:13px 2px;border-bottom:1px solid var(--line-dark);font-size:16px}
   nav a:last-child{border-bottom:0}
@@ -96,139 +105,221 @@ nav a:hover{color:var(--amber)}
 }
 .hdr{position:relative}
 
-/* ---------- hero ---------- */
+/* ---------- hero ----------
+   The type sits on solid ground and the photograph bleeds off the right edge,
+   so the picture carries weight without ever sitting under the words. */
 .hero{background:
-    radial-gradient(900px 460px at 88% 8%, rgba(34,201,98,.16), transparent 62%),
+    radial-gradient(680px 420px at 22% 0%, rgba(34,201,98,.13), transparent 66%),
     linear-gradient(165deg,#0C3527 0%,#0A2E22 46%,#07231A 100%);
-  color:#fff;padding:96px 0 92px;position:relative;overflow:hidden}
-.hero .grid{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center}
-.pill{display:inline-flex;align-items:center;gap:9px;font:500 12px/1 var(--body);letter-spacing:.15em;
-  text-transform:uppercase;color:var(--amber);border:1px solid rgba(242,193,78,.42);
+  color:#fff;position:relative;overflow:hidden}
+.heroplate{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.86fr);align-items:stretch;
+  max-width:1520px;margin:0 auto}
+.herotext{padding:92px 56px 92px max(26px,calc((100vw - 1120px)/2));
+  display:flex;flex-direction:column;justify-content:center;max-width:none}
+@media(min-width:1521px){.herotext{padding-left:calc((1520px - 1120px)/2 + 26px)}}
+.pill{align-self:flex-start;display:inline-flex;align-items:center;gap:9px;font:500 12px/1 var(--body);
+  letter-spacing:.15em;text-transform:uppercase;color:var(--amber);border:1px solid rgba(242,193,78,.42);
   border-radius:999px;padding:9px 16px;margin-bottom:26px}
 .pill b{width:6px;height:6px;border-radius:50%;background:var(--amber)}
-h1{font-size:clamp(35px,5.1vw,58px);line-height:1.06;font-weight:800;color:#fff}
+h1{font-size:clamp(33px,4.5vw,54px);line-height:1.06;font-weight:800;color:#fff;max-width:15ch}
 h1 em{font-style:normal;color:var(--amber)}
-.lede{font-size:18.5px;line-height:1.62;color:#C8DFD2;margin:24px 0 0;max-width:38em}
-.cta{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px}
+.lede{font-size:18.5px;line-height:1.62;color:#C8DFD2;margin:26px 0 0;max-width:44ch}
+.cta{display:flex;flex-wrap:wrap;gap:13px;margin-top:36px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 26px;border-radius:10px;
   font:600 15.5px/1 var(--body);text-decoration:none;border:1px solid transparent;transition:.16s}
 .btn-primary{background:var(--action);color:#04241A}
 .btn-primary:hover{background:#3ADB77}
 .btn-ghost{border-color:rgba(221,240,228,.34);color:#EAF6EE}
 .btn-ghost:hover{border-color:var(--amber);color:var(--amber)}
-
-/* hero right — the brand mark, used as the graphic */
-.emblem{position:relative;display:flex;align-items:center;justify-content:center;min-height:300px}
-.emblem .ring{position:absolute;width:min(400px,86%);aspect-ratio:1;border-radius:50%;
-  background:radial-gradient(circle,rgba(34,201,98,.18),rgba(34,201,98,0) 68%)}
-.emblem .mark{width:min(240px,60%);height:auto;position:relative;
-  --brand-green:var(--action);--brand-amber:var(--cocoon);
-  filter:drop-shadow(0 18px 42px rgba(0,0,0,.42))}
-.tagline{position:absolute;bottom:-6px;left:0;right:0;text-align:center;
-  font:500 13px/1.5 var(--body);letter-spacing:.03em;color:#9FC6B0}
-@media(max-width:900px){
-  .hero{padding:70px 0 66px}
-  .hero .grid{grid-template-columns:1fr;gap:40px}
-  .emblem{order:-1;min-height:0;flex-direction:column;gap:16px}
-  .emblem .mark{width:118px}
-  .emblem .ring{width:230px}
-  .tagline{position:static;margin:0;max-width:30ch}
+.heroshot{position:relative;margin:0;overflow:hidden;min-height:520px}
+.heroshot img{width:100%;height:100%;object-fit:cover;object-position:50% 74%;display:block}
+.heroshot::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(96deg,rgba(8,38,28,1) 0%,rgba(8,38,28,.86) 9%,rgba(8,38,28,.34) 30%,rgba(8,38,28,.06) 58%,transparent 78%)}
+.heroshot figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:38px 22px 16px;
+  background:linear-gradient(transparent,rgba(7,35,26,.86));
+  font:500 12.5px/1.5 var(--body);color:#CFE4D8;text-align:right}
+@media(max-width:940px){
+  .heroplate{grid-template-columns:1fr}
+  .herotext{padding:52px 26px 58px;order:2}
+  .heroshot{order:1;min-height:0;aspect-ratio:16/10}
+  .heroshot::before{background:linear-gradient(to top,rgba(7,35,26,.86) 0%,transparent 46%)}
+  .heroshot figcaption{text-align:left}
+  h1{max-width:none}
 }
 
 /* ---------- sections ---------- */
-section{padding:88px 0}
+section{padding:84px 0}
 .sec-light{background:var(--paper)}
 .sec-tint{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .sec-dark{background:linear-gradient(170deg,var(--panel) 0%,#0B3A2B 100%);color:#EAF6EE}
-.sec-dark h2{color:#fff}
-h2{font-size:clamp(27px,3.5vw,39px);line-height:1.16;font-weight:700;max-width:19ch}
-.sec-dark h2{max-width:22ch}
-.sub{font-size:17.5px;color:var(--muted);margin:20px 0 0;max-width:60ch}
+.sec-dark h2,.sec-dark h3{color:#fff}
+h2{font-size:clamp(26px,3.4vw,38px);line-height:1.16;font-weight:700;max-width:22ch}
+.sub{font-size:17.5px;color:var(--muted);margin:20px 0 0;max-width:64ch}
 .sec-dark .sub{color:#B9D6C6}
+.note{margin-top:32px;font-size:15px;color:var(--muted);max-width:78ch;line-height:1.65}
+.sec-dark .note{color:#9FC6B0}
 
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
-@media(max-width:860px){.cards{grid-template-columns:1fr;gap:16px}}
+/* ---------- the cycle ---------- */
+.cycle{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-top:46px}
+.stage{position:relative;min-width:0;overflow-wrap:break-word;background:var(--paper);border:1px solid var(--line);border-radius:13px;
+  padding:17px 15px 15px;display:flex;flex-direction:column;gap:7px}
+.sec-tint .stage{background:#fff}
+.stage .cap{height:5px;border-radius:99px;width:100%;margin-bottom:4px;background:var(--leaf)}
+.stage .num{font:500 11px/1 var(--mono);letter-spacing:.1em;color:#8FA096}
+.stage h3{font-size:15.5px;font-weight:700;line-height:1.26}
+.stage p{margin:0;font-size:13.4px;line-height:1.55;color:var(--muted)}
+.stage .risk{margin-top:auto;padding-top:11px;font:500 11.5px/1.45 var(--body);color:#A8541C}
+.stage::after{content:"";position:absolute;right:-9px;top:50%;width:7px;height:7px;
+  border-top:2px solid #C9DACE;border-right:2px solid #C9DACE;transform:translateY(-50%) rotate(45deg)}
+.stage:last-child::after{display:none}
+@media(max-width:1080px){.cycle{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 18px}.stage:nth-child(3)::after{display:none}}
+@media(max-width:700px){
+  .cycle{grid-template-columns:1fr;gap:24px}
+  .stage::after,.stage:nth-child(3)::after{display:block;right:auto;left:50%;top:auto;bottom:-16px;transform:translateX(-50%) rotate(135deg)}
+  .stage:last-child::after{display:none}
+}
+
+/* ---------- drift figure ---------- */
+.drift-fig{margin:44px 0 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.drift-fig svg{display:block;width:100%;height:auto}
+.drift-fig text{font-family:var(--body);font-size:15px;fill:var(--muted)}
+.drift-fig .dlab text{font-size:14.5px;font-weight:500}
+.drift-fig .dlab .hi{fill:var(--spot);font-weight:600;font-size:16px}
+.drift-fig .zone text{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;fill:#8FA096}
+.drift-fig .bnd{font-size:13.5px;font-weight:600;fill:var(--cocoon)}
+.drift-fig .norm{font-size:13px;fill:#8FA096}
+html[lang="ta"] .drift-fig text,html[lang="kn"] .drift-fig text,html[lang="te"] .drift-fig text,html[lang="mr"] .drift-fig text,html[lang="hi"] .drift-fig text{font-size:13px}
+html[lang="ta"] .drift-fig .dlab .hi,html[lang="kn"] .drift-fig .dlab .hi,html[lang="te"] .drift-fig .dlab .hi,html[lang="mr"] .drift-fig .dlab .hi,html[lang="hi"] .drift-fig .dlab .hi{font-size:14px}
+.drift-fig figcaption{padding:16px 22px 18px;border-top:1px solid var(--line);
+  font-size:14px;line-height:1.6;color:var(--muted);background:var(--paper-2)}
+@media(max-width:720px){
+  .drift-fig svg{min-width:640px}
+  .drift-fig{overflow-x:auto}
+}
+
+/* ---------- products ---------- */
+.prods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:46px}
+@media(max-width:1000px){.prods{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.prods{grid-template-columns:1fr}}
+.prod{background:rgba(255,255,255,.055);border:1px solid var(--line-dark);border-radius:16px;padding:26px 26px 24px;
+  display:flex;flex-direction:column}
+.prod .top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:14px}
+.prod h3{font-size:21px;font-weight:700}
+.prod .where{font:500 11px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin-top:6px;min-height:2.8em}
+.prod-lead .where{min-height:0}
+.prod p{margin:0;font-size:15.5px;line-height:1.62;color:#B9D6C6}
+.badge{flex-shrink:0;font:500 10.5px/1 var(--mono);letter-spacing:.09em;padding:7px 10px;border-radius:6px;white-space:nowrap}
+.badge.live{background:rgba(34,201,98,.16);color:var(--action);border:1px solid rgba(34,201,98,.34)}
+.badge.built{background:rgba(242,193,78,.14);color:var(--amber);border:1px solid rgba(242,193,78,.3)}
+.badge.dev{background:transparent;color:#9FC6B0;border:1px dashed rgba(221,240,228,.34)}
+.prod .stat{margin-top:auto;padding-top:14px;border-top:1px solid var(--line-dark);
+  font:500 13px/1.55 var(--body);color:#8FB9A2}
+/* The flagship spans the row and carries the photograph; the other three stay equal. */
+.prod-lead{grid-column:1 / -1;flex-direction:row;gap:30px;align-items:center}
+.prod-lead .prod-body{flex:1 1 auto;min-width:0;display:flex;flex-direction:column}
+.prod-lead .prod-body .stat{margin-top:16px}
+.prod-lead .prod-shot{flex:0 0 244px;aspect-ratio:1/1;border-radius:12px;overflow:hidden;
+  border:1px solid var(--line-dark);background:#0A2E22}
+.prod-lead .prod-shot img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:900px){.prod-lead{flex-direction:column;align-items:stretch;gap:22px}
+  .prod-lead .prod-shot{flex:0 0 auto;aspect-ratio:16/9;order:-1}}
+
+/* ---------- approach cards ---------- */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+@media(max-width:880px){.cards{grid-template-columns:1fr;gap:16px}}
 .card{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:28px 26px 30px}
 .sec-tint .card{background:#fff}
 .card .n{display:inline-block;font:500 11.5px/1 var(--mono);color:var(--leaf);background:var(--mint);
   border-radius:6px;padding:7px 10px;margin-bottom:17px;letter-spacing:.06em}
 .card h3{font-size:19.5px;font-weight:700;margin-bottom:11px}
 .card p{margin:0;font-size:16px;color:var(--muted);line-height:1.62}
-
 .sec-dark .card{background:rgba(255,255,255,.055);border-color:var(--line-dark)}
-.sec-dark .card h3{color:#fff}
 .sec-dark .card p{color:#B9D6C6}
 .sec-dark .card .n{background:rgba(242,193,78,.14);color:var(--amber)}
 
-.note{margin-top:34px;font-size:15px;color:var(--muted);max-width:78ch;line-height:1.65}
-.sec-dark .note{color:#9FC6B0}
+/* ---------- gallery ---------- */
+.gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:46px}
+@media(max-width:1000px){.gal{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.gal{grid-template-columns:1fr}}
+.gal figure{margin:0;border-radius:13px;overflow:hidden;border:1px solid var(--line);background:#fff;
+  display:flex;flex-direction:column;transition:box-shadow .18s,transform .18s}
+.gal figure{cursor:zoom-in}
+.gal figure:hover{box-shadow:0 12px 30px rgba(10,46,34,.13);transform:translateY(-2px)}
+.gal figure:focus-visible{outline:2px solid var(--action);outline-offset:3px}
+/* ---------- lightbox ---------- */
+#lb[hidden]{display:none}
+#lb{position:fixed;inset:0;z-index:200;background:rgba(5,24,18,.975);
+  display:flex;align-items:center;justify-content:center;padding:32px 20px 24px}
+#lb figure{margin:0;max-width:min(1100px,94vw);max-height:100%;display:flex;flex-direction:column;gap:14px}
+#lb img{max-width:100%;max-height:calc(100vh - 150px);object-fit:contain;border-radius:10px;display:block;margin:0 auto}
+#lb figcaption{color:#CFE4D8;font-size:14.5px;line-height:1.55;text-align:center;max-width:70ch;margin:0 auto}
+#lbclose{position:absolute;top:16px;right:18px;width:42px;height:42px;border-radius:10px;cursor:pointer;
+  background:rgba(255,255,255,.08);border:1px solid var(--line-dark);color:#EAF6EE;font-size:22px;line-height:1}
+#lbclose:hover{border-color:var(--amber);color:var(--amber)}
+#lbprev,#lbnext{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;
+  cursor:pointer;background:rgba(255,255,255,.08);border:1px solid var(--line-dark);color:#EAF6EE;font-size:20px;line-height:1}
+#lbprev{left:16px}#lbnext{right:16px}
+#lbprev:hover,#lbnext:hover{border-color:var(--amber);color:var(--amber)}
+@media(max-width:620px){#lbprev,#lbnext{top:auto;bottom:14px;transform:none}#lbprev{left:30%}#lbnext{right:30%}}
+.gal img{width:100%;height:auto;min-height:0;aspect-ratio:4/3;object-fit:cover;display:block;flex:0 0 auto;background:var(--paper-2)}
+.gal figcaption{padding:12px 14px 14px;font-size:13.2px;line-height:1.5;color:var(--muted)}
+.gal figure.tall{grid-row:span 1}
 
-/* patent card */
-.patent{margin-top:40px;background:var(--mint);border:1px solid #C4E2CF;border-left:4px solid var(--leaf);
-  border-radius:13px;padding:28px 30px}
-.patent h3{font-size:19px;font-weight:700;margin-bottom:12px;line-height:1.4}
-.patent .meta{font:400 14px/1.8 var(--mono);color:#2C5A42;word-break:break-word}
-.patent p{margin:14px 0 0;font-size:15.5px;color:#345C48}
+/* ---------- timeline ---------- */
+.tl{margin-top:46px;border-left:2px solid var(--line);padding-left:26px;display:flex;flex-direction:column;gap:26px}
+.sec-dark .tl{border-color:var(--line-dark)}
+.ev{position:relative}
+.ev::before{content:"";position:absolute;left:-33px;top:6px;width:11px;height:11px;border-radius:50%;
+  background:var(--paper-2);border:2px solid var(--leaf)}
+.sec-dark .ev::before{background:var(--panel);border-color:var(--amber)}
+.ev .meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:5px}
+.ev .yr{font:500 12px/1 var(--mono);color:var(--muted)}
+.sec-dark .ev .yr{color:#8FB9A2}
+.ev .kind{font:500 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+  padding:5px 8px;border-radius:5px;background:var(--mint);color:var(--leaf)}
+.sec-dark .ev .kind{background:rgba(242,193,78,.14);color:var(--amber)}
+.ev h3{font-size:16.5px;font-weight:700;line-height:1.35}
+.ev p{margin:5px 0 0;font-size:14.5px;line-height:1.6;color:var(--muted)}
+.sec-dark .ev p{color:#B9D6C6}
 
-/* facts */
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:0 60px;margin-top:44px}
-@media(max-width:820px){.facts{grid-template-columns:1fr;gap:0}}
-.row{display:flex;justify-content:space-between;align-items:baseline;gap:20px;
-  padding:15px 0;border-bottom:1px solid var(--line)}
-.row dt{font-weight:600;font-size:15.5px;color:var(--ink);margin:0}
-.row dd{margin:0;text-align:right;font:400 14.5px/1.5 var(--mono);color:var(--muted)}
-
-/* contact */
-.contact-grid{display:grid;grid-template-columns:1fr;gap:48px;margin-top:44px}
-@media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:28px}}
-.cbox .lbl{font:600 11.5px/1 var(--body);letter-spacing:.19em;text-transform:uppercase;color:var(--amber);margin-bottom:12px}
-.cbox .val{font-size:20px;font-weight:600}
+/* ---------- contact ---------- */
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:44px}
+@media(max-width:820px){.cgrid{grid-template-columns:1fr;gap:30px}}
+.cbox .lbl{font:600 11.5px/1 var(--body);letter-spacing:.19em;text-transform:uppercase;color:var(--amber);margin-bottom:11px}
+.cbox .val{font-size:19px;font-weight:600;line-height:1.5}
 .cbox .val a{color:var(--action);text-decoration:none;border-bottom:1px solid rgba(34,201,98,.4)}
 .cbox .val a:hover{color:var(--amber);border-color:var(--amber)}
+.cbox + .cbox{margin-top:30px}
+.addr{font:400 15.5px/1.7 var(--body);color:#B9D6C6;font-style:normal}
 
 footer{background:#061C15;color:#8FB9A2;padding:44px 0;font-size:14.5px}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:22px;align-items:flex-start}
 footer b{display:block;font-family:var(--display);font-weight:800;letter-spacing:.02em;color:#EAF6EE;font-size:16px;margin-bottom:9px}
 footer a{color:var(--amber);text-decoration:none}
 footer .tag{color:#6E9C82;font-style:italic}
+footer .legal{margin-top:8px;line-height:1.7}
 
-/* ---------- drift chain ---------- */
-.chainwrap{margin-top:48px}
-.chain{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
-.knode{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:13px;
-  padding:18px 15px 16px;display:flex;flex-direction:column;gap:8px}
-.knode .cap{height:5px;border-radius:99px;width:100%;margin-bottom:4px}
-.knode .num{font:500 11px/1 var(--mono);letter-spacing:.1em;color:#8FA096}
-.knode h3{font-size:15.5px;font-weight:700;line-height:1.26}
-.knode p{margin:0;font-size:13.4px;line-height:1.54;color:var(--muted)}
-.knode .tag{margin-top:auto;padding-top:12px;font:500 9.5px/1.35 var(--mono);letter-spacing:.11em;
-  text-transform:uppercase;color:#8FA096}
-.knode.gap{background:#FFF8EA;border-color:#F0D8A6}
-.knode.gap .tag{color:#B0741B}
-.knode::after{content:"";position:absolute;right:-11px;top:50%;width:7px;height:7px;
-  border-top:2px solid #C9DACE;border-right:2px solid #C9DACE;
-  transform:translateY(-50%) rotate(45deg)}
-.knode:last-child::after{display:none}
-@media(max-width:1040px){
-  .chain{grid-template-columns:repeat(3,1fr);gap:14px 18px}
-  .knode:nth-child(3)::after{display:none}
-}
-@media(max-width:680px){
-  .chain{grid-template-columns:1fr;gap:26px}
-  .knode::after,.knode:nth-child(3)::after{display:block;right:auto;left:50%;top:auto;bottom:-17px;
-    transform:translateX(-50%) rotate(135deg)}
-  .knode:last-child::after{display:none}
-}
-.act{margin-top:20px;display:block;
-  background:var(--ground);border-radius:14px;padding:24px 28px;flex-wrap:wrap}
-.act h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:8px}
-.act p{margin:0;font-size:15px;line-height:1.6;color:#B9D6C6;max-width:64ch}
-.act .metric{flex-shrink:0;text-align:right}
-.act .metric b{display:block;font-family:var(--display);font-size:31px;font-weight:800;
-  color:var(--amber);line-height:1;white-space:nowrap}
-.act .metric span{display:block;margin-top:8px;font:500 10px/1.4 var(--mono);letter-spacing:.13em;color:#8FB9A2}
-@media(max-width:760px){.act{flex-direction:column;align-items:flex-start;gap:18px}.act .metric{text-align:left}}
+/* ---------- company: the page's one centred block, for rhythm ---------- */
+.co-sec{padding:96px 0}
+.co-wrap{max-width:760px;text-align:center}
+.co-wrap h2{max-width:none;margin:0 auto;font-size:clamp(25px,3.1vw,34px)}
+.co-wrap .sub{margin:22px auto 0;max-width:62ch;text-align:left;font-size:17px}
+.co-wrap .eyebrow{margin-bottom:16px}
+.co-wrap::after{content:"";display:block;width:54px;height:3px;border-radius:99px;
+  background:var(--cocoon);margin:34px auto 0}
+@media(max-width:640px){.co-wrap .sub{text-align:left}}
+.foot-r{text-align:right;margin-left:auto}
+@media(max-width:640px){.foot-r{text-align:left;margin-left:0}}
 
+:focus-visible{outline:2px solid var(--action);outline-offset:3px;border-radius:4px}
+.sec-dark :focus-visible,.hero :focus-visible,header :focus-visible,footer 
+
+
+:focus-visible{outline-color:var(--amber)}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
+}
 </style>
 </head>
 <body id="top">
@@ -237,225 +328,424 @@ footer .tag{color:#6E9C82;font-style:italic}
   <input type="checkbox" id="navtoggle" aria-hidden="true">
   <div class="wrap bar">
     <a class="brand" href="#top" aria-label="SeriGreen Technologies — home">
-      <svg viewBox="0 0 466 558" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="mark" width="30" height="36"><g transform="translate(0.000000,558.000000) scale(0.100000,-0.100000)" fill="var(--brand-amber)"><path d="M2585 5494 c-166 -42 -287 -124 -377 -257 -39 -56 -62 -64 -114 -42 -279 120 -621 107 -829 -30 -240 -159 -394 -416 -412 -687 -6 -97 -6 -97 -37 -108 -323 -120 -473 -258 -562 -520 -42 -122 -23 -417 36 -573 29 -75 27 -79 -53 -159 -181 -179 -201 -376 -61 -585 44 -66 44 -66 -5 -167 -88 -180 -94 -313 -20 -461 68 -136 288 -322 388 -328 36 -2 36 -2 48 98 82 678 321 1407 618 1886 515 830 1523 1358 2591 1359 223 0 246 5 275 62 37 73 -9 168 -81 168 -25 0 -43 11 -83 51 -135 135 -291 175 -422 109 -32 -17 -62 -34 -65 -38 -9 -14 -112 -92 -120 -92 -5 0 -41 33 -82 73 -179 177 -304 238 -498 243 -63 1 -124 1 -135 -2z M3705 4845 c-471 -38 -852 -143 -1252 -344 -887 -444 -1536 -1356 -1683 -2361 -80 -549 -236 -1190 -355 -1455 -102 -230 -176 -353 -275 -459 -63 -67 -63 -67 -25 -106 51 -52 60 -51 126 17 163 167 310 466 420 851 30 104 32 109 97 175 202 207 407 333 782 482 244 96 453 196 566 270 119 77 354 312 418 417 48 78 48 78 28 120 -11 24 -23 69 -26 102 -4 34 -17 75 -31 100 -33 57 -32 77 11 146 39 64 64 136 64 187 0 66 108 152 191 153 45 0 54 10 68 80 16 78 22 84 75 81 61 -3 126 27 162 74 94 123 131 148 252 171 112 21 233 -3 271 -54 33 -46 57 1 115 228 68 268 87 331 116 395 114 255 358 490 658 633 115 55 116 54 -29 76 -239 36 -475 42 -744 21z"/></g><g transform="translate(0.000000,558.000000) scale(0.100000,-0.100000)" fill="var(--brand-green)"><path d="M3705 4845 c-471 -38 -852 -143 -1252 -344 -887 -444 -1536 -1356 -1683 -2361 -80 -549 -236 -1190 -355 -1455 -102 -230 -176 -353 -275 -459 -63 -67 -63 -67 -25 -106 51 -52 60 -51 126 17 163 167 310 466 420 851 30 104 32 109 97 175 202 207 407 333 782 482 244 96 453 196 566 270 119 77 354 312 418 417 48 78 48 78 28 120 -11 24 -23 69 -26 102 -4 34 -17 75 -31 100 -33 57 -32 77 11 146 39 64 64 136 64 187 0 66 108 152 191 153 45 0 54 10 68 80 16 78 22 84 75 81 61 -3 126 27 162 74 94 123 131 148 252 171 112 21 233 -3 271 -54 33 -46 57 1 115 228 68 268 87 331 116 395 114 255 358 490 658 633 115 55 116 54 -29 76 -239 36 -475 42 -744 21z"/></g></svg>
+      <svg viewBox="0 0 466 558" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="mark"><g transform="translate(0.000000,558.000000) scale(0.100000,-0.100000)" fill="var(--brand-amber)"><path d="M2585 5494 c-166 -42 -287 -124 -377 -257 -39 -56 -62 -64 -114 -42 -279 120 -621 107 -829 -30 -240 -159 -394 -416 -412 -687 -6 -97 -6 -97 -37 -108 -323 -120 -473 -258 -562 -520 -42 -122 -23 -417 36 -573 29 -75 27 -79 -53 -159 -181 -179 -201 -376 -61 -585 44 -66 44 -66 -5 -167 -88 -180 -94 -313 -20 -461 68 -136 288 -322 388 -328 36 -2 36 -2 48 98 82 678 321 1407 618 1886 515 830 1523 1358 2591 1359 223 0 246 5 275 62 37 73 -9 168 -81 168 -25 0 -43 11 -83 51 -135 135 -291 175 -422 109 -32 -17 -62 -34 -65 -38 -9 -14 -112 -92 -120 -92 -5 0 -41 33 -82 73 -179 177 -304 238 -498 243 -63 1 -124 1 -135 -2z M3705 4845 c-471 -38 -852 -143 -1252 -344 -887 -444 -1536 -1356 -1683 -2361 -80 -549 -236 -1190 -355 -1455 -102 -230 -176 -353 -275 -459 -63 -67 -63 -67 -25 -106 51 -52 60 -51 126 17 163 167 310 466 420 851 30 104 32 109 97 175 202 207 407 333 782 482 244 96 453 196 566 270 119 77 354 312 418 417 48 78 48 78 28 120 -11 24 -23 69 -26 102 -4 34 -17 75 -31 100 -33 57 -32 77 11 146 39 64 64 136 64 187 0 66 108 152 191 153 45 0 54 10 68 80 16 78 22 84 75 81 61 -3 126 27 162 74 94 123 131 148 252 171 112 21 233 -3 271 -54 33 -46 57 1 115 228 68 268 87 331 116 395 114 255 358 490 658 633 115 55 116 54 -29 76 -239 36 -475 42 -744 21z"/></g><g transform="translate(0.000000,558.000000) scale(0.100000,-0.100000)" fill="var(--brand-green)"><path d="M3705 4845 c-471 -38 -852 -143 -1252 -344 -887 -444 -1536 -1356 -1683 -2361 -80 -549 -236 -1190 -355 -1455 -102 -230 -176 -353 -275 -459 -63 -67 -63 -67 -25 -106 51 -52 60 -51 126 17 163 167 310 466 420 851 30 104 32 109 97 175 202 207 407 333 782 482 244 96 453 196 566 270 119 77 354 312 418 417 48 78 48 78 28 120 -11 24 -23 69 -26 102 -4 34 -17 75 -31 100 -33 57 -32 77 11 146 39 64 64 136 64 187 0 66 108 152 191 153 45 0 54 10 68 80 16 78 22 84 75 81 61 -3 126 27 162 74 94 123 131 148 252 171 112 21 233 -3 271 -54 33 -46 57 1 115 228 68 268 87 331 116 395 114 255 358 490 658 633 115 55 116 54 -29 76 -239 36 -475 42 -744 21z"/></g></svg>
       <span>
         <span class="wordmark">Seri<span>Green</span></span>
         <small>TECHNOLOGIES</small>
       </span>
     </a>
-    <label class="burger" for="navtoggle" aria-label="Open menu"><i></i><i></i><i></i></label>
-    <nav>
-      <a href="#threat">The threat</a>
-      <a href="#chain">The chain</a>
-      <a href="#approach">Approach</a>
-      <a href="#technology">Technology</a>
-      <a href="#company">Company</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+    <div class="navwrap">
+      <nav>
+        <a href="#cycle" data-i18n="nav.cycle">The cycle</a>
+        <a href="#drift" data-i18n="nav.drift">Drift</a>
+        <a href="#products" data-i18n="nav.products">What we build</a>
+        <a href="#approach" data-i18n="nav.approach">Approach</a>
+        <a href="#field" data-i18n="nav.field">From the field</a>
+        <a href="#journey" data-i18n="nav.journey">Journey</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="lang" id="lang" data-open="0">
+        <button type="button" id="langbtn" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 6 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-6-3.8-9S9.5 5.7 12 3z"/>
+          </svg>
+          <span id="langlabel">English</span>
+        </button>
+        <ul role="menu">
+          <li><button type="button" data-lang="en" role="menuitem">English</button></li>
+          <li><button type="button" data-lang="ta" role="menuitem">Tamil <span class="native">தமிழ்</span></button></li>
+          <li><button type="button" data-lang="kn" role="menuitem">Kannada <span class="native">ಕನ್ನಡ</span></button></li>
+          <li><button type="button" data-lang="te" role="menuitem">Telugu <span class="native">తెలుగు</span></button></li>
+          <li><button type="button" data-lang="mr" role="menuitem">Marathi <span class="native">मराठी</span></button></li>
+          <li><button type="button" data-lang="hi" role="menuitem">Hindi <span class="native">हिन्दी</span></button></li>
+        </ul>
+      </div>
+
+      <label class="burger" for="navtoggle" aria-label="Open menu"><i></i><i></i><i></i></label>
+    </div>
   </div>
 </header>
 
 <div class="hero">
-  <div class="wrap grid">
-    <div>
-      <span class="pill"><b></b> India</span>
-      <h1>Protecting silk farms from <em>what they cannot see.</em></h1>
-      <p class="lede">Pesticide drift from a neighbouring field can reach mulberry leaf and cost a
-        farmer an entire silkworm batch — often without anyone knowing it arrived. SeriGreen builds
-        IoT systems that watch the boundary — the point where the drift arrives — so the
-        conditions that decide a crop are measured, recorded and acted on.</p>
+  <div class="heroplate">
+    <div class="herotext">
+      <span class="pill"><b></b> <span data-i18n="hero.pill">India</span></span>
+      <h1><span data-i18n="hero.h1a">A silk crop takes six weeks.</span> <em data-i18n="hero.h1b">Most of what decides it is invisible.</em></h1>
+      <p class="lede" data-i18n="hero.lede">SeriGreen builds instruments for the sericulture cycle — the mulberry, the rearing house, and the boundary where a neighbour's spray arrives. We measure the conditions that decide a crop, keep the record, and tell the farmer in time to act on it.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="#approach">How it works</a>
-        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        <a class="btn btn-primary" href="#products" data-i18n="hero.cta1">What we build</a>
+        <a class="btn btn-ghost" href="#contact" data-i18n="hero.cta2">Get in touch</a>
       </div>
     </div>
-    <div class="emblem">
-      <span class="ring"></span>
-      <svg viewBox="0 0 466 558" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="mark"><g transform="translate(0.000000,558.000000) scale(0.100000,-0.100000)" fill="var(--brand-amber)"><path d="M2585 5494 c-166 -42 -287 -124 -377 -257 -39 -56 -62 -64 -114 -42 -279 120 -621 107 -829 -30 -240 -159 -394 -416 -412 -687 -6 -97 -6 -97 -37 -108 -323 -120 -473 -258 -562 -520 -42 -122 -23 -417 36 -573 29 -75 27 -79 -53 -159 -181 -179 -201 -376 -61 -585 44 -66 44 -66 -5 -167 -88 -180 -94 -313 -20 -461 68 -136 288 -322 388 -328 36 -2 36 -2 48 98 82 678 321 1407 618 1886 515 830 1523 1358 2591 1359 223 0 246 5 275 62 37 73 -9 168 -81 168 -25 0 -43 11 -83 51 -135 135 -291 175 -422 109 -32 -17 -62 -34 -65 -38 -9 -14 -112 -92 -120 -92 -5 0 -41 33 -82 73 -179 177 -304 238 -498 243 -63 1 -124 1 -135 -2z M3705 4845 c-471 -38 -852 -143 -1252 -344 -887 -444 -1536 -1356 -1683 -2361 -80 -549 -236 -1190 -355 -1455 -102 -230 -176 -353 -275 -459 -63 -67 -63 -67 -25 -106 51 -52 60 -51 126 17 163 167 310 466 420 851 30 104 32 109 97 175 202 207 407 333 782 482 244 96 453 196 566 270 119 77 354 312 418 417 48 78 48 78 28 120 -11 24 -23 69 -26 102 -4 34 -17 75 -31 100 -33 57 -32 77 11 146 39 64 64 136 64 187 0 66 108 152 191 153 45 0 54 10 68 80 16 78 22 84 75 81 61 -3 126 27 162 74 94 123 131 148 252 171 112 21 233 -3 271 -54 33 -46 57 1 115 228 68 268 87 331 116 395 114 255 358 490 658 633 115 55 116 54 -29 76 -239 36 -475 42 -744 21z"/></g><g transform="translate(0.000000,558.000000) scale(0.100000,-0.100000)" fill="var(--brand-green)"><path d="M3705 4845 c-471 -38 -852 -143 -1252 -344 -887 -444 -1536 -1356 -1683 -2361 -80 -549 -236 -1190 -355 -1455 -102 -230 -176 -353 -275 -459 -63 -67 -63 -67 -25 -106 51 -52 60 -51 126 17 163 167 310 466 420 851 30 104 32 109 97 175 202 207 407 333 782 482 244 96 453 196 566 270 119 77 354 312 418 417 48 78 48 78 28 120 -11 24 -23 69 -26 102 -4 34 -17 75 -31 100 -33 57 -32 77 11 146 39 64 64 136 64 187 0 66 108 152 191 153 45 0 54 10 68 80 16 78 22 84 75 81 61 -3 126 27 162 74 94 123 131 148 252 171 112 21 233 -3 271 -54 33 -46 57 1 115 228 68 268 87 331 116 395 114 255 358 490 658 633 115 55 116 54 -29 76 -239 36 -475 42 -744 21z"/></g></svg>
-      <div class="tagline">Protecting silk farms. Growing rural futures.</div>
-    </div>
+    <figure class="heroshot">
+      <img src="assets/img/rearing-bed-silkworms.jpg" alt="Silkworms feeding on mulberry leaf in a rearing bed" width="1500" height="1125">
+      <figcaption data-i18n="hero.caption">Fifth-instar worms feeding, Tamil Nadu.</figcaption>
+    </figure>
   </div>
 </div>
 
-<section id="threat" class="sec-tint">
+<section id="cycle" class="sec-tint">
   <div class="wrap">
-    <div class="eyebrow">The problem</div>
-    <h2>Silkworms are sensitive, and the field around them is not under the farmer's control.</h2>
-    <p class="sub">Sericulture supports a large number of smallholder families in India. It is also
-      unusually exposed — to a neighbour's spray schedule, to weather that no longer follows the old
-      pattern, and to the simple absence of any record of what happened.</p>
+    <div class="eyebrow" data-i18n="cycle.eyebrow">The sericulture cycle</div>
+    <h2 data-i18n="cycle.h2">Six stages, and a crop can be lost at any of them.</h2>
+    <p class="sub" data-i18n="cycle.sub">Sericulture supports a large number of smallholder families in India. It is also unusually exposed — to a neighbour's spray schedule, to weather that no longer follows the old pattern, to a narrow band of temperature and humidity that changes with every instar, and to the simple absence of any record of what happened.</p>
+
+    <div class="cycle">
+      <div class="stage">
+        <span class="cap" style="background:#4FA96B"></span>
+        <div class="num">01</div>
+        <h3 data-i18n="cycle.s1.h">Mulberry</h3>
+        <p data-i18n="cycle.s1.p">The leaf is the entire input. Variety, irrigation and plantation spacing set what the worm will eat for six weeks.</p>
+        <div class="risk" data-i18n="cycle.s1.r">Exposed to whatever lands on it from next door.</div>
+      </div>
+      <div class="stage">
+        <span class="cap" style="background:#6DB878"></span>
+        <div class="num">02</div>
+        <h3 data-i18n="cycle.s2.h">Chawki</h3>
+        <p data-i18n="cycle.s2.p">Most farmers do not hatch eggs. Young worms come from a chawki centre and arrive at the second or third instar.</p>
+        <div class="risk" data-i18n="cycle.s2.r">The batch starts with a quality you did not control.</div>
+      </div>
+      <div class="stage">
+        <span class="cap" style="background:#E8C77A"></span>
+        <div class="num">03</div>
+        <h3 data-i18n="cycle.s3.h">Rearing</h3>
+        <p data-i18n="cycle.s3.p">Five instars in the rearing house. Early worms need high humidity, late worms need much less, and the band is narrow at every stage.</p>
+        <div class="risk" data-i18n="cycle.s3.r">One excursion at the wrong moult can cost the crop.</div>
+      </div>
+      <div class="stage">
+        <span class="cap" style="background:#F2C14E"></span>
+        <div class="num">04</div>
+        <h3 data-i18n="cycle.s4.h">Mounting</h3>
+        <p data-i18n="cycle.s4.p">Ripe worms are moved to chandrike to spin. Crowding, disturbance and damp all show up later in the shell.</p>
+        <div class="risk" data-i18n="cycle.s4.r">Nothing can be corrected once spinning starts.</div>
+      </div>
+      <div class="stage">
+        <span class="cap" style="background:#F39D19"></span>
+        <div class="num">05</div>
+        <h3 data-i18n="cycle.s5.h">Cocoon</h3>
+        <p data-i18n="cycle.s5.p">Graded on shell ratio, uniformity, colour and texture. This is where six weeks of decisions become a number.</p>
+        <div class="risk" data-i18n="cycle.s5.r">A poor grade cannot be traced without a record.</div>
+      </div>
+      <div class="stage">
+        <span class="cap" style="background:#D2601C"></span>
+        <div class="num">06</div>
+        <h3 data-i18n="cycle.s6.h">Market</h3>
+        <p data-i18n="cycle.s6.p">Price follows grade. A failed batch is six weeks of leaf, labour, eggs and electricity with nothing at the end of it.</p>
+        <div class="risk" data-i18n="cycle.s6.r">And no evidence of why, to improve against.</div>
+      </div>
+    </div>
+
+    <p class="note" data-i18n="cycle.note">We work on the parts of this cycle that can be measured — the leaf and the boundary at stage 01, and the rearing house at stage 03 — and on keeping a record good enough that stage 06 can be explained.</p>
+  </div>
+</section>
+
+<section id="drift" class="sec-light">
+  <div class="wrap">
+    <div class="eyebrow" data-i18n="drift.eyebrow">The sharpest edge</div>
+    <h2 data-i18n="drift.h2">Pesticide drift, and why nobody sees it coming.</h2>
+    <p class="sub" data-i18n="drift.sub">India has no buffer-zone regulation protecting sericulture, against international norms of three to a hundred metres. A neighbour spraying cotton, sugarcane, banana or chilli has no duty to tell anyone. This is the stage of the cycle we understand best, and it is where our first instrument sits.</p>
+
+
+    <figure class="drift-fig">
+      <svg viewBox="0 0 1000 330" role="img" aria-labelledby="driftttl">
+        <title id="driftttl">Spray droplets under 100 micrometres do not fall to the ground; they stay airborne and cross the boundary onto mulberry leaf.</title>
+        <defs>
+          <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="var(--spot)"/>
+          </marker>
+        </defs>
+
+        <line x1="40" y1="250" x2="960" y2="250" stroke="var(--line)" stroke-width="2"/>
+
+        <g stroke="#C2D3C6" stroke-width="3" stroke-linecap="round">
+          <path d="M140,250 v-14 M172,250 v-19 M204,250 v-14 M236,250 v-19 M268,250 v-14 M300,250 v-19 M332,250 v-14 M364,250 v-19 M396,250 v-14 M428,250 v-19 M460,250 v-14 M492,250 v-19"/>
+        </g>
+
+        <g fill="var(--leaf)" opacity=".55">
+          <path d="M600,250 c0,-24 13,-37 30,-39 c2,19 -9,39 -30,39 z M648,250 c0,-28 15,-43 34,-45 c2,22 -11,45 -34,45 z M702,250 c0,-24 13,-37 30,-39 c2,19 -9,39 -30,39 z M750,250 c0,-28 15,-43 34,-45 c2,22 -11,45 -34,45 z M804,250 c0,-24 13,-37 30,-39 c2,19 -9,39 -30,39 z M852,250 c0,-28 15,-43 34,-45 c2,22 -11,45 -34,45 z M906,250 c0,-24 13,-37 30,-39 c2,19 -9,39 -30,39 z"/>
+        </g>
+
+        <line x1="545" y1="72" x2="545" y2="266" stroke="var(--cocoon)" stroke-width="2" stroke-dasharray="7 7"/>
+
+        <g>
+          <rect x="52" y="214" width="44" height="24" rx="5" fill="#A9BCAE"/>
+          <path d="M74,214 L96,158" stroke="#A9BCAE" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <path d="M99,153 l16,-9 M99,153 l17,2 M99,153 l12,12" stroke="#C2D3C6" stroke-width="2.4" stroke-linecap="round"/>
+        </g>
+
+        <path d="M100,150 Q140,192 188,249" fill="none" stroke="#8FA396" stroke-width="2.6"/>
+        <path d="M100,149 Q268,178 418,249" fill="none" stroke="#BC9C6C" stroke-width="2.4"/>
+        <path d="M100,147 C310,116 545,134 928,162" fill="none" stroke="var(--spot)" stroke-width="2.6" marker-end="url(#ar)"/>
+
+        <g fill="var(--spot)">
+          <circle cx="575" cy="136" r="1.3"/><circle cx="618" cy="138" r="1.3"/><circle cx="655" cy="140" r="1.3"/>
+          <circle cx="694" cy="143" r="1.3"/><circle cx="733" cy="146" r="1.3"/><circle cx="772" cy="149" r="1.3"/>
+          <circle cx="811" cy="152" r="1.3"/><circle cx="850" cy="156" r="1.3"/><circle cx="889" cy="159" r="1.3"/>
+        </g>
+        <circle cx="188" cy="249" r="13" fill="#7E937F"/>
+        <circle cx="418" cy="249" r="3.9" fill="#BC9C6C"/>
+
+        <g class="dlab">
+          <text x="188" y="284" text-anchor="middle" data-i18n="dg.d1">500 µm falls at once</text>
+          <text x="418" y="284" text-anchor="middle" data-i18n="dg.d2">150 µm falls near the line</text>
+          <text x="618" y="106" class="hi" data-i18n="dg.d3">Under 100 µm stays up and travels</text>
+        </g>
+
+        <text x="545" y="34" class="bnd" text-anchor="middle" data-i18n="dg.line">Boundary — no buffer required in India</text>
+        <text x="545" y="56" class="norm" text-anchor="middle" data-i18n="dg.norm">International buffer norms: 3–100 m</text>
+
+        <g class="zone">
+          <text x="44" y="316" data-i18n="dg.left">Neighbour's crop</text>
+          <text x="956" y="316" text-anchor="end" data-i18n="dg.right">Mulberry</text>
+        </g>
+      </svg>
+      <figcaption data-i18n="dg.cap">Droplets drawn to true relative scale. The one that reaches the mulberry is the one you cannot see.</figcaption>
+    </figure>
+
     <div class="cards">
       <div class="card">
         <span class="n">01</span>
-        <h3>Drift arrives unannounced</h3>
-        <p>Silkworms are acutely sensitive to pesticide residue. Spray drifting from an adjacent
-          field can settle on mulberry leaf with nothing to warn the farm it happened — until the
-          batch fails.</p>
+        <h3 data-i18n="drift.c1.h">The fine droplets travel</h3>
+        <p data-i18n="drift.c1.p">Nozzles throw fifty to five hundred micrometres. Anything under a hundred and fifty does not fall — it stays up and moves with the wind.</p>
       </div>
       <div class="card">
         <span class="n">02</span>
-        <h3>Narrow tolerances</h3>
-        <p>Rearing succeeds only inside a tight band of temperature and humidity. An excursion at
-          the wrong stage of the cycle can cost the entire crop.</p>
+        <h3 data-i18n="drift.c2.h">Nothing looks wrong</h3>
+        <p data-i18n="drift.c2.p">The leaf is fresh and green; residue is invisible. Sericulture has a zero-tolerance standard, so a dose far below lethal has already ruined it.</p>
       </div>
       <div class="card">
         <span class="n">03</span>
-        <h3>Nothing to learn from</h3>
-        <p>When a crop fails, most farms cannot say why. Without measurement there is no record to
-          reason about and nothing to improve against next season.</p>
+        <h3 data-i18n="drift.c3.h">He cuts, and he feeds</h3>
+        <p data-i18n="drift.c3.p">Within hours the worms stop feeding, regurgitate, curl and go flaccid. By then the decision that mattered is days behind him.</p>
       </div>
+    </div>
+
+    <p class="note" data-i18n="drift.note">Published toxicology on mulberry pesticide exposure is unambiguous — cocoon and shell weights collapse at doses far below anything that looks dangerous. That work is not ours; we cite it because it is the reason this problem is worth instrumenting.</p>
+  </div>
+</section>
+
+<section id="products" class="sec-dark on-dark">
+  <div class="wrap">
+    <div class="eyebrow" data-i18n="prod.eyebrow">What we build</div>
+    <h2 data-i18n="prod.h2">Four things, at three points in the cycle.</h2>
+    <p class="sub" data-i18n="prod.sub">Each one is at a different stage of readiness, and we say which. Nothing here is described as finished before it is.</p>
+
+    <div class="prods">
+
+      <div class="prod prod-lead">
+        <div class="prod-body">
+        <div class="top">
+          <div>
+            <h3>MoriShield</h3>
+            <div class="where" data-i18n="prod.p1.where">Stage 01 · the boundary</div>
+          </div>
+          <span class="badge live" data-i18n="prod.p1.badge">PROTOTYPE · TESTED</span>
+        </div>
+        <p data-i18n="prod.p1.p">A unit that stands on the boundary facing the neighbouring field, at mulberry leaf height. It samples the air and the wind that carry a spray onto the leaf, and raises a score when a reading moves <em>fast</em> rather than merely high — because plumes arrive in seconds while weather moves over hours. It tells you that a spray passed this point, at this time. It does not name the chemical and it does not touch the leaf.</p>
+        <div class="stat" data-i18n="prod.p1.stat">Tested against controlled sprays. Not yet deployed on a customer farm. The full test record, including the results that failed, is documented and available on request.</div>
+        </div>
+        <div class="prod-shot">
+          <img src="assets/img/device-unit.jpg" alt="A MoriShield sensor head mounted above a white louvered radiation shield on a post" width="460" height="460">
+        </div>
+      </div>
+
+      <div class="prod">
+        <div class="top">
+          <div>
+            <h3>SeriShed</h3>
+            <div class="where" data-i18n="prod.p2.where">Stage 03 · the rearing house</div>
+          </div>
+          <span class="badge built" data-i18n="prod.p2.badge">DESIGNED · BUILT ONCE</span>
+        </div>
+        <p data-i18n="prod.p2.p">A rearing house built to hold its own climate, so the temperature and humidity band can be kept where the instar actually needs it instead of where the weather leaves it. We designed it, costed it and built one, and ran it as a paired trial — the same farmer, the same mulberry, conventional rearing on one side and controlled rearing on the other.</p>
+        <div class="stat" data-i18n="prod.p2.stat">Built and trialled. We can build one to specification. Ask us for the design and the costing.</div>
+      </div>
+
+      <div class="prod">
+        <div class="top">
+          <div>
+            <h3>SeriShield</h3>
+            <div class="where" data-i18n="prod.p3.where">Across the cycle · the record</div>
+          </div>
+          <span class="badge dev" data-i18n="prod.p3.badge">IN DEVELOPMENT</span>
+        </div>
+        <p data-i18n="prod.p3.p">One place for the record. Readings from the boundary unit and from the rearing house land in a single view — current conditions, the history behind them, and the alerts that were raised. On top of that record sits a scoring layer that reads rearing conditions against known disease thresholds and flags when a house is drifting into a risk band.</p>
+        <div class="stat" data-i18n="prod.p3.stat">In development. It is arithmetic on measured channels — a weighted score against published thresholds, not a trained model.</div>
+      </div>
+
+      <div class="prod">
+        <div class="top">
+          <div>
+            <h3 data-i18n="prod.p4.h">SeriGreen App</h3>
+            <div class="where" data-i18n="prod.p4.where">The farmer's end</div>
+          </div>
+          <span class="badge dev" data-i18n="prod.p4.badge">IN DEVELOPMENT</span>
+        </div>
+        <p data-i18n="prod.p4.p">Readings, alerts and the record on a phone, in the language the farmer actually reads. Rearing practice notes for the stage the batch is at, and the history of the block so a grade can be explained afterwards rather than guessed at.</p>
+        <div class="stat" data-i18n="prod.p4.stat">In development. English, Kannada and Telugu today; Tamil and Marathi are next, and phone alerts wait on message-template approval.</div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section id="chain" class="sec-light">
+<section id="approach" class="sec-light">
   <div class="wrap">
-    <div class="eyebrow">How a batch is lost</div>
-    <h2>The drift chain.</h2>
-    <p class="sub">Six stages, none of them dramatic. The loss is decided long before anyone can see
-      that anything went wrong.</p>
-
-    <div class="chainwrap">
-      <div class="chain">
-
-        <div class="knode">
-          <span class="cap" style="background:#4FA96B"></span>
-          <div class="num">01</div>
-          <h3>The neighbour sprays</h3>
-          <p>Cotton, sugarcane, banana, chilli &mdash; whatever is next door. India has no buffer-zone
-            rule protecting sericulture, and he has no duty to tell anyone.</p>
-          <div class="tag">Surveyed</div>
-        </div>
-
-        <div class="knode">
-          <span class="cap" style="background:#E8C77A"></span>
-          <div class="num">02</div>
-          <h3>The fine droplets travel</h3>
-          <p>Nozzles throw 50&ndash;500&nbsp;&micro;m. Anything under 150&nbsp;&micro;m does not fall.
-            It stays up and moves with the wind.</p>
-          <div class="tag">Literature</div>
-        </div>
-
-        <div class="knode">
-          <span class="cap" style="background:#F2C14E"></span>
-          <div class="num">03</div>
-          <h3>It reaches the leaf</h3>
-          <p>Direct drift, vapour settling out overnight, dew, soil to root. Several routes onto
-            mulberry, not one.</p>
-          <div class="tag">Documented</div>
-        </div>
-
-        <div class="knode gap">
-          <span class="cap" style="background:#F39D19"></span>
-          <div class="num">04</div>
-          <h3>Nothing looks wrong</h3>
-          <p>The leaf is fresh and green; residue is invisible. Sericulture has a zero-tolerance
-            standard, so a dose far below lethal has already ruined it.</p>
-          <div class="tag">The gap</div>
-        </div>
-
-        <div class="knode">
-          <span class="cap" style="background:#D2601C"></span>
-          <div class="num">05</div>
-          <h3>He cuts, and he feeds</h3>
-          <p>Within hours the worms stop feeding, regurgitate, curl, and go flaccid. By then the
-            decision that mattered is days behind him.</p>
-          <div class="tag">Published toxicology</div>
-        </div>
-
-        <div class="knode">
-          <span class="cap" style="background:#A33417"></span>
-          <div class="num">06</div>
-          <h3>The cycle is gone</h3>
-          <p>Death, or a worm that eats for eighteen days and never spins. Weeks of labour, leaf and
-            eggs go with it.</p>
-          <div class="tag">Published toxicology</div>
-        </div>
-
-      </div>
-
-      <div class="act">
-        <div>
-          <h3>What we put into stage 04</h3>
-          <p>A unit on the boundary notices the air change and raises a score. It does not name the
-            chemical and it does not touch the leaf. It tells you that a spray passed this point, at
-            this time &mdash; so the decision it changes is whether you cut leaf from that block,
-            and when.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="approach" class="sec-dark on-dark">
-  <div class="wrap">
-    <div class="eyebrow">Our approach</div>
-    <h2>Instrument the boundary. Warn early. Improve on the record.</h2>
-    <p class="sub">Our work follows the structure of our patent application — a field optimisation
-      <em>and protection</em> system. Protection is where it starts, because that is where a season
-      is most often lost.</p>
+    <div class="eyebrow" data-i18n="app.eyebrow">Our approach</div>
+    <h2 data-i18n="app.h2">Instrument the boundary. Warn early. Improve on the record.</h2>
+    <p class="sub" data-i18n="app.sub">Our work follows the structure of our patent application — a field optimisation <em>and protection</em> system. Protection is where it starts, because that is where a season is most often lost.</p>
     <div class="cards">
       <div class="card">
         <span class="n">WATCH</span>
-        <h3>Sit where the drift arrives</h3>
-        <p>Instruments on the boundary facing the neighbouring field, sampling the air and the wind
-          that carry a spray onto mulberry leaf.</p>
+        <h3 data-i18n="app.c1.h">Sit where the drift arrives</h3>
+        <p data-i18n="app.c1.p">Instruments on the boundary facing the neighbouring field, sampling the air and the wind that carry a spray onto mulberry leaf.</p>
       </div>
       <div class="card">
         <span class="n">WARN</span>
-        <h3>Alarm on a fast reading, not a high one</h3>
-        <p>Plumes arrive in seconds; weather moves over hours. Reading the rate of change rather
-          than the level is what separates a spray from an ordinary afternoon.</p>
+        <h3 data-i18n="app.c2.h">Alarm on a fast reading, not a high one</h3>
+        <p data-i18n="app.c2.p">Plumes arrive in seconds; weather moves over hours. Reading the rate of change rather than the level is what separates a spray from an ordinary afternoon.</p>
       </div>
       <div class="card">
         <span class="n">WAIT</span>
-        <h3>Hold the cut, and keep the record</h3>
-        <p>The decision this changes is whether to cut leaf from that block, and when. The record
-          stays afterwards, to explain an outcome and to carry into the next season.</p>
+        <h3 data-i18n="app.c3.h">Hold the cut, and keep the record</h3>
+        <p data-i18n="app.c3.p">The decision this changes is whether to cut leaf from that block, and when. The record stays afterwards, to explain an outcome and to carry into the next season.</p>
       </div>
     </div>
-    <p class="note">SeriGreen is pre-revenue and in active research and development. Our prototype has been
-      tested over 40&nbsp;hours against controlled sprays; the full test record, including the
-      results that failed, is documented and available on request. We do not publish performance
-      claims we cannot yet evidence.</p>
+    <p class="note" data-i18n="app.note">SeriGreen is pre-revenue and in active research and development. We do not publish performance claims we cannot yet evidence, and where a product is not finished this page says so.</p>
   </div>
 </section>
 
-<section id="technology" class="sec-light">
+<section id="field" class="sec-tint">
   <div class="wrap">
-    <div class="eyebrow">Technology &amp; intellectual property</div>
-    <h2>Our approach is the subject of a filed patent application.</h2>
-    <p class="sub">SeriGreen's core work is covered by a patent application filed with the Indian
-      Patent Office.</p>
-    <div class="patent">
-      <h3>The application is pending examination.</h3>
-      <p>We do not publish the application number, title or filing date while it is under
-        examination. SeriGreen makes no claim to a granted patent, and will not until one is
-        granted. Serious enquiries are welcome to write to us.</p>
+    <div class="eyebrow" data-i18n="field.eyebrow">From the field</div>
+    <h2 data-i18n="field.h2">Where the work actually happens.</h2>
+    <p class="sub" data-i18n="field.sub">Mulberry plots, rearing houses, mountages and cocoons, across Tamil Nadu. These are our own photographs, taken on the farms we work on.</p>
+
+    <div class="gal">
+      <figure>
+        <img src="assets/img/field-mulberry-wide.jpg" alt="A mulberry plot in full leaf under an open sky, bordered by coconut palms" width="1400" height="1050">
+        <figcaption data-i18n="field.g7">Mulberry under an open sky — and an open boundary.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/field-mulberry-rows.jpg" alt="Mulberry rows with the irrigation furrow running between them" width="693" height="520">
+        <figcaption data-i18n="field.g11">Row spacing and irrigation set what the leaf will be.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/rearing-tiers.jpg" alt="Rearing trays racked on tiers inside a rearing house" width="1400" height="1050">
+        <figcaption data-i18n="field.g4">Rearing trays on tiers inside the rearing house.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/mountage-cocoons.jpg" alt="Plastic collapsible mountages with silkworms spinning" width="400" height="300">
+        <figcaption data-i18n="field.g5">Chandrike mounted for spinning.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/cocoons.jpg" alt="Harvested white silk cocoons" width="1400" height="1050">
+        <figcaption data-i18n="field.g6">Harvest. Six weeks of decisions, graded in one morning.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/field-mulberry-palms.jpg" alt="A mulberry plot bordered by coconut palms and other crops" width="1400" height="1050">
+        <figcaption data-i18n="field.g8">Mulberry bordered by other crops on every side.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<section id="company" class="sec-tint">
+<section id="journey" class="sec-dark on-dark">
   <div class="wrap">
-    <div class="eyebrow">Company</div>
+    <div class="eyebrow" data-i18n="jr.eyebrow">Our journey</div>
+    <h2 data-i18n="jr.h2">Where we have been.</h2>
+    <p class="sub" data-i18n="jr.sub">Grants, recognitions and the trials we have run. Dated, and stated as history rather than as an ongoing claim.</p>
+
+    <div class="tl">
+      <div class="ev">
+        <div class="meta"><span class="yr">2023</span><span class="kind" data-i18n="jr.k.grant">Grant</span></div>
+        <h3 data-i18n="jr.e1.h">Seed grant — IIT Madras Pravartak</h3>
+        <p data-i18n="jr.e1.p">The grant that started deep-tech development in sericulture for us. The incubation term has since concluded.</p>
+      </div>
+      <div class="ev">
+        <div class="meta"><span class="yr">2023</span><span class="kind" data-i18n="jr.k.grant">Grant</span></div>
+        <h3 data-i18n="jr.e2.h">DST–NIDHI PRAYAS — MaDeIT, IIITDM</h3>
+        <p data-i18n="jr.e2.p">A government-backed innovation grant to build sensing and rearing systems for silk farmers. The incubation term has since concluded.</p>
+      </div>
+      <div class="ev">
+        <div class="meta"><span class="yr">2024</span><span class="kind" data-i18n="jr.k.rec">Recognition</span></div>
+        <h3 data-i18n="jr.e3.h">STEP UnPollute 2024</h3>
+        <p data-i18n="jr.e3.p">Selected among the top ten women entrepreneurs working on sustainability.</p>
+      </div>
+      <div class="ev">
+        <div class="meta"><span class="yr">2024</span><span class="kind" data-i18n="jr.k.rec">Recognition</span></div>
+        <h3 data-i18n="jr.e4.h">TSEC 2024</h3>
+        <p data-i18n="jr.e4.p">Recognised among the top twenty agri-tech startups for innovation in sericulture.</p>
+      </div>
+      <div class="ev">
+        <div class="meta"><span class="yr">2025</span><span class="kind" data-i18n="jr.k.trial">Trial</span></div>
+        <h3 data-i18n="jr.e5.h">Rearing-house trial, first batch</h3>
+        <p data-i18n="jr.e5.p">A paired trial on one farm in Sathyamangalam — the same grower, the same mulberry, conventional rearing against a controlled house. Climate held manually while the automation was still being finished.</p>
+      </div>
+      <div class="ev">
+        <div class="meta"><span class="yr">2025</span><span class="kind" data-i18n="jr.k.rec">Recognition</span></div>
+        <h3 data-i18n="jr.e6.h">Vels University V-Fund Prize</h3>
+        <p data-i18n="jr.e6.p">First prize for women-led agri-tech innovation, International Women's Day.</p>
+      </div>
+      <div class="ev">
+        <div class="meta"><span class="yr">2025</span><span class="kind" data-i18n="jr.k.trial">Trial</span></div>
+        <h3 data-i18n="jr.e7.h">Rearing-house trial, second batch</h3>
+        <p data-i18n="jr.e7.p">The same house run again with instrumented monitoring, to see whether the first result repeated under a second cycle.</p>
+      </div>
+      <div class="ev">
+        <div class="meta"><span class="yr">2025</span><span class="kind" data-i18n="jr.k.prog">Programme</span></div>
+        <h3 data-i18n="jr.e8.h">DST GDC I-NCUBATE, IIT Madras</h3>
+        <p data-i18n="jr.e8.p">Selected for the programme that helps deep-tech startups move from an idea toward something a customer can buy.</p>
+      </div>
+      <div class="ev">
+        <div class="meta"><span class="yr">2025</span><span class="kind" data-i18n="jr.k.prog">Programme</span></div>
+        <h3 data-i18n="jr.e9.h">RKVY RAFTAAR — MANAGE-CIA cohort</h3>
+        <p data-i18n="jr.e9.p">Selected for the national agricultural innovation programme.</p>
+      </div>
+      <div class="ev">
+        <div class="meta"><span class="yr">2026</span><span class="kind" data-i18n="jr.k.field">Field work</span></div>
+        <h3 data-i18n="jr.e10.h">Drift testing against controlled sprays</h3>
+        <p data-i18n="jr.e10.p">Repeated instrumented sessions against known sprays at measured distances, with the full record kept — including the sessions where the device did not respond.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="company" class="sec-light co-sec">
+  <div class="wrap co-wrap">
+    <div class="eyebrow" data-i18n="co.eyebrow">Company</div>
     <h2>Serigreen Technologies Private Limited</h2>
-    <p class="sub">A registered Indian private limited company, pre-revenue and in active research
-      and development. We build instrumentation for a hazard that sericulture has so far had no practical
-      way to measure.</p>
+    <p class="sub" data-i18n="co.sub">A registered Indian private limited company, pre-revenue and in active research and development. Founded by people with roots in silk weaving and silkworm rearing — this work began in conversations with farmers, scientists and traders, not in a laboratory. Our core approach is the subject of a patent application filed with the Indian Patent Office; the application is pending examination, we do not publish its details while it is under examination, and we make no claim to a granted patent.</p>
   </div>
 </section>
 
 <section id="contact" class="sec-dark on-dark">
   <div class="wrap">
-    <div class="eyebrow">Contact</div>
-    <h2>Talk to us.</h2>
-    <p class="sub">For research collaboration, partnership, investment or supplier enquiries, write
-      to us and we will respond.</p>
-    <div class="contact-grid">
-      <div class="cbox">
-        <div class="lbl">Email</div>
-        <div class="val"><a href="mailto:info@serigreen.in">info@serigreen.in</a></div>
+    <div class="eyebrow" data-i18n="ct.eyebrow">Contact</div>
+    <h2 data-i18n="ct.h2">Talk to us.</h2>
+    <p class="sub" data-i18n="ct.sub">For research collaboration, a farm trial, partnership, investment or supplier enquiries — write to us and we will respond.</p>
+    <div class="cgrid">
+      <div>
+        <div class="cbox">
+          <div class="lbl" data-i18n="ct.email">Email</div>
+          <div class="val"><a href="mailto:info@serigreen.in">info@serigreen.in</a></div>
+        </div>
+        <div class="cbox">
+          <div class="lbl" data-i18n="ct.phone">Phone</div>
+          <div class="val"><a href="tel:+919659222737">+91 96592 22737</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="cbox">
+          <div class="lbl" data-i18n="ct.office">Registered office</div>
+          <address class="addr">#3-458, K N Pudur (Post)<br>Kadayampatti (Tk), Danishpet<br>Salem, Omalur<br>Tamil Nadu 636354, India</address>
+        </div>
+        <div class="cbox">
+          <div class="lbl" data-i18n="ct.hours">Hours</div>
+          <div class="addr" data-i18n="ct.hoursval">Monday to Saturday, 9:00 – 18:00 IST</div>
+        </div>
       </div>
     </div>
   </div>
@@ -465,16 +755,664 @@ footer .tag{color:#6E9C82;font-style:italic}
   <div class="wrap foot">
     <div>
       <b>SeriGreen Technologies</b>
-      Serigreen Technologies Private Limited &nbsp;·&nbsp; CIN U13122TZ2023PTC029040<br>
-      Registered office: Salem, Tamil Nadu, India &nbsp;·&nbsp; info@serigreen.in<br>
-      <span class="tag">Protecting silk farms. Growing rural futures.</span>
+      <span class="legal">Serigreen Technologies Private Limited &nbsp;·&nbsp; CIN U13122TZ2023PTC029040<br>
+      <span data-i18n="ft.office">Registered office</span>: #3-458, K N Pudur (Post), Kadayampatti (Tk), Danishpet, Salem, Omalur, Tamil Nadu 636354, India<br>
+      info@serigreen.in &nbsp;·&nbsp; +91 96592 22737</span><br>
+      <span class="tag" data-i18n="ft.tag">Protecting silk farms. Growing rural futures.</span>
     </div>
-    <div style="text-align:right">
-      <a href="mailto:info@serigreen.in">info@serigreen.in</a><br>
+    <div class="foot-r">
       © 2026 Serigreen Technologies Private Limited
     </div>
   </div>
 </footer>
 
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Photograph">
+  <button type="button" id="lbprev" aria-label="Previous photograph">&#8249;</button>
+  <figure><img id="lbimg" src="" alt=""><figcaption id="lbcap"></figcaption></figure>
+  <button type="button" id="lbnext" aria-label="Next photograph">&#8250;</button>
+  <button type="button" id="lbclose" aria-label="Close">&times;</button>
+</div>
+
+<script>
+window.I18N = {
+ta:{
+"nav.cycle":"சுழற்சி","nav.drift":"காற்றுப் பரவல்","nav.products":"நாங்கள் உருவாக்குவது","nav.approach":"அணுகுமுறை","nav.field":"வயலிலிருந்து","nav.journey":"பயணம்","nav.contact":"தொடர்பு",
+"hero.pill":"இந்தியா",
+"hero.h1a":"ஒரு பட்டுப் பயிர் ஆறு வாரங்கள்.",
+"hero.h1b":"அதைத் தீர்மானிப்பவற்றில் பெரும்பாலானவை கண்ணுக்குத் தெரிவதில்லை.",
+"hero.lede":"பட்டு வளர்ப்புச் சுழற்சிக்கான கருவிகளை செரிகிரீன் உருவாக்குகிறது — மல்பெரி, வளர்ப்பு அறை, மற்றும் அண்டை வயலின் மருந்து வந்து சேரும் எல்லை. ஒரு பயிரைத் தீர்மானிக்கும் நிலைமைகளை நாங்கள் அளக்கிறோம், பதிவு வைக்கிறோம், விவசாயி செயல்படுவதற்கான நேரத்தில் சொல்கிறோம்.",
+"hero.cta1":"நாங்கள் உருவாக்குவது","hero.cta2":"தொடர்பு கொள்ளுங்கள்",
+"hero.caption":"ஐந்தாம் நிலைப் புழுக்கள் உண்ணுகின்றன, தமிழ்நாடு.",
+"cycle.eyebrow":"பட்டு வளர்ப்புச் சுழற்சி",
+"cycle.h2":"ஆறு நிலைகள் — எந்த நிலையிலும் பயிரை இழக்க முடியும்.",
+"cycle.sub":"இந்தியாவில் ஏராளமான சிறு விவசாயக் குடும்பங்களை பட்டு வளர்ப்பு தாங்குகிறது. அதே நேரம் அது வழக்கத்திற்கு மாறாக வெளிப்பட்டுக் கிடக்கிறது — அண்டை வயலின் மருந்து தெளிக்கும் நேரத்திற்கு, பழைய முறையைப் பின்பற்றாத வானிலைக்கு, ஒவ்வொரு நிலையிலும் மாறும் குறுகிய வெப்பநிலை மற்றும் ஈரப்பதப் பட்டைக்கு, மற்றும் நடந்தது என்ன என்பதற்கான பதிவே இல்லாத நிலைக்கு.",
+"cycle.s1.h":"மல்பெரி","cycle.s1.p":"இலையே முழு உள்ளீடு. ரகம், நீர்ப்பாசனம், நடவு இடைவெளி ஆகியவை ஆறு வாரங்களுக்குப் புழு உண்பதை நிர்ணயிக்கின்றன.","cycle.s1.r":"அடுத்த வயலிலிருந்து வந்து விழுவது எதுவானாலும் அதற்கு வெளிப்பட்டது.",
+"cycle.s2.h":"சாக்கி","cycle.s2.p":"பெரும்பாலான விவசாயிகள் முட்டையிலிருந்து தொடங்குவதில்லை. இளம் புழுக்கள் சாக்கி மையத்திலிருந்து இரண்டாம் அல்லது மூன்றாம் நிலையில் வருகின்றன.","cycle.s2.r":"நீங்கள் கட்டுப்படுத்தாத தரத்துடன் தொகுதி தொடங்குகிறது.",
+"cycle.s3.h":"வளர்ப்பு","cycle.s3.p":"வளர்ப்பு அறையில் ஐந்து நிலைகள். இளம் புழுக்களுக்கு அதிக ஈரப்பதம், முதிர்ந்தவற்றுக்கு மிகக் குறைவு — ஒவ்வொரு நிலையிலும் பட்டை குறுகியது.","cycle.s3.r":"தவறான நேரத்தில் ஒரு விலகல் பயிரையே இழக்கச் செய்யும்.",
+"cycle.s4.h":"சந்திரிகை","cycle.s4.p":"முதிர்ந்த புழுக்கள் நூல் நூற்க சந்திரிகைக்கு மாற்றப்படுகின்றன. நெரிசல், இடையூறு, ஈரம் — அனைத்தும் பின்னர் ஓட்டில் தெரியும்.","cycle.s4.r":"நூற்கத் தொடங்கியபின் எதையும் திருத்த முடியாது.",
+"cycle.s5.h":"கூடு","cycle.s5.p":"ஓட்டு விகிதம், சீர்மை, நிறம், அமைப்பு ஆகியவற்றால் தரம் நிர்ணயிக்கப்படுகிறது. ஆறு வார முடிவுகள் ஒரு எண்ணாக மாறும் இடம் இது.","cycle.s5.r":"பதிவு இல்லாமல் மோசமான தரத்தைக் கண்டறிய முடியாது.",
+"cycle.s6.h":"சந்தை","cycle.s6.p":"விலை தரத்தைப் பின்தொடர்கிறது. தோல்வியடைந்த தொகுதி என்பது ஆறு வார இலை, உழைப்பு, முட்டை, மின்சாரம் — முடிவில் ஒன்றுமில்லை.","cycle.s6.r":"ஏன் என்பதற்கும் ஆதாரமில்லை, மேம்படுத்தவும் வழியில்லை.",
+"cycle.note":"இந்தச் சுழற்சியில் அளக்கக்கூடிய பகுதிகளில் நாங்கள் வேலை செய்கிறோம் — நிலை 01-ல் இலையும் எல்லையும், நிலை 03-ல் வளர்ப்பு அறையும் — மேலும் நிலை 06-ஐ விளக்கக்கூடிய அளவுக்கு நல்ல பதிவை வைத்திருப்பதில்.",
+"dg.d1":"500 மைக்ரோமீட்டர் — உடனே விழுகிறது","dg.d2":"150 மைக்ரோமீட்டர் — எல்லைக்கு அருகில் விழுகிறது","dg.d3":"100-க்குக் கீழ் — விழாமல் காற்றில் பயணிக்கிறது","dg.left":"அண்டை பயிர்","dg.right":"மல்பெரி","dg.line":"எல்லை — இந்தியாவில் இடைவெளி கட்டாயம் இல்லை","dg.norm":"சர்வதேச இடைவெளி: 3–100 மீட்டர்","dg.cap":"துளிகள் உண்மையான விகிதத்தில் வரையப்பட்டுள்ளன. மல்பெரியை அடைவது கண்ணுக்குத் தெரியாத துளிதான்.","drift.eyebrow":"மிகக் கூர்மையான விளிம்பு",
+"drift.h2":"பூச்சிமருந்துப் பரவல், அதை ஏன் யாரும் முன்கூட்டியே காண்பதில்லை.",
+"drift.sub":"சர்வதேச விதிமுறைகள் மூன்று முதல் நூறு மீட்டர் இடைவெளி கோரும் நிலையில், பட்டு வளர்ப்பைப் பாதுகாக்கும் இடையக மண்டல ஒழுங்குமுறை இந்தியாவில் இல்லை. பருத்தி, கரும்பு, வாழை அல்லது மிளகாய்க்கு மருந்து தெளிக்கும் அண்டை விவசாயிக்கு யாருக்கும் சொல்ல வேண்டிய கடமை இல்லை. இதுவே சுழற்சியில் நாங்கள் மிக நன்றாகப் புரிந்துகொண்ட நிலை, எங்கள் முதல் கருவி இங்குதான் நிற்கிறது.",
+"drift.c1.h":"நுண் துளிகள் பயணிக்கின்றன","drift.c1.p":"நாஸில்கள் ஐம்பது முதல் ஐந்நூறு மைக்ரோமீட்டர் வரை வீசுகின்றன. நூற்று ஐம்பதுக்குக் கீழ் உள்ளவை கீழே விழுவதில்லை — காற்றோடு பயணிக்கின்றன.",
+"drift.c2.h":"எதுவும் தவறாகத் தெரிவதில்லை","drift.c2.p":"இலை புதியதாகவும் பச்சையாகவும் இருக்கிறது; எச்சம் கண்ணுக்குத் தெரிவதில்லை. பட்டு வளர்ப்பில் பூஜ்ஜிய சகிப்புத்தன்மை தரநிலை உள்ளதால், கொல்லும் அளவுக்கு மிகக் குறைவான அளவே இலையைக் கெடுத்துவிடும்.",
+"drift.c3.h":"அவர் அறுத்து, ஊட்டுகிறார்","drift.c3.p":"சில மணி நேரங்களில் புழுக்கள் உண்ணுவதை நிறுத்தி, வாந்தியெடுத்து, சுருண்டு, தளர்ந்துவிடுகின்றன. அப்போது முக்கியமான முடிவு பல நாட்கள் பின்னால் இருக்கும்.",
+"drift.note":"மல்பெரி பூச்சிமருந்து வெளிப்பாடு குறித்த வெளியிடப்பட்ட நச்சுயியல் ஆய்வு தெளிவானது — ஆபத்தானதாகத் தோன்றாத அளவுகளிலேயே கூடு மற்றும் ஓட்டு எடைகள் சரிகின்றன. அந்த ஆய்வு எங்களுடையது அல்ல; இந்தப் பிரச்சினையை அளக்க வேண்டியதற்கான காரணம் அதுவே என்பதால் மேற்கோள் காட்டுகிறோம்.",
+"prod.eyebrow":"நாங்கள் உருவாக்குவது",
+"prod.h2":"சுழற்சியின் மூன்று இடங்களில், நான்கு பொருட்கள்.",
+"prod.sub":"ஒவ்வொன்றும் வெவ்வேறு தயார்நிலையில் உள்ளது, எது என்பதை நாங்கள் சொல்கிறோம். முடிவடையும் முன் எதுவும் முடிந்ததாகச் சொல்லப்படவில்லை.",
+"prod.p1.where":"நிலை 01 · எல்லை","prod.p1.badge":"முன்மாதிரி · சோதிக்கப்பட்டது",
+"prod.p1.p":"அண்டை வயலை நோக்கி, மல்பெரி இலை உயரத்தில் எல்லையில் நிற்கும் ஒரு கருவி. இலையின் மீது மருந்தைக் கொண்டுவரும் காற்றையும் அதன் திசையையும் இது மாதிரி எடுக்கிறது; வாசிப்பு உயரமாக அல்லாமல் வேகமாக மாறும்போது மதிப்பெண்ணை உயர்த்துகிறது — ஏனெனில் மருந்துப் புகை வினாடிகளில் வருகிறது, வானிலை மணிநேரங்களில் மாறுகிறது. இந்தப் புள்ளியில், இந்த நேரத்தில் ஒரு மருந்து கடந்து சென்றது என்பதை இது சொல்கிறது. வேதிப்பொருளின் பெயரைச் சொல்வதில்லை, இலையைத் தொடுவதுமில்லை.",
+"prod.p1.stat":"கட்டுப்படுத்தப்பட்ட தெளிப்புகளுக்கு எதிராகச் சோதிக்கப்பட்டது. இதுவரை எந்த வாடிக்கையாளர் பண்ணையிலும் நிறுவப்படவில்லை. தோல்வியடைந்த முடிவுகள் உட்பட முழுச் சோதனைப் பதிவும் ஆவணப்படுத்தப்பட்டு, கேட்டால் வழங்கப்படும்.",
+"prod.p2.where":"நிலை 03 · வளர்ப்பு அறை","prod.p2.badge":"வடிவமைக்கப்பட்டது · ஒருமுறை கட்டப்பட்டது",
+"prod.p2.p":"தன் சொந்தக் காலநிலையைத் தக்கவைக்கும்படி கட்டப்பட்ட வளர்ப்பு அறை — வெப்பநிலை மற்றும் ஈரப்பதப் பட்டையை வானிலை விட்டுச் செல்லும் இடத்தில் அல்லாமல், அந்த நிலைக்குத் தேவையான இடத்தில் வைக்க. நாங்கள் அதை வடிவமைத்தோம், செலவிட்டோம், ஒன்றைக் கட்டினோம், இரட்டைச் சோதனையாக நடத்தினோம் — ஒரே விவசாயி, ஒரே மல்பெரி, ஒரு பக்கம் வழக்கமான வளர்ப்பு, மறுபக்கம் கட்டுப்படுத்தப்பட்ட வளர்ப்பு.",
+"prod.p2.stat":"கட்டப்பட்டு சோதிக்கப்பட்டது. குறிப்பீட்டின்படி ஒன்றைக் கட்டித் தர முடியும். வடிவமைப்பையும் செலவுக் கணக்கையும் எங்களிடம் கேளுங்கள்.",
+"prod.p3.where":"சுழற்சி முழுவதும் · பதிவு","prod.p3.badge":"உருவாக்கத்தில்",
+"prod.p3.p":"பதிவுக்கான ஒரே இடம். எல்லைக் கருவியிலிருந்தும் வளர்ப்பு அறையிலிருந்தும் வரும் வாசிப்புகள் ஒரே காட்சியில் வந்து சேர்கின்றன — தற்போதைய நிலைமைகள், அவற்றுக்குப் பின்னால் உள்ள வரலாறு, எழுப்பப்பட்ட எச்சரிக்கைகள். அந்தப் பதிவின் மேல் ஒரு மதிப்பீட்டு அடுக்கு அமர்கிறது; அது வளர்ப்பு நிலைமைகளை அறியப்பட்ட நோய் வரம்புகளுக்கு எதிராகப் படித்து, ஓர் அறை ஆபத்துப் பட்டைக்குள் நகர்வதைக் குறிக்கிறது.",
+"prod.p3.stat":"உருவாக்கத்தில். இது அளக்கப்பட்ட சேனல்களின் மீதான கணிதம் — வெளியிடப்பட்ட வரம்புகளுக்கு எதிரான எடையிடப்பட்ட மதிப்பெண், பயிற்றுவிக்கப்பட்ட மாதிரி அல்ல.",
+"prod.p4.h":"செரிகிரீன் செயலி","prod.p4.where":"விவசாயியின் பக்கம","prod.p4.badge":"உருவாக்கத்தில்",
+"prod.p4.p":"வாசிப்புகள், எச்சரிக்கைகள், பதிவு — விவசாயி உண்மையில் படிக்கும் மொழியில், தொலைபேசியில். தொகுதி இருக்கும் நிலைக்கான வளர்ப்பு நடைமுறைக் குறிப்புகள், மற்றும் தரத்தை ஊகிக்காமல் விளக்கக்கூடிய வகையில் அந்தத் தோட்டத்தின் வரலாறு.",
+"prod.p4.stat":"உருவாக்கத்தில். இன்று ஆங்கிலம், கன்னடம், தெலுங்கு; தமிழும் மராத்தியும் அடுத்தது. தொலைபேசி எச்சரிக்கைகள் செய்தி வார்ப்புரு ஒப்புதலுக்குக் காத்திருக்கின்றன.",
+"app.eyebrow":"எங்கள் அணுகுமுறை","app.h2":"எல்லையை அளவிடு. முன்கூட்டியே எச்சரி. பதிவின் மேல் முன்னேறு.",
+"app.sub":"எங்கள் பணி எங்கள் காப்புரிமை விண்ணப்பத்தின் அமைப்பைப் பின்பற்றுகிறது — ஒரு வயல் மேம்பாடு மற்றும் பாதுகாப்பு அமைப்பு. பாதுகாப்பிலிருந்தே தொடங்குகிறது, ஏனெனில் ஒரு பருவம் பெரும்பாலும் அங்குதான் இழக்கப்படுகிறது.",
+"app.c1.h":"பரவல் வந்து சேரும் இடத்தில் நில்","app.c1.p":"அண்டை வயலை நோக்கி எல்லையில் கருவிகள், இலையின் மீது மருந்தைக் கொண்டுவரும் காற்றையும் திசையையும் மாதிரி எடுக்கின்றன.",
+"app.c2.h":"உயர்ந்த வாசிப்பு அல்ல, வேகமான வாசிப்பே எச்சரிக்கை","app.c2.p":"மருந்துப் புகை வினாடிகளில் வருகிறது; வானிலை மணிநேரங்களில் நகர்கிறது. அளவை அல்லாமல் மாற்ற வேகத்தைப் படிப்பதே ஒரு தெளிப்பையும் சாதாரண மதியத்தையும் பிரிக்கிறது.",
+"app.c3.h":"அறுவடையை நிறுத்து, பதிவை வை","app.c3.p":"இது மாற்றும் முடிவு — அந்தத் தோட்டத்திலிருந்து இலை அறுக்கலாமா, எப்போது என்பது. பதிவு பின்னரும் நிற்கிறது, ஒரு விளைவை விளக்கவும் அடுத்த பருவத்திற்கு எடுத்துச் செல்லவும்.",
+"app.note":"செரிகிரீன் வருவாய்க்கு முந்தைய நிலையில், தீவிர ஆய்வு மற்றும் மேம்பாட்டில் உள்ளது. ஆதாரம் காட்ட முடியாத செயல்திறன் கூற்றுகளை நாங்கள் வெளியிடுவதில்லை; ஒரு பொருள் முடியவில்லை என்றால் இந்தப் பக்கம் அதைச் சொல்கிறது.",
+"field.eyebrow":"வயலிலிருந்து","field.h2":"வேலை உண்மையில் நடக்கும் இடம்.",
+"field.sub":"மல்பெரி நிலங்கள், வளர்ப்பு அறைகள், சந்திரிகைகள், கூடுகள் — தமிழ்நாடு முழுவதும். இவை நாங்கள் பணியாற்றும் பண்ணைகளில் எடுக்கப்பட்ட எங்கள் சொந்தப் புகைப்படங்கள்.",
+"field.g1":"மல்பெரி வரிசைகளுக்கு இடையே வயல் ஆய்வு. ஒவ்வொரு வடிவமைப்பு முடிவும் இங்கிருந்தே தொடங்குகிறது.",
+"field.g2":"விவசாயியின் சொந்தத் தோட்டத்தில் ஒரு வளர்ப்புச் சுழற்சி பற்றிய உரையாடல்.",
+"field.g3":"நிலையின் நடுவில் ஒரு வளர்ப்புப் படுக்கை, காலை உணவுக்காக இலை பரப்பப்பட்டுள்ளது.",
+"field.g4":"வளர்ப்பு அறையின் அடுக்குகளில் வளர்ப்புத் தட்டுகள்.",
+"field.g5":"நூற்பதற்காக ஏற்றப்பட்ட சந்திரிகை.",
+"field.g6":"அறுவடை. ஆறு வார முடிவுகள், ஒரு காலையில் தரம் நிர்ணயிக்கப்படுகின்றன.",
+"field.g7":"திறந்த வானத்தின் கீழ் மல்பெரி — மற்றும் திறந்த எல்லை.",
+"field.g8":"எல்லாப் பக்கமும் வேறு பயிர்களால் சூழப்பட்ட மல்பெரி.",
+"field.g9":"நாங்கள் வடிவமைத்துக் கட்டிய வளர்ப்பு அறை, டிசம்பர் 2025.",
+"field.g10":"ஒரு மோரிஷீல்ட் கருவி — வெப்பக் கவசத்தின் மேல் உணரி தலை.",
+"field.g11":"வரிசை இடைவெளியும் நீர்ப்பாசனமும் இலை எப்படி இருக்கும் என்பதை நிர்ணயிக்கின்றன.",
+"field.g12":"தோட்டத்தின் விளிம்பில், அண்டை வயல் தொடங்கும் இடத்தில்.",
+"jr.eyebrow":"எங்கள் பயணம்","jr.h2":"நாங்கள் இருந்த இடங்கள்.",
+"jr.sub":"மானியங்கள், அங்கீகாரங்கள், நாங்கள் நடத்திய சோதனைகள். தேதியிடப்பட்டவை, தொடரும் கூற்றாக அல்லாமல் வரலாறாகச் சொல்லப்பட்டவை.",
+"jr.k.grant":"மானியம்","jr.k.rec":"அங்கீகாரம்","jr.k.trial":"சோதனை","jr.k.field":"களப் பணி","jr.k.prog":"திட்டம்",
+"jr.e1.h":"விதை மானியம் — ஐஐடி மெட்ராஸ் பிரவர்தக்","jr.e1.p":"பட்டு வளர்ப்பில் ஆழ்-தொழில்நுட்ப உருவாக்கத்தை எங்களுக்குத் தொடங்கிவைத்த மானியம். அந்த அடைகாப்புக் காலம் முடிவடைந்துவிட்டது.",
+"jr.e2.h":"DST–NIDHI PRAYAS — MaDeIT, IIITDM","jr.e2.p":"பட்டு விவசாயிகளுக்கான உணர்வு மற்றும் வளர்ப்பு அமைப்புகளைக் கட்டுவதற்கான அரசு ஆதரவு மானியம். அந்த அடைகாப்புக் காலம் முடிவடைந்துவிட்டது.",
+"jr.e3.h":"STEP UnPollute 2024","jr.e3.p":"நிலைத்தன்மையில் பணியாற்றும் முதல் பத்து பெண் தொழில்முனைவோரில் தேர்வு.",
+"jr.e4.h":"TSEC 2024","jr.e4.p":"பட்டு வளர்ப்பில் புத்தாக்கத்திற்காக முதல் இருபது வேளாண்-தொழில்நுட்ப நிறுவனங்களில் அங்கீகாரம்.",
+"jr.e5.h":"வளர்ப்பு அறை சோதனை, முதல் தொகுதி","jr.e5.p":"சத்தியமங்கலத்தில் ஒரே பண்ணையில் இரட்டைச் சோதனை — ஒரே விவசாயி, ஒரே மல்பெரி, வழக்கமான வளர்ப்புக்கு எதிராகக் கட்டுப்படுத்தப்பட்ட அறை. தானியங்கி அமைப்பு முடிக்கப்பட்டுக் கொண்டிருந்ததால் காலநிலை கையால் பராமரிக்கப்பட்டது.",
+"jr.e6.h":"வேல்ஸ் பல்கலைக்கழகம் V-Fund பரிசு","jr.e6.p":"பெண்கள் தலைமையிலான வேளாண்-தொழில்நுட்பப் புத்தாக்கத்திற்கான முதல் பரிசு, சர்வதேச மகளிர் தினம்.",
+"jr.e7.h":"வளர்ப்பு அறை சோதனை, இரண்டாம் தொகுதி","jr.e7.p":"முதல் முடிவு இரண்டாவது சுழற்சியில் மீண்டும் வருகிறதா என்று பார்க்க, அதே அறை கருவிகளுடன் மீண்டும் நடத்தப்பட்டது.",
+"jr.e8.h":"DST GDC I-NCUBATE, ஐஐடி மெட்ராஸ்","jr.e8.p":"ஆழ்-தொழில்நுட்ப நிறுவனங்கள் ஒரு யோசனையிலிருந்து வாடிக்கையாளர் வாங்கக்கூடிய ஒன்றை நோக்கி நகர உதவும் திட்டத்தில் தேர்வு.",
+"jr.e9.h":"RKVY RAFTAAR — MANAGE-CIA","jr.e9.p":"தேசிய வேளாண் புத்தாக்கத் திட்டத்தில் தேர்வு.",
+"jr.e10.h":"கட்டுப்படுத்தப்பட்ட தெளிப்புகளுக்கு எதிரான பரவல் சோதனை","jr.e10.p":"அளக்கப்பட்ட தூரங்களில் அறியப்பட்ட தெளிப்புகளுக்கு எதிராக மீண்டும் மீண்டும் கருவி அமர்வுகள், முழுப் பதிவும் வைக்கப்பட்டது — கருவி பதிலளிக்காத அமர்வுகள் உட்பட.",
+"co.eyebrow":"நிறுவனம்",
+"co.sub":"பதிவுசெய்யப்பட்ட இந்திய தனியார் வரையறுக்கப்பட்ட நிறுவனம், வருவாய்க்கு முந்தைய நிலையில், தீவிர ஆய்வு மற்றும் மேம்பாட்டில். பட்டு நெசவு மற்றும் பட்டுப்புழு வளர்ப்பில் வேர்கள் கொண்டவர்களால் நிறுவப்பட்டது — இந்தப் பணி ஆய்வகத்தில் அல்ல, விவசாயிகள், விஞ்ஞானிகள், வியாபாரிகளுடனான உரையாடல்களில் தொடங்கியது. எங்கள் மைய அணுகுமுறை இந்தியக் காப்புரிமை அலுவலகத்தில் தாக்கல் செய்யப்பட்ட விண்ணப்பத்தின் பொருள்; விண்ணப்பம் பரிசீலனையில் உள்ளது, பரிசீலனையில் இருக்கும்வரை அதன் விவரங்களை நாங்கள் வெளியிடுவதில்லை, வழங்கப்பட்ட காப்புரிமை என்று எந்தக் கூற்றும் இல்லை.",
+"ct.eyebrow":"தொடர்பு","ct.h2":"எங்களுடன் பேசுங்கள்.",
+"ct.sub":"ஆய்வு ஒத்துழைப்பு, வயல் சோதனை, கூட்டாண்மை, முதலீடு அல்லது சப்ளையர் விசாரணைகளுக்கு — எழுதுங்கள், நாங்கள் பதிலளிப்போம்.",
+"ct.email":"மின்னஞ்சல்","ct.phone":"தொலைபேசி","ct.office":"பதிவு அலுவலகம்","ct.hours":"நேரம்","ct.hoursval":"திங்கள் முதல் சனி வரை, காலை 9:00 – மாலை 18:00 IST",
+"ft.office":"பதிவு அலுவலகம்","ft.tag":"பட்டுப் பண்ணைகளைப் பாதுகாக்கிறோம். கிராமப்புற எதிர்காலத்தை வளர்க்கிறோம்."
+},
+kn:{
+"nav.cycle":"ಚಕ್ರ","nav.drift":"ಸಿಂಪರಣೆ ಹರಡುವಿಕೆ","nav.products":"ನಾವು ನಿರ್ಮಿಸುವುದು","nav.approach":"ವಿಧಾನ","nav.field":"ಹೊಲದಿಂದ","nav.journey":"ಪಯಣ","nav.contact":"ಸಂಪರ್ಕ",
+"hero.pill":"ಭಾರತ",
+"hero.h1a":"ಒಂದು ರೇಷ್ಮೆ ಬೆಳೆಗೆ ಆರು ವಾರ.",
+"hero.h1b":"ಅದನ್ನು ನಿರ್ಧರಿಸುವ ಬಹುಪಾಲು ಕಣ್ಣಿಗೆ ಕಾಣುವುದಿಲ್ಲ.",
+"hero.lede":"ರೇಷ್ಮೆ ಕೃಷಿ ಚಕ್ರಕ್ಕೆ ಬೇಕಾದ ಉಪಕರಣಗಳನ್ನು ಸೆರಿಗ್ರೀನ್ ನಿರ್ಮಿಸುತ್ತದೆ — ಹಿಪ್ಪುನೇರಳೆ, ಸಾಕಣೆ ಮನೆ, ಮತ್ತು ಪಕ್ಕದ ಹೊಲದ ಸಿಂಪರಣೆ ಬಂದು ತಲುಪುವ ಗಡಿ. ಬೆಳೆಯನ್ನು ನಿರ್ಧರಿಸುವ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ನಾವು ಅಳೆಯುತ್ತೇವೆ, ದಾಖಲೆ ಇಡುತ್ತೇವೆ, ಮತ್ತು ರೈತ ಕ್ರಮ ಕೈಗೊಳ್ಳಲು ಸಮಯವಿರುವಾಗಲೇ ತಿಳಿಸುತ್ತೇವೆ.",
+"hero.cta1":"ನಾವು ನಿರ್ಮಿಸುವುದು","hero.cta2":"ಸಂಪರ್ಕಿಸಿ",
+"hero.caption":"ಐದನೇ ಹಂತದ ಹುಳುಗಳು ಮೇಯುತ್ತಿವೆ, ತಮಿಳುನಾಡು.",
+"cycle.eyebrow":"ರೇಷ್ಮೆ ಕೃಷಿ ಚಕ್ರ","cycle.h2":"ಆರು ಹಂತಗಳು — ಯಾವುದೇ ಹಂತದಲ್ಲಿ ಬೆಳೆ ಕಳೆದುಕೊಳ್ಳಬಹುದು.",
+"cycle.sub":"ಭಾರತದಲ್ಲಿ ಹಲವಾರು ಸಣ್ಣ ರೈತ ಕುಟುಂಬಗಳನ್ನು ರೇಷ್ಮೆ ಕೃಷಿ ಪೋಷಿಸುತ್ತದೆ. ಆದರೆ ಅದು ಅಸಾಧಾರಣವಾಗಿ ತೆರೆದುಕೊಂಡಿದೆ — ಪಕ್ಕದವರ ಸಿಂಪರಣೆ ವೇಳಾಪಟ್ಟಿಗೆ, ಹಳೆಯ ಮಾದರಿಯನ್ನು ಅನುಸರಿಸದ ಹವಾಮಾನಕ್ಕೆ, ಪ್ರತಿ ಹಂತದಲ್ಲೂ ಬದಲಾಗುವ ಕಿರಿದಾದ ಉಷ್ಣತೆ ಮತ್ತು ತೇವಾಂಶ ವ್ಯಾಪ್ತಿಗೆ, ಮತ್ತು ಏನಾಯಿತೆಂಬ ದಾಖಲೆಯೇ ಇಲ್ಲದಿರುವುದಕ್ಕೆ.",
+"cycle.s1.h":"ಹಿಪ್ಪುನೇರಳೆ","cycle.s1.p":"ಎಲೆಯೇ ಸಂಪೂರ್ಣ ಆಹಾರ. ತಳಿ, ನೀರಾವರಿ ಮತ್ತು ನಾಟಿ ಅಂತರ ಆರು ವಾರ ಹುಳು ತಿನ್ನುವುದನ್ನು ನಿರ್ಧರಿಸುತ್ತವೆ.","cycle.s1.r":"ಪಕ್ಕದ ಹೊಲದಿಂದ ಏನು ಬಂದು ಬೀಳುತ್ತದೋ ಅದಕ್ಕೆ ತೆರೆದಿದೆ.",
+"cycle.s2.h":"ಚಾಕಿ","cycle.s2.p":"ಬಹುತೇಕ ರೈತರು ಮೊಟ್ಟೆಯಿಂದ ಆರಂಭಿಸುವುದಿಲ್ಲ. ಎಳೆಯ ಹುಳುಗಳು ಚಾಕಿ ಕೇಂದ್ರದಿಂದ ಎರಡು ಅಥವಾ ಮೂರನೇ ಹಂತದಲ್ಲಿ ಬರುತ್ತವೆ.","cycle.s2.r":"ನೀವು ನಿಯಂತ್ರಿಸದ ಗುಣಮಟ್ಟದೊಂದಿಗೆ ಬ್ಯಾಚ್ ಆರಂಭವಾಗುತ್ತದೆ.",
+"cycle.s3.h":"ಸಾಕಣೆ","cycle.s3.p":"ಸಾಕಣೆ ಮನೆಯಲ್ಲಿ ಐದು ಹಂತಗಳು. ಎಳೆಯ ಹುಳುಗಳಿಗೆ ಹೆಚ್ಚು ತೇವಾಂಶ, ಬೆಳೆದವಕ್ಕೆ ಬಹಳ ಕಡಿಮೆ — ಪ್ರತಿ ಹಂತದಲ್ಲೂ ವ್ಯಾಪ್ತಿ ಕಿರಿದು.","cycle.s3.r":"ತಪ್ಪು ಸಮಯದ ಒಂದು ವ್ಯತ್ಯಯ ಇಡೀ ಬೆಳೆ ತೆಗೆದುಕೊಳ್ಳಬಹುದು.",
+"cycle.s4.h":"ಚಂದ್ರಿಕೆ","cycle.s4.p":"ಬಲಿತ ಹುಳುಗಳನ್ನು ನೂಲು ಕಟ್ಟಲು ಚಂದ್ರಿಕೆಗೆ ವರ್ಗಾಯಿಸಲಾಗುತ್ತದೆ. ದಟ್ಟಣೆ, ತೊಂದರೆ, ತೇವ — ಎಲ್ಲವೂ ನಂತರ ಚಿಪ್ಪಿನಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ.","cycle.s4.r":"ನೂಲು ಆರಂಭವಾದ ಮೇಲೆ ಏನನ್ನೂ ಸರಿಪಡಿಸಲಾಗದು.",
+"cycle.s5.h":"ಗೂಡು","cycle.s5.p":"ಚಿಪ್ಪಿನ ಅನುಪಾತ, ಏಕರೂಪತೆ, ಬಣ್ಣ ಮತ್ತು ವಿನ್ಯಾಸದ ಮೇಲೆ ದರ್ಜೆ ನಿರ್ಧಾರ. ಆರು ವಾರದ ನಿರ್ಧಾರಗಳು ಒಂದು ಸಂಖ್ಯೆಯಾಗುವ ಸ್ಥಳ ಇದು.","cycle.s5.r":"ದಾಖಲೆ ಇಲ್ಲದೆ ಕಳಪೆ ದರ್ಜೆಯ ಕಾರಣ ಪತ್ತೆಯಾಗದು.",
+"cycle.s6.h":"ಮಾರುಕಟ್ಟೆ","cycle.s6.p":"ಬೆಲೆ ದರ್ಜೆಯನ್ನು ಅನುಸರಿಸುತ್ತದೆ. ವಿಫಲ ಬ್ಯಾಚ್ ಎಂದರೆ ಆರು ವಾರದ ಎಲೆ, ಶ್ರಮ, ಮೊಟ್ಟೆ, ವಿದ್ಯುತ್ — ಕೊನೆಗೆ ಏನೂ ಇಲ್ಲ.","cycle.s6.r":"ಏಕೆಂಬುದಕ್ಕೆ ಸಾಕ್ಷ್ಯವೂ ಇಲ್ಲ, ಸುಧಾರಿಸಲು ದಾರಿಯೂ ಇಲ್ಲ.",
+"cycle.note":"ಈ ಚಕ್ರದಲ್ಲಿ ಅಳೆಯಬಹುದಾದ ಭಾಗಗಳಲ್ಲಿ ನಾವು ಕೆಲಸ ಮಾಡುತ್ತೇವೆ — ಹಂತ 01ರಲ್ಲಿ ಎಲೆ ಮತ್ತು ಗಡಿ, ಹಂತ 03ರಲ್ಲಿ ಸಾಕಣೆ ಮನೆ — ಮತ್ತು ಹಂತ 06ನ್ನು ವಿವರಿಸುವಷ್ಟು ಒಳ್ಳೆಯ ದಾಖಲೆ ಇಡುವುದರಲ್ಲಿ.",
+"dg.d1":"500 ಮೈಕ್ರೋಮೀಟರ್ — ತಕ್ಷಣ ಬೀಳುತ್ತದೆ","dg.d2":"150 ಮೈಕ್ರೋಮೀಟರ್ — ಗಡಿಯ ಹತ್ತಿರ ಬೀಳುತ್ತದೆ","dg.d3":"100ಕ್ಕಿಂತ ಕಡಿಮೆ — ಬೀಳದೆ ಗಾಳಿಯಲ್ಲಿ ಸಾಗುತ್ತದೆ","dg.left":"ಪಕ್ಕದ ಬೆಳೆ","dg.right":"ಹಿಪ್ಪುನೇರಳೆ","dg.line":"ಗಡಿ — ಭಾರತದಲ್ಲಿ ಅಂತರ ಕಡ್ಡಾಯವಲ್ಲ","dg.norm":"ಅಂತಾರಾಷ್ಟ್ರೀಯ ಅಂತರ: 3–100 ಮೀಟರ್","dg.cap":"ಹನಿಗಳನ್ನು ನಿಜವಾದ ಪ್ರಮಾಣದಲ್ಲಿ ಚಿತ್ರಿಸಲಾಗಿದೆ. ಹಿಪ್ಪುನೇರಳೆ ತಲುಪುವುದು ಕಣ್ಣಿಗೆ ಕಾಣದ ಹನಿಯೇ.","drift.eyebrow":"ಅತ್ಯಂತ ಚೂಪಾದ ಅಂಚು","drift.h2":"ಕೀಟನಾಶಕ ಹರಡುವಿಕೆ, ಮತ್ತು ಅದು ಏಕೆ ಯಾರಿಗೂ ಮೊದಲೇ ಕಾಣಿಸುವುದಿಲ್ಲ.",
+"drift.sub":"ಮೂರರಿಂದ ನೂರು ಮೀಟರ್ ಅಂತರವನ್ನು ಅಂತಾರಾಷ್ಟ್ರೀಯ ಮಾನದಂಡಗಳು ಕೇಳುವಾಗ, ರೇಷ್ಮೆ ಕೃಷಿಯನ್ನು ರಕ್ಷಿಸುವ ಬಫರ್ ವಲಯ ನಿಯಂತ್ರಣ ಭಾರತದಲ್ಲಿ ಇಲ್ಲ. ಹತ್ತಿ, ಕಬ್ಬು, ಬಾಳೆ ಅಥವಾ ಮೆಣಸಿಗೆ ಸಿಂಪಡಿಸುವ ಪಕ್ಕದ ರೈತನಿಗೆ ಯಾರಿಗೂ ಹೇಳುವ ಕರ್ತವ್ಯವಿಲ್ಲ. ಚಕ್ರದಲ್ಲಿ ನಾವು ಅತ್ಯುತ್ತಮವಾಗಿ ಅರ್ಥಮಾಡಿಕೊಂಡ ಹಂತ ಇದು, ಮತ್ತು ನಮ್ಮ ಮೊದಲ ಉಪಕರಣ ಇಲ್ಲಿಯೇ ನಿಲ್ಲುತ್ತದೆ.",
+"drift.c1.h":"ಸೂಕ್ಷ್ಮ ಹನಿಗಳು ಪ್ರಯಾಣಿಸುತ್ತವೆ","drift.c1.p":"ನಳಿಕೆಗಳು ಐವತ್ತರಿಂದ ಐನೂರು ಮೈಕ್ರೋಮೀಟರ್ ಎಸೆಯುತ್ತವೆ. ನೂರೈವತ್ತಕ್ಕಿಂತ ಕಡಿಮೆಯಿರುವುದು ಕೆಳಗೆ ಬೀಳುವುದಿಲ್ಲ — ಗಾಳಿಯೊಂದಿಗೆ ಚಲಿಸುತ್ತದೆ.",
+"drift.c2.h":"ಏನೂ ತಪ್ಪು ಕಾಣಿಸುವುದಿಲ್ಲ","drift.c2.p":"ಎಲೆ ತಾಜಾ ಮತ್ತು ಹಸಿರು; ಶೇಷ ಕಣ್ಣಿಗೆ ಕಾಣದು. ರೇಷ್ಮೆ ಕೃಷಿಗೆ ಶೂನ್ಯ ಸಹಿಷ್ಣುತೆ ಮಾನದಂಡವಿದೆ, ಹಾಗಾಗಿ ಮಾರಕ ಪ್ರಮಾಣಕ್ಕಿಂತ ಬಹಳ ಕಡಿಮೆ ಪ್ರಮಾಣವೇ ಅದನ್ನು ಹಾಳುಮಾಡಿರುತ್ತದೆ.",
+"drift.c3.h":"ಅವನು ಕತ್ತರಿಸಿ, ಹಾಕುತ್ತಾನೆ","drift.c3.p":"ಕೆಲವೇ ಗಂಟೆಗಳಲ್ಲಿ ಹುಳುಗಳು ತಿನ್ನುವುದನ್ನು ನಿಲ್ಲಿಸಿ, ವಾಂತಿ ಮಾಡಿ, ಸುರುಳಿಯಾಗಿ, ಸಡಿಲವಾಗುತ್ತವೆ. ಆಗ ಮುಖ್ಯವಾಗಿದ್ದ ನಿರ್ಧಾರ ಹಲವು ದಿನ ಹಿಂದೆ ಉಳಿದಿರುತ್ತದೆ.",
+"drift.note":"ಹಿಪ್ಪುನೇರಳೆ ಕೀಟನಾಶಕ ಸಂಪರ್ಕದ ಬಗ್ಗೆ ಪ್ರಕಟಿತ ವಿಷಶಾಸ್ತ್ರ ಸ್ಪಷ್ಟವಾಗಿದೆ — ಅಪಾಯಕಾರಿಯಾಗಿ ಕಾಣದ ಪ್ರಮಾಣಗಳಲ್ಲೇ ಗೂಡು ಮತ್ತು ಚಿಪ್ಪಿನ ತೂಕ ಕುಸಿಯುತ್ತದೆ. ಆ ಸಂಶೋಧನೆ ನಮ್ಮದಲ್ಲ; ಈ ಸಮಸ್ಯೆಯನ್ನು ಅಳೆಯಬೇಕಾದ ಕಾರಣ ಅದೇ ಎಂಬ ಕಾರಣಕ್ಕೆ ಉಲ್ಲೇಖಿಸುತ್ತೇವೆ.",
+"prod.eyebrow":"ನಾವು ನಿರ್ಮಿಸುವುದು","prod.h2":"ಚಕ್ರದ ಮೂರು ಸ್ಥಳಗಳಲ್ಲಿ, ನಾಲ್ಕು ಉತ್ಪನ್ನಗಳು.",
+"prod.sub":"ಪ್ರತಿಯೊಂದೂ ಬೇರೆ ಬೇರೆ ಸಿದ್ಧತೆಯ ಹಂತದಲ್ಲಿದೆ, ಮತ್ತು ಯಾವುದೆಂಬುದನ್ನು ನಾವು ಹೇಳುತ್ತೇವೆ. ಮುಗಿಯುವ ಮೊದಲು ಯಾವುದನ್ನೂ ಮುಗಿದಿದೆ ಎಂದು ಹೇಳಿಲ್ಲ.",
+"prod.p1.where":"ಹಂತ 01 · ಗಡಿ","prod.p1.badge":"ಮೂಲಮಾದರಿ · ಪರೀಕ್ಷಿತ",
+"prod.p1.p":"ಪಕ್ಕದ ಹೊಲದತ್ತ ಮುಖಮಾಡಿ, ಹಿಪ್ಪುನೇರಳೆ ಎಲೆಯ ಎತ್ತರದಲ್ಲಿ ಗಡಿಯಲ್ಲಿ ನಿಲ್ಲುವ ಉಪಕರಣ. ಎಲೆಯ ಮೇಲೆ ಸಿಂಪರಣೆಯನ್ನು ಹೊತ್ತು ತರುವ ಗಾಳಿ ಮತ್ತು ಅದರ ದಿಕ್ಕನ್ನು ಇದು ಮಾದರಿ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ; ಓದು ಎತ್ತರವಾಗಿ ಅಲ್ಲ ವೇಗವಾಗಿ ಬದಲಾದಾಗ ಅಂಕ ಏರಿಸುತ್ತದೆ — ಏಕೆಂದರೆ ಸಿಂಪರಣೆ ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಬರುತ್ತದೆ, ಹವಾಮಾನ ಗಂಟೆಗಳಲ್ಲಿ ಬದಲಾಗುತ್ತದೆ. ಈ ಸ್ಥಳದಲ್ಲಿ, ಈ ಸಮಯದಲ್ಲಿ ಸಿಂಪರಣೆ ಹಾದುಹೋಯಿತು ಎಂದು ಅದು ಹೇಳುತ್ತದೆ. ರಾಸಾಯನಿಕದ ಹೆಸರು ಹೇಳುವುದಿಲ್ಲ, ಎಲೆಯನ್ನು ಮುಟ್ಟುವುದೂ ಇಲ್ಲ.",
+"prod.p1.stat":"ನಿಯಂತ್ರಿತ ಸಿಂಪರಣೆಗಳ ವಿರುದ್ಧ ಪರೀಕ್ಷಿಸಲಾಗಿದೆ. ಇದುವರೆಗೆ ಯಾವುದೇ ಗ್ರಾಹಕರ ಹೊಲದಲ್ಲಿ ಅಳವಡಿಸಿಲ್ಲ. ವಿಫಲವಾದ ಫಲಿತಾಂಶಗಳೂ ಸೇರಿದಂತೆ ಸಂಪೂರ್ಣ ಪರೀಕ್ಷಾ ದಾಖಲೆ ದಾಖಲಿಸಲಾಗಿದ್ದು, ಕೇಳಿದರೆ ನೀಡಲಾಗುತ್ತದೆ.",
+"prod.p2.where":"ಹಂತ 03 · ಸಾಕಣೆ ಮನೆ","prod.p2.badge":"ವಿನ್ಯಾಸಗೊಳಿಸಿದೆ · ಒಮ್ಮೆ ನಿರ್ಮಿಸಿದೆ",
+"prod.p2.p":"ತನ್ನದೇ ಹವಾಮಾನವನ್ನು ಹಿಡಿದಿಡುವಂತೆ ಕಟ್ಟಿದ ಸಾಕಣೆ ಮನೆ — ಉಷ್ಣತೆ ಮತ್ತು ತೇವಾಂಶದ ವ್ಯಾಪ್ತಿಯನ್ನು ಹವಾಮಾನ ಬಿಟ್ಟುಹೋದಲ್ಲಿ ಅಲ್ಲ, ಆ ಹಂತಕ್ಕೆ ಬೇಕಾದಲ್ಲಿ ಇಡಲು. ನಾವು ಅದನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಿದೆವು, ವೆಚ್ಚ ಲೆಕ್ಕ ಹಾಕಿದೆವು, ಒಂದನ್ನು ಕಟ್ಟಿದೆವು, ಮತ್ತು ಜೋಡಿ ಪ್ರಯೋಗವಾಗಿ ನಡೆಸಿದೆವು — ಒಬ್ಬನೇ ರೈತ, ಒಂದೇ ಹಿಪ್ಪುನೇರಳೆ, ಒಂದು ಕಡೆ ಸಾಂಪ್ರದಾಯಿಕ ಸಾಕಣೆ, ಇನ್ನೊಂದು ಕಡೆ ನಿಯಂತ್ರಿತ ಸಾಕಣೆ.",
+"prod.p2.stat":"ಕಟ್ಟಿ ಪ್ರಯೋಗಿಸಲಾಗಿದೆ. ವಿವರಣೆಯ ಪ್ರಕಾರ ಒಂದನ್ನು ಕಟ್ಟಿಕೊಡಬಲ್ಲೆವು. ವಿನ್ಯಾಸ ಮತ್ತು ವೆಚ್ಚದ ಲೆಕ್ಕ ನಮ್ಮಿಂದ ಕೇಳಿ.",
+"prod.p3.where":"ಚಕ್ರದುದ್ದಕ್ಕೂ · ದಾಖಲೆ","prod.p3.badge":"ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ",
+"prod.p3.p":"ದಾಖಲೆಗೆ ಒಂದೇ ಸ್ಥಳ. ಗಡಿ ಉಪಕರಣ ಮತ್ತು ಸಾಕಣೆ ಮನೆಯಿಂದ ಬರುವ ಓದುಗಳು ಒಂದೇ ನೋಟದಲ್ಲಿ ಬಂದು ಸೇರುತ್ತವೆ — ಪ್ರಸ್ತುತ ಪರಿಸ್ಥಿತಿ, ಅದರ ಹಿಂದಿನ ಇತಿಹಾಸ, ಎತ್ತಿದ ಎಚ್ಚರಿಕೆಗಳು. ಆ ದಾಖಲೆಯ ಮೇಲೆ ಒಂದು ಅಂಕ ನೀಡುವ ಪದರ ಕೂರುತ್ತದೆ; ಅದು ಸಾಕಣೆ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ತಿಳಿದಿರುವ ರೋಗ ಮಿತಿಗಳ ವಿರುದ್ಧ ಓದಿ, ಮನೆ ಅಪಾಯದ ವ್ಯಾಪ್ತಿಗೆ ಸರಿಯುತ್ತಿರುವುದನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+"prod.p3.stat":"ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ. ಇದು ಅಳೆದ ಚಾನೆಲ್‌ಗಳ ಮೇಲಿನ ಗಣಿತ — ಪ್ರಕಟಿತ ಮಿತಿಗಳ ವಿರುದ್ಧ ತೂಕದ ಅಂಕ, ತರಬೇತಿ ಪಡೆದ ಮಾದರಿ ಅಲ್ಲ.",
+"prod.p4.h":"ಸೆರಿಗ್ರೀನ್ ಆ್ಯಪ್","prod.p4.where":"ರೈತನ ಕಡೆ","prod.p4.badge":"ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ",
+"prod.p4.p":"ಓದುಗಳು, ಎಚ್ಚರಿಕೆಗಳು ಮತ್ತು ದಾಖಲೆ — ರೈತ ನಿಜವಾಗಿ ಓದುವ ಭಾಷೆಯಲ್ಲಿ, ಫೋನಿನಲ್ಲಿ. ಬ್ಯಾಚ್ ಇರುವ ಹಂತಕ್ಕೆ ಸಾಕಣೆ ಅಭ್ಯಾಸದ ಟಿಪ್ಪಣಿಗಳು, ಮತ್ತು ದರ್ಜೆಯನ್ನು ಊಹಿಸದೆ ವಿವರಿಸಬಹುದಾದಂತೆ ಆ ತೋಟದ ಇತಿಹಾಸ.",
+"prod.p4.stat":"ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ. ಇಂದು ಇಂಗ್ಲಿಷ್, ಕನ್ನಡ ಮತ್ತು ತೆಲುಗು; ತಮಿಳು ಮತ್ತು ಮರಾಠಿ ಮುಂದಿನವು. ಫೋನ್ ಎಚ್ಚರಿಕೆಗಳು ಸಂದೇಶ ಟೆಂಪ್ಲೇಟ್ ಅನುಮೋದನೆಗೆ ಕಾಯುತ್ತಿವೆ.",
+"app.eyebrow":"ನಮ್ಮ ವಿಧಾನ","app.h2":"ಗಡಿಯನ್ನು ಅಳೆಯಿರಿ. ಬೇಗ ಎಚ್ಚರಿಸಿ. ದಾಖಲೆಯ ಮೇಲೆ ಸುಧಾರಿಸಿ.",
+"app.sub":"ನಮ್ಮ ಕೆಲಸ ನಮ್ಮ ಪೇಟೆಂಟ್ ಅರ್ಜಿಯ ರಚನೆಯನ್ನು ಅನುಸರಿಸುತ್ತದೆ — ಹೊಲದ ಸುಧಾರಣೆ ಮತ್ತು ರಕ್ಷಣೆ ವ್ಯವಸ್ಥೆ. ರಕ್ಷಣೆಯಿಂದಲೇ ಆರಂಭ, ಏಕೆಂದರೆ ಋತು ಬಹುಪಾಲು ಅಲ್ಲಿಯೇ ಕಳೆದುಹೋಗುತ್ತದೆ.",
+"app.c1.h":"ಹರಡುವಿಕೆ ಬಂದು ತಲುಪುವಲ್ಲಿ ನಿಲ್ಲಿ","app.c1.p":"ಪಕ್ಕದ ಹೊಲದತ್ತ ಮುಖಮಾಡಿ ಗಡಿಯಲ್ಲಿ ಉಪಕರಣಗಳು, ಎಲೆಯ ಮೇಲೆ ಸಿಂಪರಣೆ ಹೊತ್ತು ತರುವ ಗಾಳಿ ಮತ್ತು ದಿಕ್ಕನ್ನು ಮಾದರಿ ತೆಗೆದುಕೊಳ್ಳುತ್ತವೆ.",
+"app.c2.h":"ಎತ್ತರದ ಓದಲ್ಲ, ವೇಗದ ಓದೇ ಎಚ್ಚರಿಕೆ","app.c2.p":"ಸಿಂಪರಣೆ ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಬರುತ್ತದೆ; ಹವಾಮಾನ ಗಂಟೆಗಳಲ್ಲಿ ಚಲಿಸುತ್ತದೆ. ಪ್ರಮಾಣವಲ್ಲ ಬದಲಾವಣೆಯ ವೇಗವನ್ನು ಓದುವುದೇ ಸಿಂಪರಣೆಯನ್ನು ಸಾಮಾನ್ಯ ಮಧ್ಯಾಹ್ನದಿಂದ ಬೇರ್ಪಡಿಸುತ್ತದೆ.",
+"app.c3.h":"ಕಟಾವು ತಡೆಹಿಡಿಯಿರಿ, ದಾಖಲೆ ಇಡಿ","app.c3.p":"ಇದು ಬದಲಿಸುವ ನಿರ್ಧಾರ — ಆ ತೋಟದಿಂದ ಎಲೆ ಕತ್ತರಿಸಬೇಕೇ, ಯಾವಾಗ ಎಂಬುದು. ದಾಖಲೆ ನಂತರವೂ ಉಳಿಯುತ್ತದೆ, ಫಲಿತಾಂಶ ವಿವರಿಸಲು ಮತ್ತು ಮುಂದಿನ ಋತುವಿಗೆ ಒಯ್ಯಲು.",
+"app.note":"ಸೆರಿಗ್ರೀನ್ ಆದಾಯಪೂರ್ವ ಹಂತದಲ್ಲಿದೆ ಮತ್ತು ಸಕ್ರಿಯ ಸಂಶೋಧನೆ ಹಾಗೂ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿದೆ. ಸಾಕ್ಷ್ಯ ತೋರಿಸಲಾಗದ ಕಾರ್ಯಕ್ಷಮತೆಯ ಹಕ್ಕುಗಳನ್ನು ನಾವು ಪ್ರಕಟಿಸುವುದಿಲ್ಲ; ಒಂದು ಉತ್ಪನ್ನ ಮುಗಿದಿಲ್ಲದಿದ್ದರೆ ಈ ಪುಟ ಅದನ್ನು ಹೇಳುತ್ತದೆ.",
+"field.eyebrow":"ಹೊಲದಿಂದ","field.h2":"ಕೆಲಸ ನಿಜವಾಗಿ ನಡೆಯುವ ಸ್ಥಳ.",
+"field.sub":"ಹಿಪ್ಪುನೇರಳೆ ಹೊಲಗಳು, ಸಾಕಣೆ ಮನೆಗಳು, ಚಂದ್ರಿಕೆಗಳು ಮತ್ತು ಗೂಡುಗಳು — ತಮಿಳುನಾಡಿನಾದ್ಯಂತ. ನಾವು ಕೆಲಸ ಮಾಡುವ ಹೊಲಗಳಲ್ಲಿ ತೆಗೆದ ನಮ್ಮದೇ ಛಾಯಾಚಿತ್ರಗಳಿವು.",
+"field.g1":"ಹಿಪ್ಪುನೇರಳೆ ಸಾಲುಗಳ ನಡುವೆ ಹೊಲ ಸಮೀಕ್ಷೆ. ಪ್ರತಿ ವಿನ್ಯಾಸ ನಿರ್ಧಾರವೂ ಇಲ್ಲಿಂದಲೇ ಆರಂಭ.",
+"field.g2":"ರೈತನ ಸ್ವಂತ ತೋಟದಲ್ಲಿ ಸಾಕಣೆ ಚಕ್ರದ ಬಗ್ಗೆ ಮಾತುಕತೆ.",
+"field.g3":"ಹಂತದ ಮಧ್ಯದಲ್ಲಿ ಸಾಕಣೆ ಹಾಸಿಗೆ, ಬೆಳಗಿನ ಮೇವಿಗೆ ಎಲೆ ಹರಡಲಾಗಿದೆ.",
+"field.g4":"ಸಾಕಣೆ ಮನೆಯ ಅಟ್ಟಗಳಲ್ಲಿ ಸಾಕಣೆ ತಟ್ಟೆಗಳು.",
+"field.g5":"ನೂಲು ಕಟ್ಟಲು ಏರಿಸಿದ ಚಂದ್ರಿಕೆ.",
+"field.g6":"ಕೊಯ್ಲು. ಆರು ವಾರದ ನಿರ್ಧಾರಗಳು ಒಂದೇ ಬೆಳಗಿನಲ್ಲಿ ದರ್ಜೆ ಪಡೆಯುತ್ತವೆ.",
+"field.g7":"ತೆರೆದ ಆಕಾಶದ ಕೆಳಗೆ ಹಿಪ್ಪುನೇರಳೆ — ಮತ್ತು ತೆರೆದ ಗಡಿ.",
+"field.g8":"ಎಲ್ಲ ಕಡೆಯಿಂದ ಬೇರೆ ಬೆಳೆಗಳಿಂದ ಸುತ್ತುವರಿದ ಹಿಪ್ಪುನೇರಳೆ.",
+"field.g9":"ನಾವು ವಿನ್ಯಾಸಗೊಳಿಸಿ ಕಟ್ಟಿದ ಸಾಕಣೆ ಮನೆ, ಡಿಸೆಂಬರ್ 2025.",
+"field.g10":"ಒಂದು ಮೋರಿಶೀಲ್ಡ್ ಘಟಕ — ವಿಕಿರಣ ಕವಚದ ಮೇಲೆ ಸಂವೇದಕ ತಲೆ.",
+"field.g11":"ಸಾಲಿನ ಅಂತರ ಮತ್ತು ನೀರಾವರಿ ಎಲೆ ಹೇಗಿರುತ್ತದೆ ಎಂಬುದನ್ನು ನಿರ್ಧರಿಸುತ್ತವೆ.",
+"field.g12":"ತೋಟದ ಅಂಚಿನಲ್ಲಿ, ಪಕ್ಕದ ಹೊಲ ಆರಂಭವಾಗುವಲ್ಲಿ.",
+"jr.eyebrow":"ನಮ್ಮ ಪಯಣ","jr.h2":"ನಾವು ಇದ್ದ ಸ್ಥಳಗಳು.",
+"jr.sub":"ಅನುದಾನಗಳು, ಮನ್ನಣೆಗಳು ಮತ್ತು ನಾವು ನಡೆಸಿದ ಪ್ರಯೋಗಗಳು. ದಿನಾಂಕ ಸಹಿತ, ಮುಂದುವರಿಯುವ ಹಕ್ಕಾಗಿ ಅಲ್ಲ ಇತಿಹಾಸವಾಗಿ ಹೇಳಲಾಗಿದೆ.",
+"jr.k.grant":"ಅನುದಾನ","jr.k.rec":"ಮನ್ನಣೆ","jr.k.trial":"ಪ್ರಯೋಗ","jr.k.field":"ಕ್ಷೇತ್ರ ಕಾರ್ಯ","jr.k.prog":"ಕಾರ್ಯಕ್ರಮ",
+"jr.e1.h":"ಬೀಜ ಅನುದಾನ — ಐಐಟಿ ಮದ್ರಾಸ್ ಪ್ರವರ್ತಕ್","jr.e1.p":"ರೇಷ್ಮೆ ಕೃಷಿಯಲ್ಲಿ ಆಳ-ತಂತ್ರಜ್ಞಾನ ಅಭಿವೃದ್ಧಿಯನ್ನು ನಮಗೆ ಆರಂಭಿಸಿಕೊಟ್ಟ ಅನುದಾನ. ಆ ಇನ್ಕ್ಯುಬೇಶನ್ ಅವಧಿ ಈಗ ಮುಗಿದಿದೆ.",
+"jr.e2.h":"DST–NIDHI PRAYAS — MaDeIT, IIITDM","jr.e2.p":"ರೇಷ್ಮೆ ರೈತರಿಗಾಗಿ ಸಂವೇದನೆ ಮತ್ತು ಸಾಕಣೆ ವ್ಯವಸ್ಥೆ ಕಟ್ಟಲು ಸರ್ಕಾರಿ ಬೆಂಬಲಿತ ಅನುದಾನ. ಆ ಇನ್ಕ್ಯುಬೇಶನ್ ಅವಧಿ ಈಗ ಮುಗಿದಿದೆ.",
+"jr.e3.h":"STEP UnPollute 2024","jr.e3.p":"ಸುಸ್ಥಿರತೆಯಲ್ಲಿ ಕೆಲಸ ಮಾಡುವ ಅಗ್ರ ಹತ್ತು ಮಹಿಳಾ ಉದ್ಯಮಿಗಳಲ್ಲಿ ಆಯ್ಕೆ.",
+"jr.e4.h":"TSEC 2024","jr.e4.p":"ರೇಷ್ಮೆ ಕೃಷಿಯಲ್ಲಿ ನಾವೀನ್ಯತೆಗಾಗಿ ಅಗ್ರ ಇಪ್ಪತ್ತು ಅಗ್ರಿಟೆಕ್ ಸ್ಟಾರ್ಟಪ್‌ಗಳಲ್ಲಿ ಮನ್ನಣೆ.",
+"jr.e5.h":"ಸಾಕಣೆ ಮನೆ ಪ್ರಯೋಗ, ಮೊದಲ ಬ್ಯಾಚ್","jr.e5.p":"ಸತ್ಯಮಂಗಲದಲ್ಲಿ ಒಂದೇ ಹೊಲದಲ್ಲಿ ಜೋಡಿ ಪ್ರಯೋಗ — ಒಬ್ಬನೇ ರೈತ, ಒಂದೇ ಹಿಪ್ಪುನೇರಳೆ, ಸಾಂಪ್ರದಾಯಿಕ ಸಾಕಣೆಯ ವಿರುದ್ಧ ನಿಯಂತ್ರಿತ ಮನೆ. ಸ್ವಯಂಚಾಲನೆ ಇನ್ನೂ ಮುಗಿಯುತ್ತಿದ್ದ ಕಾರಣ ಹವಾಮಾನವನ್ನು ಕೈಯಿಂದ ನಿರ್ವಹಿಸಲಾಯಿತು.",
+"jr.e6.h":"ವೇಲ್ಸ್ ವಿಶ್ವವಿದ್ಯಾಲಯ V-Fund ಬಹುಮಾನ","jr.e6.p":"ಮಹಿಳಾ ನೇತೃತ್ವದ ಅಗ್ರಿಟೆಕ್ ನಾವೀನ್ಯತೆಗೆ ಪ್ರಥಮ ಬಹುಮಾನ, ಅಂತಾರಾಷ್ಟ್ರೀಯ ಮಹಿಳಾ ದಿನ.",
+"jr.e7.h":"ಸಾಕಣೆ ಮನೆ ಪ್ರಯೋಗ, ಎರಡನೇ ಬ್ಯಾಚ್","jr.e7.p":"ಮೊದಲ ಫಲಿತಾಂಶ ಎರಡನೇ ಚಕ್ರದಲ್ಲಿ ಪುನರಾವರ್ತಿಸುತ್ತದೆಯೇ ನೋಡಲು ಅದೇ ಮನೆಯನ್ನು ಉಪಕರಣಗಳೊಂದಿಗೆ ಮತ್ತೆ ನಡೆಸಲಾಯಿತು.",
+"jr.e8.h":"DST GDC I-NCUBATE, ಐಐಟಿ ಮದ್ರಾಸ್","jr.e8.p":"ಆಳ-ತಂತ್ರಜ್ಞಾನ ಸ್ಟಾರ್ಟಪ್‌ಗಳು ಕಲ್ಪನೆಯಿಂದ ಗ್ರಾಹಕ ಕೊಳ್ಳಬಹುದಾದ ವಸ್ತುವಿನತ್ತ ಸಾಗಲು ನೆರವಾಗುವ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಆಯ್ಕೆ.",
+"jr.e9.h":"RKVY RAFTAAR — MANAGE-CIA","jr.e9.p":"ರಾಷ್ಟ್ರೀಯ ಕೃಷಿ ನಾವೀನ್ಯತೆ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಆಯ್ಕೆ.",
+"jr.e10.h":"ನಿಯಂತ್ರಿತ ಸಿಂಪರಣೆಗಳ ವಿರುದ್ಧ ಹರಡುವಿಕೆ ಪರೀಕ್ಷೆ","jr.e10.p":"ಅಳೆದ ದೂರಗಳಲ್ಲಿ ತಿಳಿದಿರುವ ಸಿಂಪರಣೆಗಳ ವಿರುದ್ಧ ಪುನರಾವರ್ತಿತ ಉಪಕರಣ ಅವಧಿಗಳು, ಸಂಪೂರ್ಣ ದಾಖಲೆ ಇಡಲಾಗಿದೆ — ಉಪಕರಣ ಪ್ರತಿಕ್ರಿಯಿಸದ ಅವಧಿಗಳೂ ಸೇರಿದಂತೆ.",
+"co.eyebrow":"ಕಂಪನಿ",
+"co.sub":"ನೋಂದಾಯಿತ ಭಾರತೀಯ ಖಾಸಗಿ ನಿಯಮಿತ ಕಂಪನಿ, ಆದಾಯಪೂರ್ವ ಹಂತದಲ್ಲಿ ಮತ್ತು ಸಕ್ರಿಯ ಸಂಶೋಧನೆ ಹಾಗೂ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ. ರೇಷ್ಮೆ ನೇಯ್ಗೆ ಮತ್ತು ರೇಷ್ಮೆ ಹುಳು ಸಾಕಣೆಯಲ್ಲಿ ಬೇರುಗಳಿರುವವರಿಂದ ಸ್ಥಾಪಿತ — ಈ ಕೆಲಸ ಪ್ರಯೋಗಾಲಯದಲ್ಲಿ ಅಲ್ಲ, ರೈತರು, ವಿಜ್ಞಾನಿಗಳು ಮತ್ತು ವ್ಯಾಪಾರಿಗಳೊಂದಿಗಿನ ಮಾತುಕತೆಗಳಲ್ಲಿ ಆರಂಭವಾಯಿತು. ನಮ್ಮ ಮೂಲ ವಿಧಾನ ಭಾರತೀಯ ಪೇಟೆಂಟ್ ಕಚೇರಿಯಲ್ಲಿ ಸಲ್ಲಿಸಿದ ಅರ್ಜಿಯ ವಿಷಯ; ಅರ್ಜಿ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ, ಪರಿಶೀಲನೆಯಲ್ಲಿರುವವರೆಗೆ ಅದರ ವಿವರಗಳನ್ನು ನಾವು ಪ್ರಕಟಿಸುವುದಿಲ್ಲ, ಮತ್ತು ನೀಡಲಾದ ಪೇಟೆಂಟ್ ಎಂಬ ಯಾವುದೇ ಹಕ್ಕು ನಮಗಿಲ್ಲ.",
+"ct.eyebrow":"ಸಂಪರ್ಕ","ct.h2":"ನಮ್ಮೊಂದಿಗೆ ಮಾತನಾಡಿ.",
+"ct.sub":"ಸಂಶೋಧನಾ ಸಹಯೋಗ, ಹೊಲದ ಪ್ರಯೋಗ, ಪಾಲುದಾರಿಕೆ, ಹೂಡಿಕೆ ಅಥವಾ ಪೂರೈಕೆದಾರರ ವಿಚಾರಣೆಗಳಿಗೆ — ಬರೆಯಿರಿ, ನಾವು ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತೇವೆ.",
+"ct.email":"ಇಮೇಲ್","ct.phone":"ದೂರವಾಣಿ","ct.office":"ನೋಂದಾಯಿತ ಕಚೇರಿ","ct.hours":"ಸಮಯ","ct.hoursval":"ಸೋಮವಾರದಿಂದ ಶನಿವಾರ, ಬೆಳಿಗ್ಗೆ 9:00 – ಸಂಜೆ 18:00 IST",
+"ft.office":"ನೋಂದಾಯಿತ ಕಚೇರಿ","ft.tag":"ರೇಷ್ಮೆ ಹೊಲಗಳನ್ನು ರಕ್ಷಿಸುತ್ತೇವೆ. ಗ್ರಾಮೀಣ ಭವಿಷ್ಯವನ್ನು ಬೆಳೆಸುತ್ತೇವೆ."
+},
+te:{
+"nav.cycle":"చక్రం","nav.drift":"పిచికారీ వ్యాప్తి","nav.products":"మేము నిర్మించేవి","nav.approach":"మా విధానం","nav.field":"పొలం నుండి","nav.journey":"ప్రయాణం","nav.contact":"సంప్రదించండి",
+"hero.pill":"భారతదేశం",
+"hero.h1a":"ఒక పట్టు పంటకు ఆరు వారాలు పడుతుంది.",
+"hero.h1b":"దాని ఫలితాన్ని నిర్ణయించే వాటిలో చాలావరకు కంటికి కనిపించవు.",
+"hero.lede":"సెరీగ్రీన్ పట్టు పరిశ్రమ చక్రం కోసం పరికరాలను తయారు చేస్తుంది — మల్బరీ తోట, పెంపక గృహం, మరియు పక్క పొలం నుండి పిచికారీ వచ్చి చేరే సరిహద్దు. పంటను నిర్ణయించే పరిస్థితులను మేము కొలుస్తాము, రికార్డును భద్రపరుస్తాము, మరియు రైతు చర్య తీసుకోగలిగే సమయంలోనే ఆయనకు తెలియజేస్తాము.",
+"hero.cta1":"మేము నిర్మించేవి",
+"hero.cta2":"మాతో మాట్లాడండి",
+"hero.caption":"ఐదవ దశలో ఆకు తింటున్న పట్టుపురుగులు, తమిళనాడు.",
+"cycle.eyebrow":"పట్టు పరిశ్రమ చక్రం",
+"cycle.h2":"ఆరు దశలు — వాటిలో ఏ దశలోనైనా పంట పోవచ్చు.",
+"cycle.sub":"భారతదేశంలో పట్టు పరిశ్రమ పెద్ద సంఖ్యలో చిన్న కమతాల కుటుంబాలకు జీవనాధారం. అదే సమయంలో ఇది అసాధారణంగా ప్రమాదానికి గురయ్యేది — పక్క రైతు పిచికారీ సమయానికి, పాత పద్ధతిని అనుసరించని వాతావరణానికి, ప్రతి దశలోనూ మారే ఉష్ణోగ్రత మరియు తేమ యొక్క ఇరుకైన పరిధికి, మరియు ఏమి జరిగిందో చెప్పే రికార్డు అసలు లేకపోవడానికి.",
+"cycle.s1.h":"మల్బరీ",
+"cycle.s1.p":"ఆకే మొత్తం పెట్టుబడి. రకం, నీటి పారుదల మరియు మొక్కల మధ్య దూరం — ఆరు వారాలపాటు పురుగు ఏమి తింటుందో ఇవే నిర్ణయిస్తాయి.",
+"cycle.s1.r":"పక్క పొలం నుండి ఏది వచ్చి పడినా అది ఆకుపైనే పడుతుంది.",
+"cycle.s2.h":"చాకీ",
+"cycle.s2.p":"చాలామంది రైతులు గుడ్లను పొదిగించరు. చిన్న పురుగులు చాకీ కేంద్రం నుండి వస్తాయి, రెండవ లేదా మూడవ దశలో చేరతాయి.",
+"cycle.s2.r":"మీరు నియంత్రించని నాణ్యతతో బ్యాచ్ మొదలవుతుంది.",
+"cycle.s3.h":"పెంపకం",
+"cycle.s3.p":"పెంపక గృహంలో ఐదు దశలు. చిన్న పురుగులకు ఎక్కువ తేమ కావాలి, పెద్ద పురుగులకు చాలా తక్కువ చాలు — ప్రతి దశలోనూ ఆ పరిధి ఇరుకైనదే.",
+"cycle.s3.r":"తప్పు నిద్ర సమయంలో ఒక్క తేడా వచ్చినా పంట పోతుంది.",
+"cycle.s4.h":"చంద్రికకు ఎక్కించడం",
+"cycle.s4.p":"పక్వానికి వచ్చిన పురుగులను గూడు అల్లడానికి చంద్రికకు మారుస్తారు. రద్దీ, కదలిక, తడి — ఇవన్నీ తరువాత గూడు పెంకులో కనిపిస్తాయి.",
+"cycle.s4.r":"గూడు అల్లడం మొదలైన తరువాత ఏదీ సరిదిద్దలేము.",
+"cycle.s5.h":"గూడు",
+"cycle.s5.p":"పెంకు నిష్పత్తి, ఏకరూపత, రంగు మరియు ఆకృతిని బట్టి గ్రేడ్ ఇస్తారు. ఆరు వారాల నిర్ణయాలు ఇక్కడే ఒక సంఖ్యగా మారతాయి.",
+"cycle.s5.r":"రికార్డు లేకుండా తక్కువ గ్రేడ్‌కు కారణం కనుక్కోలేము.",
+"cycle.s6.h":"మార్కెట్",
+"cycle.s6.p":"ధర గ్రేడ్‌ను అనుసరిస్తుంది. పోయిన బ్యాచ్ అంటే ఆరు వారాల ఆకు, కూలి, గుడ్లు మరియు కరెంటు — చివరికి ఏమీ మిగలకుండా.",
+"cycle.s6.r":"ఎందుకు పోయిందో ఆధారం లేదు, మెరుగుపడటానికి కూడా.",
+"cycle.note":"ఈ చక్రంలో కొలవగలిగే భాగాలపై మేము పని చేస్తాము — దశ 01లో ఆకు మరియు సరిహద్దు, దశ 03లో పెంపక గృహం — మరియు దశ 06ను వివరించగలిగేంత మంచి రికార్డు ఉంచడంపై.",
+"dg.d1":"500 మైక్రోమీటర్ — వెంటనే పడిపోతుంది","dg.d2":"150 మైక్రోమీటర్ — సరిహద్దు దగ్గర పడుతుంది","dg.d3":"100 కంటే తక్కువ — పడకుండా గాలిలో ప్రయాణిస్తుంది","dg.left":"పక్క పంట","dg.right":"మల్బరీ","dg.line":"సరిహద్దు — భారతదేశంలో దూరం తప్పనిసరి కాదు","dg.norm":"అంతర్జాతీయ దూరం: 3–100 మీటర్లు","dg.cap":"తుంపరలు నిజమైన నిష్పత్తిలో గీయబడ్డాయి. మల్బరీని చేరేది కంటికి కనిపించని తుంపరే.","drift.eyebrow":"అత్యంత పదునైన అంచు",
+"drift.h2":"పిచికారీ వ్యాప్తి — ఇది వస్తున్నట్టు ఎవరికీ కనిపించదు ఎందుకు.",
+"drift.sub":"అంతర్జాతీయంగా మూడు నుండి వంద మీటర్ల బఫర్ జోన్ ప్రమాణాలు ఉన్నా, భారతదేశంలో పట్టు పరిశ్రమను రక్షించే బఫర్ జోన్ నిబంధన లేదు. పత్తి, చెరకు, అరటి లేదా మిరపకు పిచికారీ చేసే పక్క రైతు ఎవరికీ చెప్పాల్సిన అవసరం లేదు. చక్రంలో మాకు బాగా అర్థమైన దశ ఇదే, మా మొదటి పరికరం నిలబడేది ఇక్కడే.",
+"drift.c1.h":"సన్నని తుంపరలు గాలిలో ప్రయాణిస్తాయి",
+"drift.c1.p":"నాజిల్‌లు యాభై నుండి ఐదు వందల మైక్రోమీటర్ల తుంపరలను విసురుతాయి. నూట యాభై కంటే చిన్నవి కిందకు పడవు — గాలిలోనే ఉండి గాలితోపాటు కదులుతాయి.",
+"drift.c2.h":"చూడటానికి ఏ లోపమూ కనిపించదు",
+"drift.c2.p":"ఆకు తాజాగా, పచ్చగా ఉంటుంది; అవశేషం కంటికి కనిపించదు. పట్టు పరిశ్రమలో సున్నా సహన ప్రమాణం ఉంది, కాబట్టి ప్రాణాంతకం కంటే చాలా తక్కువ మోతాదే దాన్ని పాడు చేసేసింది.",
+"drift.c3.h":"ఆయన ఆకు కోసి, మేపుతాడు",
+"drift.c3.p":"కొన్ని గంటల్లోనే పురుగులు తినడం మానేసి, వాంతి చేసుకుని, ముడుచుకుని, నీరసించిపోతాయి. అప్పటికే నిర్ణయాత్మకమైన ఆ ఘడియ రోజుల క్రితమే దాటిపోయింది.",
+"drift.note":"మల్బరీపై పురుగుమందుల ప్రభావంపై ప్రచురితమైన విషశాస్త్ర పరిశోధన స్పష్టంగా ఉంది — ప్రమాదకరంగా అనిపించని మోతాదుల వద్దే గూడు మరియు పెంకు బరువులు పడిపోతాయి. ఆ పరిశోధన మాది కాదు; ఈ సమస్యను పరికరాలతో కొలవడం ఎందుకు విలువైనదో చెప్పడానికే దాన్ని ఉదహరిస్తున్నాము.",
+"prod.eyebrow":"మేము నిర్మించేవి",
+"prod.h2":"చక్రంలో మూడు చోట్ల, నాలుగు వస్తువులు.",
+"prod.sub":"ప్రతి ఒక్కటీ వేర్వేరు సంసిద్ధత దశలో ఉంది, ఏ దశలో ఉందో మేము చెబుతాము. పూర్తికాక ముందే ఏదీ పూర్తయినట్టు ఇక్కడ చెప్పలేదు.",
+"prod.p1.where":"దశ 01 · సరిహద్దు",
+"prod.p1.badge":"ప్రోటోటైప్ · పరీక్షించబడింది",
+"prod.p1.p":"పక్క పొలం వైపు చూస్తూ, మల్బరీ ఆకు ఎత్తులో సరిహద్దుపై నిలబడే యూనిట్. ఆకుపైకి పిచికారీని మోసుకొచ్చే గాలిని, పవనాన్ని ఇది నమూనాగా తీసుకుంటుంది; రీడింగ్ కేవలం ఎక్కువగా కాకుండా వేగంగా మారినప్పుడు స్కోరును పెంచుతుంది — ఎందుకంటే పిచికారీ తుంపరలు సెకన్లలో వస్తాయి, వాతావరణం గంటల తరబడి మారుతుంది. ఈ చోట, ఈ సమయంలో ఒక పిచికారీ దాటిపోయిందని మాత్రమే అది చెబుతుంది. రసాయనం పేరు అది చెప్పదు, ఆకును ముట్టుకోదు.",
+"prod.p1.stat":"నియంత్రిత పిచికారీలకు వ్యతిరేకంగా పరీక్షించబడింది. ఇంకా ఏ కస్టమర్ పొలంలోనూ అమర్చలేదు. విఫలమైన ఫలితాలతో సహా పూర్తి పరీక్ష రికార్డు నమోదు చేయబడింది, అడిగితే ఇస్తాము.",
+"prod.p2.where":"దశ 03 · పెంపక గృహం",
+"prod.p2.badge":"రూపకల్పన · ఒకసారి నిర్మించబడింది",
+"prod.p2.p":"తన సొంత వాతావరణాన్ని నిలుపుకునేలా నిర్మించిన పెంపక గృహం — దీనివల్ల ఉష్ణోగ్రత మరియు తేమ పరిధిని బయటి వాతావరణం నిర్ణయించే చోట కాకుండా, ఆ దశకు నిజంగా అవసరమైన చోట ఉంచవచ్చు. దీన్ని మేము రూపొందించి, ఖర్చు లెక్కగట్టి, ఒకటి నిర్మించాము, మరియు జతగా ప్రయోగం నడిపాము — అదే రైతు, అదే మల్బరీ, ఒకవైపు సంప్రదాయ పెంపకం, మరోవైపు నియంత్రిత పెంపకం.",
+"prod.p2.stat":"నిర్మించి ప్రయోగించాము. మీ అవసరానికి తగినట్టు ఒకటి నిర్మించగలము. రూపకల్పన మరియు ఖర్చు వివరాలు అడగండి.",
+"prod.p3.where":"చక్రం అంతటా · రికార్డు",
+"prod.p3.badge":"అభివృద్ధిలో ఉంది",
+"prod.p3.p":"రికార్డు అంతా ఒకే చోట. సరిహద్దు యూనిట్ నుండి మరియు పెంపక గృహం నుండి వచ్చే రీడింగ్‌లు ఒకే స్క్రీన్‌లో చేరతాయి — ప్రస్తుత పరిస్థితులు, వాటి వెనుక ఉన్న చరిత్ర, మరియు ఇచ్చిన హెచ్చరికలు. ఆ రికార్డుపైన ఒక స్కోరింగ్ పొర ఉంటుంది, ఇది పెంపక పరిస్థితులను తెలిసిన వ్యాధి పరిమితులతో పోల్చి, ఒక గృహం ప్రమాద పరిధిలోకి జారుతున్నప్పుడు హెచ్చరిస్తుంది.",
+"prod.p3.stat":"అభివృద్ధిలో ఉంది. ఇది కొలిచిన విలువలపై చేసే గణితం — ప్రచురితమైన పరిమితులతో పోల్చిన బరువు కలిగిన స్కోరు, శిక్షణ పొందిన మోడల్ కాదు.",
+"prod.p4.where":"రైతు వైపు",
+"prod.p4.h":"సెరీగ్రీన్ యాప్",
+"prod.p4.badge":"అభివృద్ధిలో ఉంది",
+"prod.p4.p":"రీడింగ్‌లు, హెచ్చరికలు మరియు రికార్డు — రైతు నిజంగా చదివే భాషలో, ఫోన్‌లోనే. బ్యాచ్ ఉన్న దశకు తగిన పెంపక సూచనలు, మరియు ఆ బ్లాక్ చరిత్ర — తద్వారా గ్రేడ్‌ను ఊహించకుండా వివరించవచ్చు.",
+"prod.p4.stat":"అభివృద్ధిలో ఉంది. ప్రస్తుతం ఇంగ్లీష్, కన్నడ మరియు తెలుగు; తమిళం మరియు మరాఠీ తరువాత వస్తాయి, ఫోన్ హెచ్చరికలు సందేశ టెంప్లేట్ ఆమోదంపై ఆధారపడి ఉన్నాయి.",
+"app.eyebrow":"మా విధానం",
+"app.h2":"సరిహద్దును కొలవండి. ముందుగానే హెచ్చరించండి. రికార్డుపై మెరుగుపడండి.",
+"app.sub":"మా పని మా పేటెంట్ దరఖాస్తు నిర్మాణాన్ని అనుసరిస్తుంది — ఒక క్షేత్ర అనుకూలీకరణ మరియు రక్షణ వ్యవస్థ. రక్షణ నుండే ఇది మొదలవుతుంది, ఎందుకంటే ఒక పంట కాలం చాలావరకు అక్కడే చేజారిపోతుంది.",
+"app.c1.h":"వ్యాప్తి వచ్చి చేరే చోట కూర్చోండి",
+"app.c1.p":"పక్క పొలం వైపు చూస్తూ సరిహద్దుపై ఉన్న పరికరాలు, ఆకుపైకి పిచికారీని మోసుకొచ్చే గాలిని మరియు పవనాన్ని నమూనాగా తీసుకుంటాయి.",
+"app.c2.h":"ఎక్కువ రీడింగ్‌కు కాదు, వేగంగా మారే రీడింగ్‌కు హెచ్చరిక",
+"app.c2.p":"తుంపరలు సెకన్లలో వచ్చి చేరతాయి; వాతావరణం గంటల తరబడి మారుతుంది. స్థాయిని కాకుండా మార్పు వేగాన్ని చదవడమే పిచికారీని సాధారణ మధ్యాహ్నం నుండి వేరు చేస్తుంది.",
+"app.c3.h":"ఆకు కోతను ఆపండి, రికార్డును ఉంచండి",
+"app.c3.p":"ఇది మార్చే నిర్ణయం ఒక్కటే — ఆ బ్లాక్ నుండి ఆకు కోయాలా వద్దా, ఎప్పుడు కోయాలి. ఆ తరువాత రికార్డు మిగిలిపోతుంది — ఫలితాన్ని వివరించడానికి, మరియు తరువాతి సీజన్‌కు తీసుకెళ్ళడానికి.",
+"app.note":"సెరీగ్రీన్ ఇంకా ఆదాయం రాని దశలో ఉంది మరియు చురుకైన పరిశోధన మరియు అభివృద్ధిలో ఉంది. ఆధారం చూపలేని పనితీరు వాదనలను మేము ప్రచురించము, మరియు ఒక ఉత్పత్తి పూర్తికాలేదంటే ఈ పేజీ అదే చెబుతుంది.",
+"field.eyebrow":"పొలం నుండి",
+"field.h2":"పని నిజంగా జరిగే చోటు.",
+"field.sub":"మల్బరీ తోటలు, పెంపక గృహాలు, చంద్రికలు మరియు గూళ్ళు — తమిళనాడు అంతటా. మేము పని చేసే పొలాలలో తీసిన మా సొంత ఛాయాచిత్రాలు ఇవి.",
+"field.g1":"మల్బరీ వరుసల మధ్య పొలం సర్వే. ప్రతి రూపకల్పన నిర్ణయం ఇక్కడే మొదలవుతుంది.",
+"field.g2":"రైతు సొంత పొలంలో ఒక పెంపక చక్రం గురించి మాట్లాడుతూ.",
+"field.g3":"దశ మధ్యలో ఉన్న పెంపక పడక, ఉదయపు మేతకు ఆకు పరిచి ఉంది.",
+"field.g4":"పెంపక గృహంలో అరలపై పెంపక పళ్ళెములు.",
+"field.g5":"గూడు అల్లడానికి అమర్చిన చంద్రిక.",
+"field.g6":"కోత. ఆరు వారాల నిర్ణయాలు ఒక్క ఉదయంలో గ్రేడ్ అవుతాయి.",
+"field.g7":"తెరిచిన ఆకాశం కింద మల్బరీ — మరియు తెరిచిన సరిహద్దు.",
+"field.g8":"అన్ని వైపులా ఇతర పంటలతో ఆనుకుని ఉన్న మల్బరీ.",
+"field.g9":"మేము రూపొందించి నిర్మించిన పెంపక గృహం, డిసెంబర్ 2025.",
+"field.g10":"ఒక మోరీషీల్డ్ యూనిట్ — వికిరణ కవచం పైన సెన్సార్ హెడ్.",
+"field.g11":"వరుసల మధ్య దూరం మరియు నీటి పారుదల ఆకు ఎలా ఉంటుందో నిర్ణయిస్తాయి.",
+"field.g12":"పొలం అంచున, పక్క రైతు పొలం మొదలయ్యే చోట.",
+"jr.eyebrow":"మా ప్రయాణం",
+"jr.h2":"మేము దాటి వచ్చిన దారి.",
+"jr.sub":"గ్రాంట్లు, గుర్తింపులు మరియు మేము నిర్వహించిన ప్రయోగాలు. తేదీలతో, కొనసాగుతున్న వాదనగా కాకుండా చరిత్రగా చెప్పబడినవి.",
+"jr.k.grant":"గ్రాంట్",
+"jr.k.rec":"గుర్తింపు",
+"jr.k.trial":"ప్రయోగం",
+"jr.k.field":"క్షేత్ర పని","jr.k.prog":"కార్యక్రమం",
+"jr.e1.h":"సీడ్ గ్రాంట్ — ఐఐటీ మద్రాస్ ప్రవర్తక్",
+"jr.e1.p":"పట్టు పరిశ్రమలో మా డీప్-టెక్ అభివృద్ధిని మొదలుపెట్టిన గ్రాంట్. ఇంక్యుబేషన్ కాలం అప్పటినుండి ముగిసింది.",
+"jr.e2.h":"DST–NIDHI PRAYAS — MaDeIT, IIITDM",
+"jr.e2.p":"పట్టు రైతుల కోసం సెన్సింగ్ మరియు పెంపక వ్యవస్థలను నిర్మించడానికి ప్రభుత్వ మద్దతుతో ఇచ్చిన ఆవిష్కరణ గ్రాంట్. ఇంక్యుబేషన్ కాలం అప్పటినుండి ముగిసింది.",
+"jr.e3.h":"STEP UnPollute 2024",
+"jr.e3.p":"సుస్థిరతపై పనిచేస్తున్న టాప్ టెన్ మహిళా వ్యవస్థాపకులలో ఎంపిక.",
+"jr.e4.h":"TSEC 2024",
+"jr.e4.p":"పట్టు పరిశ్రమలో ఆవిష్కరణకు టాప్ ఇరవై అగ్రి-టెక్ స్టార్టప్‌లలో గుర్తింపు.",
+"jr.e5.h":"పెంపక గృహ ప్రయోగం, మొదటి బ్యాచ్",
+"jr.e5.p":"సత్యమంగళంలో ఒక పొలంలో జతగా నిర్వహించిన ప్రయోగం — అదే రైతు, అదే మల్బరీ, సంప్రదాయ పెంపకంతో పోల్చి నియంత్రిత గృహం. ఆటోమేషన్ ఇంకా పూర్తవుతున్నందున వాతావరణాన్ని చేతితోనే నియంత్రించారు.",
+"jr.e6.h":"వేల్స్ యూనివర్సిటీ V-Fund బహుమతి",
+"jr.e6.p":"అంతర్జాతీయ మహిళా దినోత్సవం సందర్భంగా మహిళా నేతృత్వంలోని అగ్రి-టెక్ ఆవిష్కరణకు మొదటి బహుమతి.",
+"jr.e7.h":"పెంపక గృహ ప్రయోగం, రెండవ బ్యాచ్",
+"jr.e7.p":"మొదటి ఫలితం రెండవ చక్రంలో పునరావృతమవుతుందో లేదో చూడటానికి, అదే గృహాన్ని పరికరాల పర్యవేక్షణతో మళ్ళీ నడిపాము.",
+"jr.e8.h":"DST GDC I-NCUBATE, ఐఐటీ మద్రాస్",
+"jr.e8.p":"డీప్-టెక్ స్టార్టప్‌లు ఒక ఆలోచన నుండి కస్టమర్ కొనగలిగే వస్తువు వైపు కదలడానికి సహాయపడే కార్యక్రమానికి ఎంపిక.",
+"jr.e9.h":"RKVY RAFTAAR — MANAGE-CIA బ్యాచ్",
+"jr.e9.p":"జాతీయ వ్యవసాయ ఆవిష్కరణ కార్యక్రమానికి ఎంపిక.",
+"jr.e10.h":"నియంత్రిత పిచికారీలకు వ్యతిరేకంగా వ్యాప్తి పరీక్ష",
+"jr.e10.p":"కొలిచిన దూరాల వద్ద తెలిసిన పిచికారీలకు వ్యతిరేకంగా పదేపదే నిర్వహించిన పరికర సెషన్లు, పూర్తి రికార్డుతో సహా — పరికరం స్పందించని సెషన్లతో కలిపి.",
+"co.eyebrow":"కంపెనీ",
+"co.sub":"భారతదేశంలో నమోదైన ఒక ప్రైవేట్ లిమిటెడ్ కంపెనీ, ఇంకా ఆదాయం రాని దశలో, చురుకైన పరిశోధన మరియు అభివృద్ధిలో. పట్టు నేత మరియు పట్టుపురుగుల పెంపకంలో మూలాలు ఉన్నవారు స్థాపించారు — ఈ పని ప్రయోగశాలలో కాదు, రైతులు, శాస్త్రవేత్తలు మరియు వ్యాపారులతో జరిగిన సంభాషణలలో మొదలైంది. మా ప్రధాన విధానం భారత పేటెంట్ కార్యాలయంలో దాఖలు చేసిన పేటెంట్ దరఖాస్తు అంశం; దరఖాస్తు పరిశీలనలో ఉంది, పరిశీలనలో ఉన్నంతవరకు దాని వివరాలను మేము ప్రచురించము, మరియు మంజూరైన పేటెంట్ ఉందని మేము దావా చేయము.",
+"ct.eyebrow":"సంప్రదించండి",
+"ct.h2":"మాతో మాట్లాడండి.",
+"ct.sub":"పరిశోధన సహకారం, పొలంలో ప్రయోగం, భాగస్వామ్యం, పెట్టుబడి లేదా సరఫరాదారు విచారణల కోసం — మాకు రాయండి, మేము స్పందిస్తాము.",
+"ct.email":"ఇమెయిల్","ct.phone":"ఫోన్","ct.office":"నమోదిత కార్యాలయం","ct.hours":"సమయం","ct.hoursval":"సోమవారం నుండి శనివారం, ఉదయం 9:00 – సాయంత్రం 18:00 IST",
+"ft.office":"నమోదిత కార్యాలయం","ft.tag":"పట్టు పొలాలను రక్షిస్తాము. గ్రామీణ భవిష్యత్తును పెంచుతాము."
+},
+mr:{
+"nav.cycle":"चक्र","nav.drift":"फवारणीचे वहन","nav.products":"आम्ही काय बनवतो","nav.approach":"आमचा दृष्टिकोन","nav.field":"शेतातून","nav.journey":"प्रवास","nav.contact":"संपर्क",
+"hero.pill":"भारत",
+"hero.h1a":"रेशमाचे एक पीक सहा आठवड्यांचे असते.",
+"hero.h1b":"त्याचा निकाल ठरवणाऱ्या बहुतेक गोष्टी डोळ्यांना दिसत नाहीत.",
+"hero.lede":"सेरीग्रीन रेशीम चक्रासाठी उपकरणे बनवते — तुतीचे शेत, संगोपन गृह, आणि शेजारच्या शेतातील फवारणी जिथून येते तो बांध. पीक ठरवणाऱ्या परिस्थितीचे आम्ही मोजमाप करतो, त्याची नोंद ठेवतो, आणि शेतकऱ्याला कृती करता येईल इतक्या वेळेत त्याला कळवतो.",
+"hero.cta1":"आम्ही काय बनवतो",
+"hero.cta2":"आमच्याशी बोला",
+"hero.caption":"पाचव्या अवस्थेतील अळ्या पाला खाताना, तामिळनाडू.",
+"cycle.eyebrow":"रेशीम चक्र",
+"cycle.h2":"सहा टप्पे, आणि पीक कोणत्याही टप्प्यावर जाऊ शकते.",
+"cycle.sub":"भारतात रेशीम शेती मोठ्या संख्येने अल्पभूधारक कुटुंबांना आधार देते. त्याचबरोबर ती असामान्यपणे उघडी आहे — शेजाऱ्याच्या फवारणीच्या वेळापत्रकामुळे, जुन्या साच्याप्रमाणे न चालणाऱ्या हवामानामुळे, प्रत्येक अवस्थेत बदलणाऱ्या तापमान आणि आर्द्रतेच्या अरुंद पट्ट्यामुळे, आणि काय घडले याची कोणतीही नोंदच नसल्यामुळे.",
+"cycle.s1.h":"तुती",
+"cycle.s1.p":"पालाच संपूर्ण भांडवल आहे. जात, पाणीपुरवठा आणि लागवडीतील अंतर — सहा आठवडे अळी काय खाणार हे हेच ठरवतात.",
+"cycle.s1.r":"शेजारून जे काही येऊन पडेल त्याला तो उघडाच आहे.",
+"cycle.s2.h":"चॉकी",
+"cycle.s2.p":"बहुतेक शेतकरी अंडी उबवत नाहीत. लहान अळ्या चॉकी केंद्रातून येतात आणि दुसऱ्या किंवा तिसऱ्या अवस्थेत पोहोचतात.",
+"cycle.s2.r":"तुम्ही नियंत्रित न केलेल्या दर्जासह बॅच सुरू होते.",
+"cycle.s3.h":"संगोपन",
+"cycle.s3.p":"संगोपन गृहात पाच अवस्था. लहान अळ्यांना जास्त आर्द्रता लागते, मोठ्या अळ्यांना खूपच कमी — आणि प्रत्येक अवस्थेत तो पट्टा अरुंदच असतो.",
+"cycle.s3.r":"चुकीच्या निद्रेच्या वेळी एक चूक पीक घालवू शकते.",
+"cycle.s4.h":"चंद्रिकेवर चढवणे",
+"cycle.s4.p":"तयार झालेल्या अळ्या कोष विणण्यासाठी चंद्रिकेवर हलवल्या जातात. गर्दी, हालचाल आणि ओलावा — हे सर्व नंतर कोषाच्या कवचात दिसते.",
+"cycle.s4.r":"विणणे सुरू झाल्यावर काहीही दुरुस्त करता येत नाही.",
+"cycle.s5.h":"कोष",
+"cycle.s5.p":"कवच प्रमाण, एकसारखेपणा, रंग आणि पोत यावर प्रतवारी होते. सहा आठवड्यांचे निर्णय इथेच एका आकड्यात बदलतात.",
+"cycle.s5.r":"नोंदीशिवाय कमी प्रतवारीचे कारण शोधता येत नाही.",
+"cycle.s6.h":"बाजार",
+"cycle.s6.p":"भाव प्रतवारीनुसार मिळतो. गेलेली बॅच म्हणजे सहा आठवड्यांचा पाला, मजुरी, अंडी आणि वीज — आणि शेवटी हातात काहीच नाही.",
+"cycle.s6.r":"आणि का गेली याचा पुरावाही नाही, सुधारणा करण्यासाठी.",
+"cycle.note":"या चक्रातील जे भाग मोजता येतात त्यावर आम्ही काम करतो — टप्पा ०१ मधील पाला आणि बांध, आणि टप्पा ०३ मधील संगोपन गृह — आणि टप्पा ०६ समजावून सांगता येईल इतकी चांगली नोंद ठेवण्यावर.",
+"dg.d1":"500 मायक्रोमीटर — लगेच खाली पडतो","dg.d2":"150 मायक्रोमीटर — बांधाजवळ पडतो","dg.d3":"100 पेक्षा लहान — पडत नाही, वाऱ्यावर वाहतो","dg.left":"शेजारचे पीक","dg.right":"तुती","dg.line":"बांध — भारतात अंतर बंधनकारक नाही","dg.norm":"आंतरराष्ट्रीय अंतर: 3–100 मीटर","dg.cap":"थेंब खऱ्या प्रमाणात काढले आहेत. तुतीपर्यंत पोहोचणारा थेंब तोच, जो डोळ्यांना दिसत नाही.","drift.eyebrow":"सर्वात तीक्ष्ण धार",
+"drift.h2":"फवारणीचे वहन, आणि ते येताना कोणालाच का दिसत नाही.",
+"drift.sub":"आंतरराष्ट्रीय पातळीवर तीन ते शंभर मीटरचे प्रमाण असताना, भारतात रेशीम शेतीचे संरक्षण करणारा बफर झोन नियम नाही. कापूस, ऊस, केळी किंवा मिरचीवर फवारणी करणाऱ्या शेजाऱ्यावर कोणालाही सांगण्याचे बंधन नाही. चक्रातील हाच टप्पा आम्हाला सर्वात चांगला समजतो, आणि आमचे पहिले उपकरण इथेच उभे राहते.",
+"drift.c1.h":"बारीक थेंब वाहत जातात",
+"drift.c1.p":"नोझल पन्नास ते पाचशे मायक्रोमीटरचे थेंब फेकतात. दीडशेपेक्षा लहान असलेले खाली पडतच नाहीत — ते हवेतच राहून वाऱ्याबरोबर सरकतात.",
+"drift.c2.h":"बघायला काहीच चुकीचे दिसत नाही",
+"drift.c2.p":"पाला ताजा आणि हिरवा असतो; अवशेष डोळ्यांना दिसत नाही. रेशीम शेतीत शून्य सहनशीलतेचा निकष आहे, त्यामुळे प्राणघातक मात्रेच्या कितीतरी खालच्या मात्रेनेच तो खराब झालेला असतो.",
+"drift.c3.h":"तो पाला कापतो, आणि खाऊ घालतो",
+"drift.c3.p":"काही तासांतच अळ्या खाणे थांबवतात, ओकतात, अंग आकसतात आणि निस्तेज होतात. तोपर्यंत महत्त्वाचा निर्णय कित्येक दिवस मागे पडलेला असतो.",
+"drift.note":"तुतीवरील कीटकनाशकांच्या परिणामावरील प्रकाशित विषशास्त्र स्पष्ट आहे — धोकादायक न वाटणाऱ्या मात्रांवरही कोष आणि कवचाचे वजन कोसळते. ते संशोधन आमचे नाही; ही समस्या मोजण्याजोगी का आहे हे सांगण्यासाठीच आम्ही त्याचा संदर्भ देतो.",
+"prod.eyebrow":"आम्ही काय बनवतो",
+"prod.h2":"चक्रातील तीन ठिकाणी, चार गोष्टी.",
+"prod.sub":"प्रत्येक गोष्ट वेगळ्या सज्जतेच्या टप्प्यावर आहे, आणि तो कोणता ते आम्ही सांगतो. इथे काहीही पूर्ण होण्याआधी पूर्ण म्हणून सांगितलेले नाही.",
+"prod.p1.where":"टप्पा ०१ · बांध",
+"prod.p1.badge":"प्रोटोटाइप · चाचणी झालेली",
+"prod.p1.p":"शेजारच्या शेताकडे तोंड करून, तुतीच्या पानाच्या उंचीवर बांधावर उभे राहणारे उपकरण. पानावर फवारणी वाहून आणणारी हवा आणि वारा ते तपासते; वाचन नुसते जास्त नव्हे तर झपाट्याने बदलले की गुण वाढवते — कारण फवारणीचे लोट सेकंदांत येतात, तर हवामान तासांत बदलते. या ठिकाणी, या वेळी एक फवारणी होऊन गेली एवढेच ते सांगते. रसायनाचे नाव ते सांगत नाही, आणि पानाला स्पर्शही करत नाही.",
+"prod.p1.stat":"नियंत्रित फवारण्यांविरुद्ध चाचणी झालेली. अद्याप कोणत्याही ग्राहकाच्या शेतावर बसवलेली नाही. अपयशी निकालांसह संपूर्ण चाचणी नोंद दस्तऐवजात आहे आणि मागणी केल्यास उपलब्ध आहे.",
+"prod.p2.where":"टप्पा ०३ · संगोपन गृह",
+"prod.p2.badge":"रचना · एकदा बांधलेले",
+"prod.p2.p":"स्वतःचे हवामान स्वतः राखणारे संगोपन गृह, जेणेकरून तापमान आणि आर्द्रतेचा पट्टा हवामान जिथे सोडेल तिथे नव्हे, तर त्या अवस्थेला जिथे खरोखर हवा तिथे ठेवता येईल. आम्ही ते रचले, त्याचा खर्च काढला आणि एक बांधले, आणि जोडीने चाचणी घेतली — तोच शेतकरी, तीच तुती, एका बाजूला पारंपरिक संगोपन आणि दुसऱ्या बाजूला नियंत्रित संगोपन.",
+"prod.p2.stat":"बांधलेले आणि चाचणी घेतलेले. तुमच्या गरजेनुसार आम्ही एक बांधू शकतो. रचना आणि खर्चाचा तपशील आमच्याकडे मागा.",
+"prod.p3.where":"संपूर्ण चक्रात · नोंद",
+"prod.p3.badge":"विकासात",
+"prod.p3.p":"नोंदीसाठी एकच जागा. बांधावरील उपकरण आणि संगोपन गृहातील वाचने एकाच पडद्यावर येतात — सध्याची परिस्थिती, तिच्यामागचा इतिहास, आणि दिलेले इशारे. त्या नोंदीवर एक गुणांकन थर बसतो, जो संगोपनाच्या परिस्थितीची ज्ञात रोग-मर्यादांशी तुलना करतो आणि एखादे गृह धोक्याच्या पट्ट्यात सरकत असेल तर सूचित करतो.",
+"prod.p3.stat":"विकासात. हे मोजलेल्या मूल्यांवरचे गणित आहे — प्रकाशित मर्यादांशी तुलना करून काढलेला भारित गुण, प्रशिक्षित मॉडेल नव्हे.",
+"prod.p4.where":"शेतकऱ्याकडे",
+"prod.p4.h":"सेरीग्रीन अ‍ॅप",
+"prod.p4.badge":"विकासात",
+"prod.p4.p":"वाचने, इशारे आणि नोंद — शेतकरी खरोखर वाचतो त्या भाषेत, फोनवरच. बॅच ज्या अवस्थेत आहे त्यासाठी संगोपनाच्या सूचना, आणि त्या प्लॉटचा इतिहास, जेणेकरून प्रतवारीचा अंदाज बांधण्याऐवजी ती समजावून सांगता येईल.",
+"prod.p4.stat":"विकासात. आज इंग्रजी, कन्नड आणि तेलुगू; तमिळ आणि मराठी पुढे येतील, आणि फोनवरील इशारे संदेश-नमुना मंजुरीवर थांबले आहेत.",
+"app.eyebrow":"आमचा दृष्टिकोन",
+"app.h2":"बांधावर मोजा. लवकर इशारा द्या. नोंदीवर सुधारणा करा.",
+"app.sub":"आमचे काम आमच्या पेटंट अर्जाच्या रचनेनुसार चालते — एक क्षेत्र अनुकूलन आणि संरक्षण प्रणाली. संरक्षणापासूनच त्याची सुरुवात होते, कारण संपूर्ण हंगाम बहुतेकदा तिथेच हातातून जातो.",
+"app.c1.h":"वहन जिथे येऊन पोहोचते तिथे बसा",
+"app.c1.p":"शेजारच्या शेताकडे तोंड करून बांधावर बसवलेली उपकरणे, तुतीच्या पानावर फवारणी वाहून आणणारी हवा आणि वारा तपासतात.",
+"app.c2.h":"उच्च वाचनावर नव्हे, झपाट्याने बदलणाऱ्या वाचनावर इशारा",
+"app.c2.p":"फवारणीचे लोट सेकंदांत येतात; हवामान तासांत बदलते. पातळीऐवजी बदलाचा वेग वाचणे हेच फवारणीला सामान्य दुपारपासून वेगळे करते.",
+"app.c3.h":"पाला कापणे थांबवा, आणि नोंद ठेवा",
+"app.c3.p":"यामुळे बदलणारा निर्णय एकच — त्या प्लॉटमधून पाला कापायचा की नाही, आणि केव्हा. नंतर नोंद शिल्लक राहते — निकाल समजावून सांगण्यासाठी, आणि पुढच्या हंगामात नेण्यासाठी.",
+"app.note":"सेरीग्रीन अद्याप महसूलपूर्व टप्प्यात असून सक्रिय संशोधन आणि विकासात आहे. ज्याचा पुरावा आमच्याकडे अद्याप नाही असे कामगिरीचे दावे आम्ही प्रसिद्ध करत नाही, आणि एखादे उत्पादन पूर्ण झालेले नसेल तर हे पान तसेच सांगते.",
+"field.eyebrow":"शेतातून",
+"field.h2":"काम प्रत्यक्षात जिथे घडते.",
+"field.sub":"तुतीचे प्लॉट, संगोपन गृहे, चंद्रिका आणि कोष — तामिळनाडूभर. आम्ही काम करत असलेल्या शेतांवर काढलेली ही आमची स्वतःची छायाचित्रे आहेत.",
+"field.g1":"तुतीच्या ओळींमधील शेत सर्वेक्षण. प्रत्येक रचनात्मक निर्णय इथूनच सुरू होतो.",
+"field.g2":"शेतकऱ्याच्या स्वतःच्या प्लॉटवर एका संगोपन चक्राविषयी चर्चा.",
+"field.g3":"अवस्थेच्या मध्यावरचे संगोपन बेड, सकाळच्या खाद्यासाठी पाला पसरलेला.",
+"field.g4":"संगोपन गृहातील मांडण्यांवर संगोपन ट्रे.",
+"field.g5":"विणण्यासाठी लावलेली चंद्रिका.",
+"field.g6":"काढणी. सहा आठवड्यांचे निर्णय एका सकाळी प्रतवारी होतात.",
+"field.g7":"उघड्या आकाशाखालची तुती — आणि उघडा बांध.",
+"field.g8":"चारही बाजूंनी इतर पिकांनी वेढलेली तुती.",
+"field.g9":"आम्ही रचलेले आणि बांधलेले संगोपन गृह, डिसेंबर २०२५.",
+"field.g10":"एक मोरीशील्ड उपकरण — किरणरोधी कवचावर सेन्सर हेड.",
+"field.g11":"ओळींमधील अंतर आणि पाणीपुरवठा पाला कसा असेल हे ठरवतात.",
+"field.g12":"प्लॉटच्या टोकाला, जिथून शेजाऱ्याचे शेत सुरू होते.",
+"jr.eyebrow":"आमचा प्रवास",
+"jr.h2":"आम्ही कुठून आलो.",
+"jr.sub":"अनुदाने, मान्यता आणि आम्ही घेतलेल्या चाचण्या. तारखांसह, आणि चालू दाव्याऐवजी इतिहास म्हणून मांडलेल्या.",
+"jr.k.grant":"अनुदान",
+"jr.k.rec":"मान्यता",
+"jr.k.trial":"चाचणी",
+"jr.k.field":"क्षेत्रीय काम","jr.k.prog":"कार्यक्रम",
+"jr.e1.h":"सीड ग्रँट — आयआयटी मद्रास प्रवर्तक",
+"jr.e1.p":"रेशीम शेतीतील आमचा डीप-टेक विकास सुरू करणारे अनुदान. उष्मायन कालावधी तेव्हापासून संपला आहे.",
+"jr.e2.h":"DST–NIDHI PRAYAS — MaDeIT, IIITDM",
+"jr.e2.p":"रेशीम शेतकऱ्यांसाठी संवेदन आणि संगोपन प्रणाली बांधण्यासाठी सरकारी पाठिंब्याचे नावीन्य अनुदान. उष्मायन कालावधी तेव्हापासून संपला आहे.",
+"jr.e3.h":"STEP UnPollute 2024",
+"jr.e3.p":"शाश्वततेवर काम करणाऱ्या पहिल्या दहा महिला उद्योजकांमध्ये निवड.",
+"jr.e4.h":"TSEC 2024",
+"jr.e4.p":"रेशीम शेतीतील नावीन्यासाठी पहिल्या वीस अ‍ॅग्री-टेक स्टार्टअप्समध्ये मान्यता.",
+"jr.e5.h":"संगोपन गृह चाचणी, पहिली बॅच",
+"jr.e5.p":"सत्यमंगलम येथे एका शेतावर जोडीने घेतलेली चाचणी — तोच शेतकरी, तीच तुती, पारंपरिक संगोपनाविरुद्ध नियंत्रित गृह. स्वयंचलन अजून पूर्ण होत असल्याने हवामान हाताने राखले गेले.",
+"jr.e6.h":"वेल्स विद्यापीठ V-Fund पारितोषिक",
+"jr.e6.p":"आंतरराष्ट्रीय महिला दिनी महिला-नेतृत्वाखालील अ‍ॅग्री-टेक नावीन्यासाठी प्रथम पारितोषिक.",
+"jr.e7.h":"संगोपन गृह चाचणी, दुसरी बॅच",
+"jr.e7.p":"पहिला निकाल दुसऱ्या चक्रात पुन्हा येतो का हे पाहण्यासाठी तेच गृह उपकरणी देखरेखीसह पुन्हा चालवले.",
+"jr.e8.h":"DST GDC I-NCUBATE, आयआयटी मद्रास",
+"jr.e8.p":"डीप-टेक स्टार्टअप्सना कल्पनेपासून ग्राहक विकत घेऊ शकेल अशा गोष्टीकडे नेणाऱ्या कार्यक्रमासाठी निवड.",
+"jr.e9.h":"RKVY RAFTAAR — MANAGE-CIA गट",
+"jr.e9.p":"राष्ट्रीय कृषी नावीन्य कार्यक्रमासाठी निवड.",
+"jr.e10.h":"नियंत्रित फवारण्यांविरुद्ध वहन चाचणी",
+"jr.e10.p":"मोजलेल्या अंतरांवर ज्ञात फवारण्यांविरुद्ध वारंवार घेतलेली उपकरणी सत्रे, संपूर्ण नोंदीसह — ज्या सत्रांत उपकरणाने प्रतिसाद दिला नाही ती सत्रेही धरून.",
+"co.eyebrow":"कंपनी",
+"co.sub":"भारतात नोंदणीकृत एक खाजगी मर्यादित कंपनी, अद्याप महसूलपूर्व टप्प्यात आणि सक्रिय संशोधन व विकासात. रेशीम विणकाम आणि रेशीम कीटक संगोपनात मुळे असलेल्या लोकांनी स्थापन केलेली — हे काम प्रयोगशाळेत नव्हे, तर शेतकरी, शास्त्रज्ञ आणि व्यापाऱ्यांशी झालेल्या संवादातून सुरू झाले. आमचा मूळ दृष्टिकोन भारतीय पेटंट कार्यालयात दाखल केलेल्या पेटंट अर्जाचा विषय आहे; अर्ज तपासणीच्या प्रतीक्षेत आहे, तपासणी चालू असेपर्यंत आम्ही त्याचे तपशील प्रसिद्ध करत नाही, आणि मंजूर पेटंटचा आम्ही कोणताही दावा करत नाही.",
+"ct.eyebrow":"संपर्क",
+"ct.h2":"आमच्याशी बोला.",
+"ct.sub":"संशोधन सहकार्य, शेतावरील चाचणी, भागीदारी, गुंतवणूक किंवा पुरवठादार चौकशीसाठी — आम्हाला लिहा, आम्ही उत्तर देऊ.",
+"ct.email":"ईमेल","ct.phone":"दूरध्वनी","ct.office":"नोंदणीकृत कार्यालय","ct.hours":"वेळ","ct.hoursval":"सोमवार ते शनिवार, सकाळी ९:०० – संध्याकाळी १८:०० IST",
+"ft.office":"नोंदणीकृत कार्यालय","ft.tag":"रेशीम शेतांचे रक्षण. ग्रामीण भविष्याची जोपासना."
+},
+hi:{
+"nav.cycle":"चक्र","nav.drift":"छिड़काव बहाव","nav.products":"हम क्या बनाते हैं","nav.approach":"हमारा तरीका","nav.field":"खेत से","nav.journey":"सफ़र","nav.contact":"संपर्क",
+"hero.pill":"भारत",
+"hero.h1a":"रेशम की एक फ़सल छह हफ़्ते की होती है।",
+"hero.h1b":"उसका नतीजा तय करने वाली ज़्यादातर चीज़ें आँखों से दिखती नहीं।",
+"hero.lede":"सेरीग्रीन रेशम चक्र के लिए उपकरण बनाती है — शहतूत का खेत, पालन गृह, और वह मेड़ जहाँ से पड़ोसी का छिड़काव आता है। फ़सल तय करने वाली परिस्थितियों को हम मापते हैं, उनका रिकॉर्ड रखते हैं, और किसान को इतने समय पर बताते हैं कि वह कुछ कर सके।",
+"hero.cta1":"हम क्या बनाते हैं",
+"hero.cta2":"हमसे बात करें",
+"hero.caption":"पाँचवीं अवस्था के कीट पत्ती खाते हुए, तमिलनाडु।",
+"cycle.eyebrow":"रेशम चक्र",
+"cycle.h2":"छह चरण, और फ़सल किसी भी चरण पर जा सकती है।",
+"cycle.sub":"भारत में रेशम उत्पादन बड़ी संख्या में छोटे किसान परिवारों का सहारा है। साथ ही यह असामान्य रूप से जोखिम में है — पड़ोसी के छिड़काव के समय से, उस मौसम से जो अब पुराने ढर्रे पर नहीं चलता, तापमान और नमी की उस संकरी पट्टी से जो हर अवस्था में बदलती है, और इस बात से कि क्या हुआ इसका कोई रिकॉर्ड ही नहीं होता।",
+"cycle.s1.h":"शहतूत",
+"cycle.s1.p":"पत्ती ही पूरी लागत है। क़िस्म, सिंचाई और पौधों के बीच की दूरी — छह हफ़्ते तक कीट क्या खाएगा, यही तय करते हैं।",
+"cycle.s1.r":"पड़ोस से जो भी आकर गिरे, पत्ती उसके सामने खुली है।",
+"cycle.s2.h":"चॉकी",
+"cycle.s2.p":"ज़्यादातर किसान अंडे नहीं सेते। छोटे कीट चॉकी केंद्र से आते हैं और दूसरी या तीसरी अवस्था में पहुँचते हैं।",
+"cycle.s2.r":"बैच उस गुणवत्ता से शुरू होती है जो आपने तय नहीं की।",
+"cycle.s3.h":"पालन",
+"cycle.s3.p":"पालन गृह में पाँच अवस्थाएँ। छोटे कीटों को ज़्यादा नमी चाहिए, बड़े कीटों को बहुत कम — और हर अवस्था में वह पट्टी संकरी ही रहती है।",
+"cycle.s3.r":"ग़लत निद्रा के समय एक चूक पूरी फ़सल ले जा सकती है।",
+"cycle.s4.h":"चंद्रिका पर चढ़ाना",
+"cycle.s4.p":"पके हुए कीट कोया बुनने के लिए चंद्रिका पर ले जाए जाते हैं। भीड़, हलचल और सीलन — ये सब बाद में कोये के खोल में दिखते हैं।",
+"cycle.s4.r":"बुनाई शुरू होने के बाद कुछ भी ठीक नहीं किया जा सकता।",
+"cycle.s5.h":"कोया",
+"cycle.s5.p":"खोल अनुपात, एकरूपता, रंग और बनावट पर श्रेणी तय होती है। छह हफ़्तों के फ़ैसले यहीं एक संख्या बन जाते हैं।",
+"cycle.s5.r":"रिकॉर्ड के बिना कम श्रेणी का कारण खोजा नहीं जा सकता।",
+"cycle.s6.h":"बाज़ार",
+"cycle.s6.p":"दाम श्रेणी के पीछे चलता है। बिगड़ी बैच यानी छह हफ़्तों की पत्ती, मज़दूरी, अंडे और बिजली — और आख़िर में हाथ में कुछ नहीं।",
+"cycle.s6.r":"और क्यों बिगड़ी इसका सबूत भी नहीं, जिससे सुधार हो सके।",
+"cycle.note":"इस चक्र के जिन हिस्सों को मापा जा सकता है, हम उन पर काम करते हैं — चरण 01 की पत्ती और मेड़, और चरण 03 का पालन गृह — और इतना अच्छा रिकॉर्ड रखने पर कि चरण 06 को समझाया जा सके।",
+"dg.d1":"500 माइक्रोमीटर — तुरंत गिर जाता है","dg.d2":"150 माइक्रोमीटर — मेड़ के पास गिरता है","dg.d3":"100 से छोटा — गिरता नहीं, हवा में बहता है","dg.left":"पड़ोसी की फ़सल","dg.right":"शहतूत","dg.line":"मेड़ — भारत में दूरी अनिवार्य नहीं","dg.norm":"अंतरराष्ट्रीय दूरी: 3–100 मीटर","dg.cap":"बूँदें असली अनुपात में बनाई गई हैं। शहतूत तक वही बूँद पहुँचती है जो दिखती नहीं।","drift.eyebrow":"सबसे तीखा किनारा",
+"drift.h2":"छिड़काव का बहाव, और यह आते हुए किसी को दिखता क्यों नहीं।",
+"drift.sub":"जबकि अंतरराष्ट्रीय मानक तीन से सौ मीटर के हैं, भारत में रेशम उत्पादन की रक्षा करने वाला कोई बफ़र ज़ोन नियम नहीं है। कपास, गन्ने, केले या मिर्च पर छिड़काव करने वाले पड़ोसी पर किसी को बताने की कोई ज़िम्मेदारी नहीं। चक्र का यही चरण हम सबसे अच्छी तरह समझते हैं, और हमारा पहला उपकरण यहीं खड़ा होता है।",
+"drift.c1.h":"महीन बूँदें उड़ती रहती हैं",
+"drift.c1.p":"नोज़ल पचास से पाँच सौ माइक्रोमीटर की बूँदें फेंकते हैं। डेढ़ सौ से छोटी बूँदें नीचे गिरती ही नहीं — वे हवा में ही रहकर हवा के साथ बहती हैं।",
+"drift.c2.h":"देखने में कुछ भी ग़लत नहीं लगता",
+"drift.c2.p":"पत्ती ताज़ा और हरी रहती है; अवशेष आँखों से नहीं दिखता। रेशम उत्पादन में शून्य सहनशीलता का मानक है, इसलिए घातक मात्रा से कहीं कम मात्रा ही उसे ख़राब कर चुकी होती है।",
+"drift.c3.h":"वह पत्ती काटता है, और खिलाता है",
+"drift.c3.p":"कुछ ही घंटों में कीट खाना छोड़ देते हैं, उलटी करते हैं, सिकुड़ते हैं और ढीले पड़ जाते हैं। तब तक जो फ़ैसला मायने रखता था वह कई दिन पीछे छूट चुका होता है।",
+"drift.note":"शहतूत पर कीटनाशक के असर पर प्रकाशित विष-विज्ञान स्पष्ट है — जो मात्राएँ ख़तरनाक लगती तक नहीं, उन पर भी कोये और खोल का वज़न गिर जाता है। वह शोध हमारा नहीं है; हम उसका हवाला इसलिए देते हैं क्योंकि यही वजह है कि इस समस्या को मापना सार्थक है।",
+"prod.eyebrow":"हम क्या बनाते हैं",
+"prod.h2":"चक्र में तीन जगह, चार चीज़ें।",
+"prod.sub":"हर एक तैयारी के अलग चरण पर है, और वह कौन-सा है यह हम बताते हैं। यहाँ कुछ भी पूरा होने से पहले पूरा नहीं कहा गया।",
+"prod.p1.where":"चरण 01 · मेड़",
+"prod.p1.badge":"प्रोटोटाइप · परीक्षित",
+"prod.p1.p":"पड़ोसी के खेत की ओर मुँह किए, शहतूत की पत्ती की ऊँचाई पर मेड़ पर खड़ी होने वाली इकाई। छिड़काव को पत्ती तक पहुँचाने वाली हवा और वायु का यह नमूना लेती है; रीडिंग सिर्फ़ ऊँची नहीं, तेज़ी से बदलने पर स्कोर बढ़ाती है — क्योंकि छिड़काव के झोंके सेकंडों में आते हैं, जबकि मौसम घंटों में बदलता है। यह इतना बताती है कि इस जगह, इस समय एक छिड़काव हुआ है। यह रसायन का नाम नहीं बताती, और पत्ती को छूती भी नहीं।",
+"prod.p1.stat":"नियंत्रित छिड़कावों के विरुद्ध परीक्षित। अभी तक किसी ग्राहक के खेत पर नहीं लगाई गई। असफल परिणामों सहित पूरा परीक्षण रिकॉर्ड दर्ज है और माँगने पर उपलब्ध है।",
+"prod.p2.where":"चरण 03 · पालन गृह",
+"prod.p2.badge":"डिज़ाइन · एक बार निर्मित",
+"prod.p2.p":"अपना मौसम ख़ुद संभालने के लिए बनाया गया पालन गृह, ताकि तापमान और नमी की पट्टी वहाँ रखी जा सके जहाँ उस अवस्था को सचमुच चाहिए, न कि वहाँ जहाँ बाहर का मौसम छोड़ दे। हमने इसे डिज़ाइन किया, इसकी लागत निकाली और एक बनाया, और जोड़ी में परीक्षण चलाया — वही किसान, वही शहतूत, एक ओर पारंपरिक पालन और दूसरी ओर नियंत्रित पालन।",
+"prod.p2.stat":"बनाया और परखा गया। आपकी ज़रूरत के अनुसार हम एक बना सकते हैं। डिज़ाइन और लागत का ब्यौरा हमसे माँगें।",
+"prod.p3.where":"पूरे चक्र में · रिकॉर्ड",
+"prod.p3.badge":"विकासाधीन",
+"prod.p3.p":"रिकॉर्ड के लिए एक ही जगह। मेड़ की इकाई और पालन गृह की रीडिंग एक ही स्क्रीन पर आती हैं — मौजूदा स्थिति, उसके पीछे का इतिहास, और दी गई चेतावनियाँ। उस रिकॉर्ड के ऊपर एक स्कोरिंग परत बैठती है, जो पालन की परिस्थितियों को ज्ञात रोग-सीमाओं से मिलाती है और बताती है कि कोई गृह जोखिम की पट्टी में खिसक रहा है।",
+"prod.p3.stat":"विकासाधीन। यह मापी गई मात्राओं पर किया गया गणित है — प्रकाशित सीमाओं के विरुद्ध एक भारित स्कोर, कोई प्रशिक्षित मॉडल नहीं।",
+"prod.p4.where":"किसान की ओर",
+"prod.p4.h":"सेरीग्रीन ऐप",
+"prod.p4.badge":"विकासाधीन",
+"prod.p4.p":"रीडिंग, चेतावनियाँ और रिकॉर्ड — उसी भाषा में जो किसान सचमुच पढ़ता है, फ़ोन पर ही। बैच जिस अवस्था में है उसके लिए पालन की सलाह, और उस प्लॉट का इतिहास, ताकि श्रेणी का अंदाज़ा लगाने के बजाय उसे समझाया जा सके।",
+"prod.p4.stat":"विकासाधीन। आज अंग्रेज़ी, कन्नड़ और तेलुगु; तमिल और मराठी अगले हैं, और फ़ोन चेतावनियाँ संदेश-टेम्पलेट की मंज़ूरी पर रुकी हैं।",
+"app.eyebrow":"हमारा तरीका",
+"app.h2":"मेड़ पर मापें। पहले चेताएँ। रिकॉर्ड पर सुधरें।",
+"app.sub":"हमारा काम हमारे पेटेंट आवेदन की संरचना पर चलता है — एक क्षेत्र अनुकूलन और संरक्षण प्रणाली। शुरुआत संरक्षण से ही होती है, क्योंकि एक पूरा मौसम अक्सर वहीं हाथ से निकल जाता है।",
+"app.c1.h":"जहाँ बहाव आकर पहुँचता है, वहीं बैठें",
+"app.c1.p":"पड़ोसी के खेत की ओर मुँह किए मेड़ पर लगे उपकरण, उस हवा और वायु का नमूना लेते हैं जो छिड़काव को शहतूत की पत्ती तक पहुँचाती है।",
+"app.c2.h":"ऊँची रीडिंग पर नहीं, तेज़ी से बदलती रीडिंग पर चेतावनी",
+"app.c2.p":"छिड़काव के झोंके सेकंडों में आते हैं; मौसम घंटों में बदलता है। स्तर के बजाय बदलाव की रफ़्तार पढ़ना ही छिड़काव को एक सामान्य दोपहर से अलग करता है।",
+"app.c3.h":"पत्ती काटना रोकें, और रिकॉर्ड रखें",
+"app.c3.p":"इससे बदलने वाला फ़ैसला एक ही है — उस प्लॉट से पत्ती काटनी है या नहीं, और कब। उसके बाद रिकॉर्ड बचा रहता है — नतीजा समझाने के लिए, और अगले मौसम में ले जाने के लिए।",
+"app.note":"सेरीग्रीन अभी राजस्व-पूर्व चरण में है और सक्रिय शोध एवं विकास में है। जिन दावों का सबूत हमारे पास अभी नहीं है, ऐसे प्रदर्शन के दावे हम प्रकाशित नहीं करते, और जहाँ कोई उत्पाद पूरा नहीं हुआ है वहाँ यह पन्ना वही कहता है।",
+"field.eyebrow":"खेत से",
+"field.h2":"काम असल में कहाँ होता है।",
+"field.sub":"शहतूत के प्लॉट, पालन गृह, चंद्रिका और कोये — तमिलनाडु भर में। ये हमारी अपनी तस्वीरें हैं, उन्हीं खेतों पर ली गई जहाँ हम काम करते हैं।",
+"field.g1":"शहतूत की कतारों के बीच खेत का सर्वेक्षण। हर डिज़ाइन फ़ैसला यहीं से शुरू होता है।",
+"field.g2":"किसान के अपने प्लॉट पर एक पालन चक्र पर बातचीत।",
+"field.g3":"अवस्था के बीच का पालन बेड, सुबह के आहार के लिए पत्ती बिछी हुई।",
+"field.g4":"पालन गृह की मांडों पर पालन ट्रे।",
+"field.g5":"बुनाई के लिए लगाई गई चंद्रिका।",
+"field.g6":"कटाई। छह हफ़्तों के फ़ैसले एक ही सुबह श्रेणीबद्ध हो जाते हैं।",
+"field.g7":"खुले आसमान के नीचे शहतूत — और खुली मेड़।",
+"field.g8":"चारों ओर दूसरी फ़सलों से घिरा शहतूत।",
+"field.g9":"हमारा डिज़ाइन किया और बनाया हुआ पालन गृह, दिसंबर 2025।",
+"field.g10":"एक मोरीशील्ड इकाई — विकिरण कवच के ऊपर सेंसर हेड।",
+"field.g11":"कतारों की दूरी और सिंचाई तय करती हैं कि पत्ती कैसी होगी।",
+"field.g12":"प्लॉट के किनारे पर, जहाँ से पड़ोसी का खेत शुरू होता है।",
+"jr.eyebrow":"हमारा सफ़र",
+"jr.h2":"हम कहाँ से आए हैं।",
+"jr.sub":"अनुदान, मान्यताएँ और हमारे किए गए परीक्षण। तारीख़ों के साथ, और चालू दावे के बजाय इतिहास के रूप में।",
+"jr.k.grant":"अनुदान",
+"jr.k.rec":"मान्यता",
+"jr.k.trial":"परीक्षण",
+"jr.k.field":"क्षेत्र कार्य","jr.k.prog":"कार्यक्रम",
+"jr.e1.h":"सीड ग्रांट — आईआईटी मद्रास प्रवर्तक",
+"jr.e1.p":"रेशम उत्पादन में हमारा डीप-टेक विकास शुरू करने वाला अनुदान। इनक्यूबेशन अवधि तब से समाप्त हो चुकी है।",
+"jr.e2.h":"DST–NIDHI PRAYAS — MaDeIT, IIITDM",
+"jr.e2.p":"रेशम किसानों के लिए संवेदन और पालन प्रणालियाँ बनाने हेतु सरकार समर्थित नवाचार अनुदान। इनक्यूबेशन अवधि तब से समाप्त हो चुकी है।",
+"jr.e3.h":"STEP UnPollute 2024",
+"jr.e3.p":"स्थिरता पर काम कर रहीं शीर्ष दस महिला उद्यमियों में चयन।",
+"jr.e4.h":"TSEC 2024",
+"jr.e4.p":"रेशम उत्पादन में नवाचार के लिए शीर्ष बीस एग्री-टेक स्टार्टअप में मान्यता।",
+"jr.e5.h":"पालन गृह परीक्षण, पहली बैच",
+"jr.e5.p":"सत्यमंगलम में एक खेत पर जोड़ी में किया गया परीक्षण — वही किसान, वही शहतूत, पारंपरिक पालन के मुक़ाबले एक नियंत्रित गृह। स्वचालन अभी पूरा हो रहा था, इसलिए मौसम हाथ से ही संभाला गया।",
+"jr.e6.h":"वेल्स विश्वविद्यालय V-Fund पुरस्कार",
+"jr.e6.p":"अंतरराष्ट्रीय महिला दिवस पर महिला-नेतृत्व वाले एग्री-टेक नवाचार के लिए प्रथम पुरस्कार।",
+"jr.e7.h":"पालन गृह परीक्षण, दूसरी बैच",
+"jr.e7.p":"यह देखने के लिए कि पहला नतीजा दूसरे चक्र में दोहराता है या नहीं, वही गृह उपकरण-आधारित निगरानी के साथ दोबारा चलाया गया।",
+"jr.e8.h":"DST GDC I-NCUBATE, आईआईटी मद्रास",
+"jr.e8.p":"उस कार्यक्रम के लिए चयन जो डीप-टेक स्टार्टअप को एक विचार से उस चीज़ तक ले जाता है जिसे ग्राहक ख़रीद सके।",
+"jr.e9.h":"RKVY RAFTAAR — MANAGE-CIA समूह",
+"jr.e9.p":"राष्ट्रीय कृषि नवाचार कार्यक्रम के लिए चयन।",
+"jr.e10.h":"नियंत्रित छिड़कावों के विरुद्ध बहाव परीक्षण",
+"jr.e10.p":"मापी गई दूरियों पर ज्ञात छिड़कावों के विरुद्ध बार-बार किए गए उपकरण-आधारित सत्र, पूरे रिकॉर्ड के साथ — उन सत्रों सहित जिनमें उपकरण ने कोई प्रतिक्रिया नहीं दी।",
+"co.eyebrow":"कंपनी",
+"co.sub":"भारत में पंजीकृत एक प्राइवेट लिमिटेड कंपनी, अभी राजस्व-पूर्व चरण में और सक्रिय शोध एवं विकास में। रेशम बुनाई और रेशम कीट पालन में जड़ें रखने वाले लोगों द्वारा स्थापित — यह काम किसी प्रयोगशाला में नहीं, बल्कि किसानों, वैज्ञानिकों और व्यापारियों के साथ हुई बातचीत से शुरू हुआ। हमारा मूल तरीक़ा भारतीय पेटेंट कार्यालय में दाख़िल एक पेटेंट आवेदन का विषय है; आवेदन परीक्षण की प्रतीक्षा में है, परीक्षण चलने तक हम उसका ब्यौरा प्रकाशित नहीं करते, और स्वीकृत पेटेंट का हम कोई दावा नहीं करते।",
+"ct.eyebrow":"संपर्क",
+"ct.h2":"हमसे बात करें।",
+"ct.sub":"शोध सहयोग, खेत पर परीक्षण, साझेदारी, निवेश या आपूर्तिकर्ता पूछताछ के लिए — हमें लिखें, हम जवाब देंगे।",
+"ct.email":"ईमेल","ct.phone":"फ़ोन","ct.office":"पंजीकृत कार्यालय","ct.hours":"समय","ct.hoursval":"सोमवार से शनिवार, सुबह 9:00 – शाम 18:00 IST",
+"ft.office":"पंजीकृत कार्यालय","ft.tag":"रेशम के खेतों की रक्षा। ग्रामीण भविष्य की परवरिश।"
+}
+};
+</script>
+<script>
+(function(){
+  "use strict";
+  var D = document.documentElement;
+  var NAMES = {en:"English", ta:"தமிழ்", kn:"ಕನ್ನಡ", te:"తెలుగు", mr:"मराठी", hi:"हिन्दी"};
+  var nodes = [].slice.call(document.querySelectorAll("[data-i18n]"));
+  var EN = {};
+  nodes.forEach(function(n){ EN[n.getAttribute("data-i18n")] = n.innerHTML; });
+
+  var box   = document.getElementById("lang");
+  var btn   = document.getElementById("langbtn");
+  var label = document.getElementById("langlabel");
+
+  function store(code){ try { localStorage.setItem("sg.lang", code); } catch(e){} }
+  function recall(){ try { return localStorage.getItem("sg.lang"); } catch(e){ return null; } }
+
+  function applyLang(code){
+    var dict = (code === "en") ? null : (window.I18N && window.I18N[code]);
+    if (code !== "en" && !dict) code = "en";
+    nodes.forEach(function(n){
+      var k = n.getAttribute("data-i18n");
+      var v = dict && dict[k];
+      if (typeof v === "string" && v.length) n.textContent = v;
+      else n.innerHTML = EN[k];
+    });
+    D.setAttribute("lang", code);
+    if (label) label.textContent = NAMES[code] || "English";
+    if (box) {
+      [].slice.call(box.querySelectorAll("button[data-lang]")).forEach(function(b){
+        b.setAttribute("aria-current", b.getAttribute("data-lang") === code ? "true" : "false");
+      });
+    }
+    store(code);
+  }
+
+  function close(){ if(!box) return; box.setAttribute("data-open","0"); if(btn) btn.setAttribute("aria-expanded","false"); }
+  function toggle(){
+    if(!box) return;
+    var open = box.getAttribute("data-open") === "1";
+    box.setAttribute("data-open", open ? "0" : "1");
+    if(btn) btn.setAttribute("aria-expanded", open ? "false" : "true");
+  }
+
+  if (btn) btn.addEventListener("click", function(e){ e.stopPropagation(); toggle(); });
+  if (box) {
+    box.addEventListener("click", function(e){
+      var t = e.target.closest ? e.target.closest("button[data-lang]") : null;
+      if (!t) return;
+      applyLang(t.getAttribute("data-lang"));
+      close();
+    });
+  }
+  document.addEventListener("click", function(e){ if (box && !box.contains(e.target)) close(); });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape") close(); });
+
+  // Close the mobile menu when a nav link is followed.
+  var navtoggle = document.getElementById("navtoggle");
+  [].slice.call(document.querySelectorAll(".navwrap nav a")).forEach(function(a){
+    a.addEventListener("click", function(){ if (navtoggle) navtoggle.checked = false; });
+  });
+
+
+  // ---- gallery lightbox ----
+  var figs = [].slice.call(document.querySelectorAll(".gal figure"));
+  var lb = document.getElementById("lb");
+  if (lb && figs.length) {
+    var lbimg = document.getElementById("lbimg"),
+        lbcap = document.getElementById("lbcap"),
+        idx = 0, lastFocus = null;
+
+    figs.forEach(function(f, i){
+      f.setAttribute("tabindex","0");
+      f.setAttribute("role","button");
+      f.addEventListener("click", function(){ open(i); });
+      f.addEventListener("keydown", function(e){
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(i); }
+      });
+    });
+
+    function show(i){
+      idx = (i + figs.length) % figs.length;
+      var im = figs[idx].querySelector("img");
+      var cp = figs[idx].querySelector("figcaption");
+      lbimg.src = im.getAttribute("src");
+      lbimg.alt = im.getAttribute("alt") || "";
+      lbcap.textContent = cp ? cp.textContent : "";
+    }
+    function open(i){
+      lastFocus = document.activeElement;
+      show(i);
+      lb.hidden = false;
+      document.body.style.overflow = "hidden";
+      document.getElementById("lbclose").focus();
+    }
+    function close(){
+      lb.hidden = true;
+      lbimg.src = "";
+      document.body.style.overflow = "";
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+    document.getElementById("lbclose").addEventListener("click", close);
+    document.getElementById("lbprev").addEventListener("click", function(e){ e.stopPropagation(); show(idx-1); });
+    document.getElementById("lbnext").addEventListener("click", function(e){ e.stopPropagation(); show(idx+1); });
+    lb.addEventListener("click", function(e){ if (e.target === lb) close(); });
+    document.addEventListener("keydown", function(e){
+      if (lb.hidden) return;
+      if (e.key === "Escape") close();
+      else if (e.key === "ArrowLeft") show(idx-1);
+      else if (e.key === "ArrowRight") show(idx+1);
+    });
+  }
+
+  var saved = recall();
+  if (saved && saved !== "en") applyLang(saved);
+  else if (label) label.textContent = "English";
+})();
+</script>
 </body>
 </html>
